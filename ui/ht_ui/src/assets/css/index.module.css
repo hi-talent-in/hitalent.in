@@ -1,0 +1,30 @@
+.glass{
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px #0000000b;
+    backdrop-filter: blur(7.1px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    @apply border-4 border-slate-300 shrink-0 h-5/6 w-[50%] rounded-3xl py-20 px-7 min-w-max;
+}
+
+.profile_img{
+    @apply border-4 border-gray-100 w-[150px] rounded-full shadow-lg cursor-pointer;
+    @apply hover:border-gray-200;
+}
+
+.textbox{
+    @apply border-0 px-5 py-4 rounded-xl w-auto shadow-sm text-lg;
+    @apply focus:outline-none;
+}
+
+.btn{
+    @apply border bg-neutral-700 w-72 py-6 rounded-lg text-gray-50 text-3xl shadow-sm text-center;
+}
+
+.btn:hover{
+    background-color: #ff6a6a;
+}
+
+input[type='file']{
+    display: none;
+}
