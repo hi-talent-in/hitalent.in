@@ -19,17 +19,13 @@ import StepProgress from "../dashboard/StepProgress";
 const List = () => {
   const accessToken = localStorage.getItem("accessToken");
 
-  const {
-    notAuthorised,
-    setNotAuthorised,
-    setShowProgress,
-    setStepsList,
-  } = useStore((state) => ({
-    notAuthorised: state.notAuthorised,
-    setNotAuthorised: state.setNotAuthorised,
-    setShowProgress: state.setShowProgress,
-    setStepsList: state.setStepsList,
-  }));
+  const { notAuthorised, setNotAuthorised, setShowProgress, setStepsList } =
+    useStore((state) => ({
+      notAuthorised: state.notAuthorised,
+      setNotAuthorised: state.setNotAuthorised,
+      setShowProgress: state.setShowProgress,
+      setStepsList: state.setStepsList,
+    }));
 
   const [status, setStatus] = React.useState(false);
   const [cStreak, setCStreak] = React.useState();
@@ -181,10 +177,16 @@ const List = () => {
                         >
                           <div className="w-[20em]">
                             <SkillTable
-                              currentLang={talentId ? levels?.[talentId]?.lang : ""}
-                              currentTrack={talentId ? levels?.[talentId]?.track : ""}
+                              currentLang={
+                                talentId ? levels?.[talentId]?.lang : ""
+                              }
+                              currentTrack={
+                                talentId ? levels?.[talentId]?.track : ""
+                              }
                               levelProgress={
-                                talentId ? levels?.[talentId]?.levelProgress : ""
+                                talentId
+                                  ? levels?.[talentId]?.levelProgress
+                                  : ""
                               }
                             />
                           </div>
@@ -216,7 +218,7 @@ const List = () => {
                                 setModal3Open(false);
                                 setShowProgress(false);
                               }}
-                              className="hover:bg-transparent"
+                              className="hover:bg-transparent mt-5"
                             >
                               Cancel
                             </Button>,
