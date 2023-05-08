@@ -5,7 +5,7 @@ import "dotenv/config.js";
 
 const app = express();
 const nodePort = process.env.NODE_PORT;
-const corsOrigin = process.env.CORS_ORIGIN;
+const corsOrigin = process.env.FRONTEND_URL;
 
 import homeRoute from "./routes/home.js";
 import contactRoute from "./routes/contact.js";

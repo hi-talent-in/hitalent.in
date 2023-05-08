@@ -11,8 +11,9 @@ case $1 in
     echo "Packages Installation Success."
     npm run build
     echo "Build Success."
-    cp .htaccess /var/www/ui/build
+    cp .htaccess /var/www/${WEBSITE_BASE_NAME}/build
     chmod 755 /var/www/${WEBSITE_BASE_NAME}
+    a2enmod ssl
     apache2ctl -D FOREGROUND
     a2enmod rewrite
     service apache2 start

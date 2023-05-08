@@ -21,15 +21,15 @@ services:
         - ./ui/ui.sh:/var/www/ui.sh
       ports:
         - "80:80"
+        - "443:443"
       command: server
   backend:
     build: services
     container_name: backend
-    command: "npm start"
     ports:
       - 8000:8000
     volumes:
-      - ./services/node.conf:/etc/apache2/sites-available/000-default.conf
+      - ./services:/var/www/backend
       - ../feedback/screenshots:/var/www/backend/files:z
       - ../logs/server:/var/log/apache2:z
     depends_on:
