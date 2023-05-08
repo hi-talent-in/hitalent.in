@@ -279,7 +279,7 @@ export const linkedinLogin = async (req, res) => {
   var data = qs.stringify({
     grant_type: "authorization_code",
     code: code,
-    redirect_uri: `${process.env.REDIRECT_URI}/auth/linkedin/callback`,
+    redirect_uri: `${process.env.FRONTEND_URL}/auth/linkedin/callback`,
     client_id: `${process.env.LINKEDIN_CLIENT_ID}`,
     client_secret: `${process.env.LINKEDIN_CLIENT_SECRET}`,
   });
