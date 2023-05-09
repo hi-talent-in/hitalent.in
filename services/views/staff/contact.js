@@ -37,7 +37,7 @@ export const getContacts = async (req, res) => {
 export const deleteContact = async (req, res) => {
   const userId = req.user.userId;
   const contactId = req.params.contactId;
-  await Staff.findOne({ where: { id: userId } })
+  await User.findOne({ where: { id: userId } })
     .then(async () => {
       if (contactId) {
         await Contact.destroy({ where: { id: contactId } })
