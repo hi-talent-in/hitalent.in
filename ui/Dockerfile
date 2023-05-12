@@ -16,7 +16,7 @@ RUN apt-get update -yq && apt-get upgrade -yq && \
 
 RUN npm install -g npm
 
-RUN echo "ServerName dev.hitalent.in" >> /etc/apache2/apache2.conf
+RUN echo "ServerName hitalent.in" >> /etc/apache2/apache2.conf
 
 COPY ./ht_ui .
 
