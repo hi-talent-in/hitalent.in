@@ -11,4 +11,4 @@
 - For example, We are open to your any ideas you have, you can start contributing in solving issues/bugs/corrections which you find in HiTalent's website.
 
 - `How to contribute in HiTalent.`
-  - Click on fork button present at top right side. ![Fork button](https://github.com/hi-talent-org/hitalent.in/tree/main/images/contribution/s1.jpg?raw=true)
+  - Click on fork button present at top right side. ![Fork button](https://github.com/hi-talent-org/hitalent.in/tree/main/images/contribution/s1.png?raw=true)
