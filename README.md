@@ -49,8 +49,11 @@
 </p>
 
 <p>
-8. After clicking create pull request, then give a title to pull request(for example, you can specify what changes you have done in one line.) and then click again create pull request and then wait till your code is reviewed by contributors.
+8. After clicking create pull request, then give a title to pull request(for example, you can specify what changes you have done in one line.) and then click again create pull request and then wait till your code is reviewed by contributors. That's it, you have successfully contributed to our project and in open source.
 
 <img src="./images/contribution/s5.png" alt="Create Fork Page">
 </p>
 
+### Thanks For Contributing...
+
+## Follow us on [LinkedIn](https://www.linkedin.com/company/hitalent-in/)
