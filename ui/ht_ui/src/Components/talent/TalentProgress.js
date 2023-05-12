@@ -102,11 +102,14 @@ const List = () => {
                 <TableHead>
                   <TableRow>
                     <TableCell align="center">
+                      <small className="text-2xl font-semibold font-serif"></small>
+                    </TableCell>
+                    <TableCell align="left">
                       <h6 className="text-2xl font-semibold font-serif">
                         Name
                       </h6>
                     </TableCell>
-                    <TableCell align="center">
+                    <TableCell align="left">
                       <h6 className="text-2xl font-semibold font-serif">
                         Email
                       </h6>
@@ -121,12 +124,12 @@ const List = () => {
                         Progress
                       </h6>
                     </TableCell>
-                    <TableCell align="center">
+                    <TableCell align="left">
                       <h6 className="text-2xl font-semibold font-serif">
                         Language
                       </h6>
                     </TableCell>
-                    <TableCell align="center">
+                    <TableCell align="left">
                       <h6 className="text-2xl font-semibold font-serif">
                         Track
                       </h6>
@@ -139,17 +142,20 @@ const List = () => {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {talents.map((talent) => (
+                  {talents.map((talent, index) => (
                     <TableRow
                       key={talent.id}
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell align="center">
+                        <small className="text-2xl font-serif">{index+1}</small>
+                      </TableCell>
+                      <TableCell align="left">
                         <small className="text-2xl font-serif">
                           {talent?.name}
                         </small>
                       </TableCell>
-                      <TableCell align="center">
+                      <TableCell align="left">
                         <small className="text-2xl font-serif">
                           {talent?.email}
                         </small>
@@ -253,7 +259,7 @@ const List = () => {
                           See
                         </Link>
                       </TableCell>
-                      <TableCell align="center">
+                      <TableCell align="left">
                         <p className="text-2xl font-serif p-0 m-0">
                           {levels?.[talent.id]?.lang === "python"
                             ? "Python"
@@ -264,7 +270,7 @@ const List = () => {
                             : "Not Selected"}
                         </p>
                       </TableCell>
-                      <TableCell align="center">
+                      <TableCell align="left">
                         <p className="text-2xl font-serif p-0 m-0">
                           {levels?.[talent.id]?.track === "backend"
                             ? "Backend"
