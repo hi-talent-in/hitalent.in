@@ -158,9 +158,7 @@ const UserRole = () => {
             <TableHead>
               <TableRow>
                 <TableCell align="center">
-                  <small className="font-serif m-0 text-xl font-semibold">
-                    Id
-                  </small>
+                  <small className="font-serif m-0 text-xl font-semibold"></small>
                 </TableCell>
                 <TableCell align="left">
                   <small className="font-serif m-0 text-xl font-semibold">
