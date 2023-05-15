@@ -102,7 +102,7 @@ const List = () => {
                 <TableHead>
                   <TableRow>
                     <TableCell align="center">
-                      <small className="font-serif m-0 text-xl font-semibold"></small>
+                      <small className="text-2xl font-semibold font-serif"></small>
                     </TableCell>
                     <TableCell align="left">
                       <h6 className="text-2xl font-semibold font-serif">
