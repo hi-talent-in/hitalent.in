@@ -47,6 +47,12 @@ const LinkedInCallback = () => {
           } else if (res?.data?.tokens?.isMentor) {
             localStorage.setItem("isMentor", res?.data?.tokens?.isMentor);
             localStorage.setItem("me", "isM");
+          } else if (res?.data?.tokens?.isStaff) {
+            localStorage.setItem("isStaff", res?.data?.tokens?.isStaff);
+            localStorage.setItem("me", "isS");
+          } else if (res?.data?.tokens?.isAdmin) {
+            localStorage.setItem("isAdmin", res?.data?.tokens?.isAdmin);
+            localStorage.setItem("me", "isA");
           } else if (res?.data?.tokens?.talentType) {
             localStorage.setItem("talentType", res?.data?.tokens?.talentType);
             localStorage.setItem(
