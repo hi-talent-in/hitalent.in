@@ -20,11 +20,15 @@ const UserRole = () => {
   const [rowIndex, setRowIndex] = React.useState();
   const [editSuccess, setEditSuccess] = React.useState(false);
   const [isMentor, setIsMentor] = React.useState();
+  const [isStaff, setIsStaff] = React.useState();
+  const [isAdmin, setIsAdmin] = React.useState();
   const [isTalent, setIsTalent] = React.useState();
   const [isIntern, setIsIntern] = React.useState();
   const [isApprentice, setIsApprentice] = React.useState();
 
   const accessToken = localStorage.getItem("accessToken");
+  const me = localStorage.getItem("me");
+
   const getTalentRoles = async () => {
     await axios
       .get(`${process.env.REACT_APP_BACKEND_API}/staff/talent/roles`, {
@@ -45,11 +49,14 @@ const UserRole = () => {
     event.preventDefault();
     const data = {
       id: rows[rowIndex].id,
-      isIntern: isIntern,
-      isApprentice: isApprentice,
-      isTalent: isTalent,
-      isMentor: isMentor,
+      isIntern,
+      isApprentice,
+      isTalent,
+      isMentor,
+      isStaff,
+      isAdmin,
     };
+
     await axios
       .post(`${process.env.REACT_APP_BACKEND_API}/staff/talent/roles/`, data, {
         headers: {
@@ -129,6 +136,44 @@ const UserRole = () => {
           }}
         />
       </div>
+      {me === "isA" ? (
+        <>
+          <div className="font-serif flex flex-row justify-between text-left ">
+            <small className="w-[7em] text-left text-2xl font-serif">
+              Staff{" "}
+            </small>
+            <small>:</small>
+            <input
+              type="checkbox"
+              id="intern"
+              name="options"
+              defaultChecked={rows[rowIndex]?.isStaff}
+              value="apprentice"
+              onChange={(e) => {
+                setIsStaff(e.target.checked);
+              }}
+            />
+          </div>
+          <div className="font-serif flex flex-row justify-between text-left ">
+            <small className="w-[7em] text-left text-2xl font-serif">
+              Admin{" "}
+            </small>
+            <small>:</small>
+            <input
+              type="checkbox"
+              id="intern"
+              name="options"
+              defaultChecked={rows[rowIndex]?.isAdmin}
+              value="apprentice"
+              onChange={(e) => {
+                setIsAdmin(e.target.checked);
+              }}
+            />
+          </div>
+        </>
+      ) : (
+        ""
+      )}
     </form>
   );
 
@@ -195,6 +240,22 @@ const UserRole = () => {
                     Apprentice
                   </small>
                 </TableCell>
+                {me === "isA" ? (
+                  <>
+                    <TableCell align="center">
+                      <small className="font-serif m-0 text-xl font-semibold">
+                        Staff
+                      </small>
+                    </TableCell>
+                    <TableCell align="center">
+                      <small className="font-serif m-0 text-xl font-semibold">
+                        Admin
+                      </small>
+                    </TableCell>
+                  </>
+                ) : (
+                  ""
+                )}
                 <TableCell align="center">
                   <small className="font-serif m-0 text-xl font-semibold">
                     Action
@@ -245,10 +306,20 @@ const UserRole = () => {
                         </small>
                       </TableCell>
                       <TableCell align="center">
-                        {/* <small className="font-serif m-0 text-xl font-medium"> */}
                         {tickMarker(row.isApprentice)}
-                        {/* </small> */}
                       </TableCell>
+                      {me === "isA" ? (
+                        <>
+                          <TableCell align="center">
+                            {tickMarker(row.isStaff)}
+                          </TableCell>
+                          <TableCell align="center">
+                            {tickMarker(row.isAdmin)}
+                          </TableCell>
+                        </>
+                      ) : (
+                        ""
+                      )}
                       <TableCell align="center">
                         <Modal
                           mask={false}
@@ -259,7 +330,8 @@ const UserRole = () => {
                           open={openEdit}
                           onCancel={() => setOpenEdit(false)}
                           onOk={editTalentRole}
-                          width={350}
+                          okText={<small>Submit</small>}
+                          width={200}
                           cancelButtonProps={{
                             className: "hover:bg-transparent",
                           }}

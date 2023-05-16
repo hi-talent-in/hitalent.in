@@ -3,10 +3,7 @@ import { User } from "../../models/user.js";
 export const getTalentRole = async (req, res) => {
   const userId = req.user.userId;
   if (userId) {
-    await User.findAll(
-      { where: { isTalent: true } },
-      { order: [["id", "ASC"]] }
-    )
+    await User.findAll({ order: [["id", "ASC"]] })
       .then((users) =>
         res.status(200).json(
           users.map((user) => {
@@ -19,6 +16,8 @@ export const getTalentRole = async (req, res) => {
               isApprentice,
               isMentor,
               isTalent,
+              isStaff,
+              isAdmin,
               ...rest
             } = user;
             return {
@@ -30,6 +29,8 @@ export const getTalentRole = async (req, res) => {
               isApprentice,
               isMentor,
               isTalent,
+              isStaff,
+              isAdmin,
             };
           })
         )
@@ -44,7 +45,7 @@ export const getTalentRole = async (req, res) => {
 
 export const editTalentRole = async (req, res) => {
   const userId = req.user.userId;
-  const { id, isIntern, isApprentice, isTalent, isMentor } = req.body;
+  const { id } = req.body;
   const data = Object.fromEntries(
     Object.entries(req.body).filter(([_, v]) => v != null && v !== "")
   );
