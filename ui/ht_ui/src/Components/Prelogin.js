@@ -9,7 +9,7 @@ const Prelogin = () => {
       className="flex flex-col gap-5 items-center justify-center h-screen bg-[rgb(202, 207, 210)]"
     >
       <strong className="text-5xl text-black">Login</strong>
-      <pre className="font-serif text-slate-600 text-left bg-white rounded-xl w-[98%] md:w-[60%] p-3">
+      <pre className="font-serif text-slate-600 text-center md:text-center bg-white rounded-xl w-[98%] md:w-[60%] p-3">
         "Welcome to <strong>HiTalent!</strong> As a professional platform, we
         highly encourage you to log in using your LinkedIn account. <br /> By doing so,
         it will you to connect with like-minded professionals and establish a
@@ -32,7 +32,7 @@ const Prelogin = () => {
       <pre className="font-serif text-black">
         If you are staff?{" "}
         <Link
-          to={`https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?redirect_uri=${process.env.REACT_APP_REDIRECT_URI}/auth/google/callback&response_type=code&client_id=${process.env.REACT_APP_GOOGLE_CLIENT_ID}&scope=email profile&access_type=offline&flowName=GeneralOAuthFlow`}
+          to={`/login`}
           className="font-serif hover:text-sky-300 underline text-black"
         >
           Login here
