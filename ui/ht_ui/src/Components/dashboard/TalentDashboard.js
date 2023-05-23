@@ -413,8 +413,8 @@ const TalentDashboard = () => {
           position="top-center"
           reverseOrder="false"
         ></Toaster>
-        <section className="mt-24  text-black">
-          <div className="flex  md:flex-row h-[39em] flex-col m-2 w-full md:w-[98%] mx-auto">
+        <section className="mt-24  text-black flex flex-col">
+          <div className="flex  md:flex-row md:h-[39em] flex-col m-2 w-full md:w-[98%] mx-auto">
             <div className="w-[98%] mx-auto ">
               <div className="bg-white rounded-lg">
                 <div className="flex flex-col md:flex-row ">
@@ -577,21 +577,23 @@ const TalentDashboard = () => {
             </div>
             {statsRenderer()}
           </div>
-          <div className="m-5 bg-white rounded-lg flex flex-row">
-            <div className="w-[29%] rounded-l-lg bg-stone-200">
-              <div className="flex flex-col space-y-3 p-2">
-                <strong className="text-center">Level</strong>
-                <SkillTable
-                  currentLang={currentLang}
-                  currentTrack={currentTrack}
-                  levelProgress={levelProgress}
-                />
+          <div className="md:m-0 m-2">
+            <div className="flex md:flex-row bg-white rounded-lg flex-col mx-auto w-full md:w-[98%]">
+              <div className="md:w-[29%] rounded-l-lg bg-stone-200">
+                <div className="flex flex-col space-y-3 p-2">
+                  <strong className="text-center">Level</strong>
+                  <SkillTable
+                    currentLang={currentLang}
+                    currentTrack={currentTrack}
+                    levelProgress={levelProgress}
+                  />
+                </div>
               </div>
-            </div>
-            <div className="w-[71%]">
-              <div className="flex flex-col space-y-3 p-2">
-                <strong className="text-center">Progress</strong>
-                <StepProgress />
+              <div className="w-[71%]">
+                <div className="flex flex-col space-y-3 p-2">
+                  <strong className="text-center">Progress</strong>
+                  <StepProgress />
+                </div>
               </div>
             </div>
           </div>
