@@ -125,7 +125,7 @@ const TalentDashboard = () => {
 
   const statsRenderer = () => {
     return (
-      <div className="flex flex-col md:w-[30em] md:m-0 m-2 bg-white max-h-[45em] md:h-[45em] ">
+      <div className="flex flex-col md:w-[30em] md:m-0 m-2 rounded-r-lg bg-white max-h-[39em] md:h-[39em] ">
         <div className="text-justify w-[80%] mx-auto">
           <ol className="p-3 font-serif text-2xl">
             <li className="font-serif text-2xl m-0 p-0">
@@ -163,13 +163,6 @@ const TalentDashboard = () => {
               Login if you are logged out of FreeCodeCamp.
             </li>
           </ol>
-        </div>
-        <div className="text-justify p-3 ">
-          <SkillTable
-            currentLang={currentLang}
-            currentTrack={currentTrack}
-            levelProgress={levelProgress}
-          />
         </div>
       </div>
     );
@@ -420,12 +413,12 @@ const TalentDashboard = () => {
           position="top-center"
           reverseOrder="false"
         ></Toaster>
-        <section className="mt-24 text-black">
-          <div className="flex md:flex-row flex-col m-2 w-full md:w-[98%] mx-auto">
+        <section className="mt-24  text-black">
+          <div className="flex  md:flex-row h-[39em] flex-col m-2 w-full md:w-[98%] mx-auto">
             <div className="w-[98%] mx-auto ">
-              <div className="bg-white">
+              <div className="bg-white rounded-lg">
                 <div className="flex flex-col md:flex-row ">
-                  <div className="md:w-[40%] max-h-[45em] md:h-[45em] overflow-auto">
+                  <div className="md:w-[40%] max-h-[39em] md:h-[39em] overflow-auto">
                     <div className="flex flex-row justify-center space-x-10  mt-3">
                       <strong className="font-sans text-2xl">
                         Learning Path
@@ -437,7 +430,7 @@ const TalentDashboard = () => {
                     </div>
                     <div className="h-10"></div>
                   </div>
-                  <div className="mx-auto w-full md:w-[60%] p-5 bg-stone-200 max-h-[45em] md:h-[45em] overflow-auto">
+                  <div className="mx-auto w-full md:w-[60%] p-5 bg-stone-200 max-h-[39em] md:h-[39em] overflow-auto">
                     <div>
                       {showTreeData && selectedTaskName ? (
                         <div className=" md:w-[80%]  md:h-[80%] m-auto space-y-10 ">
@@ -584,7 +577,24 @@ const TalentDashboard = () => {
             </div>
             {statsRenderer()}
           </div>
-          <StepProgress />
+          <div className="m-5 bg-white rounded-lg flex flex-row">
+            <div className="w-[29%] rounded-l-lg bg-stone-200">
+              <div className="flex flex-col space-y-3 p-2">
+                <strong className="text-center">Level</strong>
+                <SkillTable
+                  currentLang={currentLang}
+                  currentTrack={currentTrack}
+                  levelProgress={levelProgress}
+                />
+              </div>
+            </div>
+            <div className="w-[71%]">
+              <div className="flex flex-col space-y-3 p-2">
+                <strong className="text-center">Progress</strong>
+                <StepProgress />
+              </div>
+            </div>
+          </div>
         </section>
         <NonHomeFooter />
       </>

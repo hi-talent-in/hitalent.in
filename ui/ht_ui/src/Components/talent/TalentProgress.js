@@ -180,7 +180,7 @@ const List = () => {
                               onClick={() => setModalOpen(false)}
                               className="hover:bg-transparent"
                             >
-                              Cancel
+                              Close
                             </Button>,
                           ]}
                         >
@@ -213,7 +213,6 @@ const List = () => {
                       <TableCell align="center">
                         <Modal
                           mask={false}
-                          title="Progress"
                           okButtonProps={{ className: "text-white bg-black" }}
                           closable={false}
                           centered
@@ -227,9 +226,9 @@ const List = () => {
                                 setModal3Open(false);
                                 setShowProgress(false);
                               }}
-                              className="hover:bg-transparent mt-5"
+                              className="hover:bg-transparent mt-14"
                             >
-                              Cancel
+                              Close
                             </Button>,
                           ]}
                         >
@@ -305,7 +304,7 @@ const List = () => {
                               }}
                               className="hover:bg-transparent"
                             >
-                              Cancel
+                              Close
                             </Button>,
                           ]}
                           width={350}

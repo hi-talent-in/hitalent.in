@@ -46,7 +46,7 @@ const SkillTable = (props) => {
             onClick={() => setModalOpen(false)}
             className="hover:bg-transparent"
           >
-            Cancel
+            Close
           </Button>,
         ]}
       >
@@ -71,7 +71,7 @@ const SkillTable = (props) => {
   );
 
   return (
-    <TableContainer component={Paper} style={{ maxHeight: "16em" }}>
+    <TableContainer component={Paper} style={{ maxHeight: "25em" }}>
       <Table aria-label="simple table" size="small">
         <TableHead>
           <TableRow>

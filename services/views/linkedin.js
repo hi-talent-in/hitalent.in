@@ -301,7 +301,7 @@ export const linkedinLogin = async (req, res) => {
   });
   var config = {
     method: "post",
-    url: "http://www.linkedin.com/oauth/v2/accessToken",
+    url: "https://www.linkedin.com/oauth/v2/accessToken",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
     },

@@ -22,8 +22,8 @@ const Login = () => {
         />{" "}
         LinkedIn
       </Link>
-      <pre className="font-serif text-black">
-        If you are staff with domain email?{" "}
+      <pre className="font-serif text-black m-2 text-center">
+        If you are staff with domain email? <br />
         <Link
           to={`https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?redirect_uri=${process.env.REACT_APP_REDIRECT_URI}/auth/google/callback&response_type=code&client_id=${process.env.REACT_APP_GOOGLE_CLIENT_ID}&scope=email profile&access_type=offline&flowName=GeneralOAuthFlow`}
           className="font-serif hover:text-sky-300 underline text-black"
@@ -32,13 +32,20 @@ const Login = () => {
         </Link>
       </pre>
       <br />
-      <Link className="text-black hover:text-white underline font-serif" to="/">
-        Go to homepage
-      </Link>
-      <br />
-      <Link className="text-black hover:text-white underline font-serif" to="/prelogin">
-        Go back
-      </Link>
+      <div className="flex flex-row justify-center space-x-10">
+        <Link
+          className="text-black hover:text-white underline font-serif"
+          to="/"
+        >
+          Go to homepage
+        </Link>
+        <Link
+          className="text-black hover:text-white underline font-serif"
+          to="/prelogin"
+        >
+          Go back
+        </Link>
+      </div>
     </section>
   );
 };
