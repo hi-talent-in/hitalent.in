@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
-import { Select, Popover, Divider, Modal, Button as AButton } from "antd";
+import { Select, Modal, Button as AButton } from "antd";
 import { FaUserAlt } from "react-icons/fa";
 import { useStore } from "../store";
 
@@ -12,6 +12,7 @@ const Navbar = () => {
   const accT = localStorage.getItem("accT");
   const me = localStorage.getItem("me");
   const [modal2Open, setModal2Open] = React.useState(false);
+  const [modalOpen, setModalOpen] = React.useState(false);
 
   const { reload, setReload } = useStore((state) => ({
     reload: state.reload,
@@ -53,19 +54,6 @@ const Navbar = () => {
           </Select.Option>
         ) : null}
       </Select>
-      <Divider />
-      <Link
-        to={"/"}
-        onClick={() => {
-          localStorage.clear();
-          setReload(true);
-        }}
-        className="text-center"
-      >
-        <small className="font-serif text-2xl text-sky-600 hover:text-orange-600 underline">
-          Logout
-        </small>
-      </Link>
     </div>
   );
 
@@ -131,10 +119,10 @@ const Navbar = () => {
                   onClick={() => setModal2Open(false)}
                   className="hover:bg-transparent"
                 >
-                  Cancel
+                  Close
                 </AButton>,
               ]}
-              width={250}
+              width={230}
             >
               <div>
                 <pre className="font-serif text-slate-800 m-5">
@@ -175,18 +163,30 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="text-xl md:visible">
-            <Popover
-              placement="bottom"
-              content={popoverContent}
-              trigger="click"
-            >
-              <Button>
-                <div className="bg-gray-400 w-12 h-12 rounded-full items-center flex justify-center">
-                  <FaUserAlt style={{ color: "white", fontSize: "16px" }} />
-                </div>
-              </Button>
-            </Popover>
+            <Button onClick={() => setModalOpen(true)}>
+              <div className="bg-gray-400 w-12 h-12 rounded-full items-center flex justify-center">
+                <FaUserAlt style={{ color: "white", fontSize: "16px" }} />
+              </div>
+            </Button>
           </li>
+          <Modal
+            mask={false}
+            okButtonProps={{ className: "text-white bg-black" }}
+            closable={false}
+            centered
+            open={modalOpen}
+            onCancel={() => setModalOpen(false)}
+            onOk={() => {
+              localStorage.clear();
+              setReload(true);
+            }}
+            okText={"Logout"}
+            cancelButtonProps={{ className: "hover:bg-transparent" }}
+            cancelText="Close"
+            width={200}
+          >
+            {popoverContent}
+          </Modal>
         </>
       );
     } else {
