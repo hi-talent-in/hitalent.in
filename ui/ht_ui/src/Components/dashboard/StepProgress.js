@@ -81,7 +81,7 @@ const StepProgress = () => {
         <>
           <div className="flex flex-col m-2 items-center bg-white w-[98%] mx-auto">
             <div className="w-[95%] mx-auto overflow-auto ">
-              <strong className="font-sans ">Beginner Path Progress</strong>
+              <strong>Beginner Path</strong>
               <br />
               <br />
               <Steps
@@ -114,7 +114,7 @@ const StepProgress = () => {
           </div>
           <div className="flex flex-col m-2 items-center bg-white w-[98%] mx-auto">
             <div className="w-[95%] mx-auto overflow-auto ">
-              <strong className="font-sans ">Intermediate Path Progress</strong>
+              <strong>Intermediate Path</strong>
               <br />
               <br />
               <Steps
@@ -148,7 +148,7 @@ const StepProgress = () => {
           </div>
           <div className="flex flex-col m-2 items-center bg-white w-[98%] mx-auto">
             <div className="w-[95%] mx-auto overflow-auto ">
-              <strong className="font-sans ">Advanced Path Progress</strong>
+              <strong>Advanced Path</strong>
               <br />
               <br />
               <Steps

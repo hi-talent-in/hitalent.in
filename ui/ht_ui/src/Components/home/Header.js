@@ -30,7 +30,7 @@ const Header = () => {
               HiTalent
             </h1>
             <br />
-            <h4 className="text-2xl bg-black p-2 font-medium text-white font-mono w-[95%] md:w-[40%] mx-auto rounded-xl">
+            <h4 className="text-2xl p-2 font-medium text-white font-mono w-[95%] md:w-[40%] mx-auto rounded-xl">
               We provide mentorship to individuals who aspire to become
               Developers.
             </h4>

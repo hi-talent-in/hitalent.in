@@ -10,7 +10,7 @@ export default class Testimonials extends Component {
           <h5 className="text-red-300">Here is what others say about us</h5>
           <div className="md:w-[40em] w-[22em] mx-auto mt-5">
             <Carousel autoplay>
-              <div className=" h-[20em]">
+              <div className=" h-[30em] md:h-[20em]">
                 <div className="text-white">
                   <strong className="text-3xl">Iliyas</strong>
                   <br />
@@ -33,7 +33,7 @@ export default class Testimonials extends Component {
                   </p>
                 </div>
               </div>
-              <div className=" h-[20em]">
+              <div className=" h-[30em] md:h-[20em]">
                 <div className="text-white">
                   <strong className="text-3xl">Himanshi</strong>
                   <br />
@@ -48,15 +48,21 @@ export default class Testimonials extends Component {
                     LinkedIn
                   </a>
                   <p className="m-1 text-left  text-2xl">
-                    The program has provided me with a solid foundation in
-                    Python programming and helped me gain practical skills in
-                    real-world projects. The supportive team has been a valuable
-                    resource throughout my journey. They have been patient and
-                    encouraging, guiding me through each step of the way.
+                    I'm thankful to be part of HiTalent. It was a great pleasure
+                    and learning to work here, I worked as an employee of the
+                    first batch when this company started. This company has
+                    given me strong motivation and support, as they hire me
+                    based on skills and not experience. I had a great learning
+                    on technical skills related to ongoing market demand like
+                    Docker, GCP, Agile, DRF and many more. As a Fresher, I even
+                    developed a great team bonding skill as we used to have
+                    weekly update stand up where we had healthy interaction with
+                    the entire team. As an Alumni I would love to stay connected
+                    with team. I wish the organization grows well.
                   </p>
                 </div>
               </div>
-              <div className=" h-[20em]">
+              <div className=" h-[30em] md:h-[20em]">
                 <div className="text-white">
                   <strong className="text-3xl">Aman</strong>
                   <br />
@@ -79,14 +85,14 @@ export default class Testimonials extends Component {
                   </p>
                 </div>
               </div>
-              <div className=" h-[20em]">
+              <div className=" h-[30em] md:h-[20em]">
                 <div className="text-white">
                   <strong className="text-3xl">Roma</strong>
                   <br />
                   <strong>Backend Developer</strong>
                   <br />
                   <a
-                    href="http://linkedin.com/in/roma-patel-649792146"
+                    href="https://linkedin.com/in/roma-patel-649792146"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-orange-700 hover:text-blue-500 underline font-serif"
