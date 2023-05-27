@@ -5,7 +5,7 @@ class NonHomeFooter extends Component {
   render() {
     const main = {
       linkedin: {
-        url: "https://www.linkedin.com/in/mmmiitr/",
+        url: "https://www.linkedin.com/company/hitalent-in/",
         className: "fa fa-linkedin hover:text-orange-600 mx-4",
       },
       github: {

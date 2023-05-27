@@ -3,7 +3,7 @@ import Fab from "@mui/material/Fab";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import { Link } from "react-router-dom";
-import { AiOutlineEdit } from "react-icons/ai";
+import { FiEdit } from "react-icons/fi";
 import { Input, Modal } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
 import { Spin } from "antd";
@@ -95,7 +95,7 @@ const FloatingFeedback = () => {
         }}
         id="floatB"
       >
-        <AiOutlineEdit style={{ color: "black", fontSize: "3em" }} />
+        <FiEdit style={{ color: "black", fontSize: "3em" }} />
       </Fab>
       <Toaster
         containerStyle={{ zIndex: 99999 }}

@@ -31,6 +31,7 @@ const List = () => {
   const [cStreak, setCStreak] = React.useState();
   const [lStreak, setLStreak] = React.useState();
   const [dJoin, setDJoin] = React.useState();
+  const [lJoin, setLJoin] = React.useState();
   const [talents, setTalents] = React.useState([]);
   const [levels, setLevels] = React.useState();
   const [modalOpen, setModalOpen] = React.useState(false);
@@ -148,7 +149,9 @@ const List = () => {
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell align="center">
-                        <small className="text-2xl font-serif">{index+1}</small>
+                        <small className="text-2xl font-serif">
+                          {index + 1}
+                        </small>
                       </TableCell>
                       <TableCell align="left">
                         <small className="text-2xl font-serif">
@@ -177,7 +180,7 @@ const List = () => {
                               onClick={() => setModalOpen(false)}
                               className="hover:bg-transparent"
                             >
-                              Cancel
+                              Close
                             </Button>,
                           ]}
                         >
@@ -210,7 +213,6 @@ const List = () => {
                       <TableCell align="center">
                         <Modal
                           mask={false}
-                          title="Progress"
                           okButtonProps={{ className: "text-white bg-black" }}
                           closable={false}
                           centered
@@ -224,9 +226,9 @@ const List = () => {
                                 setModal3Open(false);
                                 setShowProgress(false);
                               }}
-                              className="hover:bg-transparent mt-5"
+                              className="hover:bg-transparent mt-14"
                             >
-                              Cancel
+                              Close
                             </Button>,
                           ]}
                         >
@@ -297,11 +299,12 @@ const List = () => {
                                 setCStreak("");
                                 setLStreak("");
                                 setDJoin("");
+                                setLJoin("");
                                 setModal2Open(false);
                               }}
                               className="hover:bg-transparent"
                             >
-                              Cancel
+                              Close
                             </Button>,
                           ]}
                           width={350}
@@ -317,6 +320,9 @@ const List = () => {
                             <li className="text-2xl font-serif p-0">
                               Joined Date(mm/dd/yyyy): {dJoin}
                             </li>
+                            <li className="text-2xl font-serif p-0">
+                              Last Login(mm/dd/yyyy): {lJoin}
+                            </li>
                           </ol>
                         </Modal>
                         <Link
@@ -325,6 +331,7 @@ const List = () => {
                             setCStreak(talent.currentStreak);
                             setLStreak(talent.longestStreak);
                             setDJoin(talent.dateOfJoin);
+                            setLJoin(talent.lastLogin);
                             setModal2Open(true);
                           }}
                         >

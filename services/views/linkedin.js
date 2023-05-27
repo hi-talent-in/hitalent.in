@@ -60,11 +60,16 @@ const jwtTokenFunc = async (res, user) => {
       tokens.talentType = user.talentType;
     }
     let accType = [];
-    if (user.isMentor) {
-      accType.push("isM");
+    if (user.isAdmin) {
+      accType.push("isA", "isS", "isT", "isM");
+      tokens.isAdmin = user.isAdmin;
+    } else if (user.isStaff) {
+      accType.push("isS", "isT", "isM");
+      tokens.isStaff = user.isStaff;
+    } else if (user.isMentor) {
+      accType.push("isM", "isT");
       tokens.isMentor = user.isMentor;
-    }
-    if (user.isTalent) {
+    } else if (user.isTalent) {
       accType.push("isT");
       tokens.isTalent = user.isTalent;
     }
@@ -81,7 +86,8 @@ const jwtTokenFunc = async (res, user) => {
 const validator = async (req, res, data) => {
   const decoded = jwt_decode(data.id_token);
   const currentDate = new Date().toISOString();
-  const streakDate = new Date().toLocaleDateString();
+  const streakDateList = new Date().toLocaleDateString().split("/");
+  let streakDate = `${streakDateList[1]}/${streakDateList[0]}/${streakDateList[2]}`;
   const staffId = `${process.env.STAFF_ID_END}`;
   if ("email" in decoded) {
     const decodedEmail = decoded.email;
@@ -203,6 +209,7 @@ const validator = async (req, res, data) => {
                         new Date(lastLogin).getTime()) /
                       1000 /
                       3600;
+                    streakDate = `${streakDateList[0]}/${streakDateList[1]}/${streakDateList[2]}`;
                     if (duration === 24) {
                       var currentStreak = Number(user.currentStreak) + 1;
                       var oldLongestStreak = Number(user.longestStreak);
@@ -235,7 +242,16 @@ const validator = async (req, res, data) => {
                           return res.status(400).json({ error: error.message });
                         });
                     } else {
-                      await jwtTokenFunc(res, user);
+                      await user
+                        .update({
+                          lastLogin: streakDate,
+                        })
+                        .then(async () => {
+                          await jwtTokenFunc(res, user);
+                        })
+                        .catch((error) => {
+                          return res.status(400).json({ error: error.message });
+                        });
                     }
                   })
                   .catch(() => {});
@@ -285,7 +301,7 @@ export const linkedinLogin = async (req, res) => {
   });
   var config = {
     method: "post",
-    url: "http://www.linkedin.com/oauth/v2/accessToken",
+    url: "https://www.linkedin.com/oauth/v2/accessToken",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
     },
