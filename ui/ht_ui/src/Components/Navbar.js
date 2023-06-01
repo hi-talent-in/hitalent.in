@@ -178,6 +178,7 @@ const Navbar = () => {
             onCancel={() => setModalOpen(false)}
             onOk={() => {
               localStorage.clear();
+              sessionStorage.clear();
               setReload(true);
             }}
             okText={"Logout"}
