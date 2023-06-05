@@ -1,11 +1,8 @@
+import "dotenv/config.js";
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
-import "dotenv/config.js";
-
-const app = express();
-const nodePort = process.env.NODE_PORT;
-const corsOrigin = process.env.FRONTEND_URL;
+import fs from "fs";
 
 import homeRoute from "./routes/home.js";
 import contactRoute from "./routes/contact.js";
@@ -17,7 +14,12 @@ import { tokenMiddleware } from "./core/middleware.js";
 // import { chatBot } from "./core/chatgptHandler.js";
 import { dbConnect, sqConnect } from "./core/dbconnector.js";
 import { Path, KeyValuePairs } from "./models/learningPath.js";
-import fs from "fs";
+import { getJobs } from "./views/fetchJobs.js";
+import { findJobs } from "./views/cronFetchJobs.js";
+
+const app = express();
+const nodePort = process.env.NODE_PORT;
+const corsOrigin = process.env.FRONTEND_URL;
 
 const appUsage = () => {
   app.use(express.json());
@@ -37,6 +39,8 @@ const appUsage = () => {
   app.use("/staff", staff);
   app.post("/profile/", tokenMiddleware, updateProfile);
   app.get("/profile/", tokenMiddleware, getProfile);
+  app.get("/jobs", getJobs);
+  app.get("/cron/find/jobs", findJobs);
 };
 appUsage();
 

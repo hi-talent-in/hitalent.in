@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import jwt_decode from "jwt-decode";
 import qs from "qs";
 import { User } from "../models/user.js";
-import { Path } from "../models/learningPath.js";
+import { Path, KeyValuePairs } from "../models/learningPath.js";
 import { removeTreeData } from "../views/dashboard/functions/removeTreeData.js";
 import { updateObject } from "./dashboard/functions/updateObject.js";
 import { filterTreeData } from "./dashboard/functions/filterTreeDataByKey.js";
@@ -74,8 +74,10 @@ const jwtTokenFunc = async (res, user) => {
       tokens.isTalent = user.isTalent;
     }
     tokens.accType = accType;
+    const jobsArr = await KeyValuePairs.findOne({ where: { key: "jobs" } });
     return res.status(200).json({
       tokens: tokens,
+      jobsArr: jobsArr.value,
     });
   } catch (error) {
     return res.status(400).json({ error: error.message });

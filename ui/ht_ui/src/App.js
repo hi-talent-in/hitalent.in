@@ -24,6 +24,7 @@ import Logout from "./Components/Logout";
 import EditableDashboard from "./Components/dashboard/EditableDashboard";
 import Dummy from "./Components/Dummy";
 import Dashboard from "./Components/dashboard/Dashboard";
+import JobDashboard from "./Components/dashboard/JobDashboard";
 
 const App = () => {
   return (
@@ -54,6 +55,7 @@ const App = () => {
           <Route path="contacts" element={<Contacts />}></Route>
           <Route path="feedbacks" element={<Feedbacks />}></Route>
           <Route path="dummy" element={<Dummy />} />
+          <Route path="jobs" element={<JobDashboard />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
