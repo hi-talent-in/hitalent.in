@@ -30,6 +30,7 @@ const LinkedInCallback = () => {
       )
       .then((res) => {
         if (res) {
+          sessionStorage.setItem("jobsArr", res?.data?.jobsArr);
           localStorage.setItem("accessToken", res?.data?.tokens?.accessToken);
           localStorage.setItem("username", res?.data?.tokens?.username);
           setProfileName(res?.data?.tokens?.username);

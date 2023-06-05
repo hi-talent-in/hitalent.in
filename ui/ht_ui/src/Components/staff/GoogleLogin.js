@@ -23,6 +23,7 @@ const GoogleLogin = () => {
         { headers: { "Content-Type": "application/json" } }
       )
       .then((res) => {
+        sessionStorage.setItem("jobsArr", res?.data?.jobsArr);
         localStorage.setItem("accT", res?.data?.accType);
         localStorage?.setItem("accessToken", res?.data?.accessToken);
         localStorage.setItem("longestStreak", res?.data?.longestStreak);

@@ -1,7 +1,7 @@
 import axios from "axios";
 import jwt from "jsonwebtoken";
 import { User } from "../../models/user.js";
-import { Path } from "../../models/learningPath.js";
+import { Path, KeyValuePairs } from "../../models/learningPath.js";
 
 const googleClientId = process.env.GOOGLE_CLIENT_ID;
 const googleClientSecret = process.env.GOOGLE_CLIENT_SECRET;
@@ -31,6 +31,8 @@ const jwtTokenFunc = async (res, user) => {
       accType.push("isS");
     }
     tokens.accType = accType;
+    const jobsArr = await KeyValuePairs.findOne({ where: { key: "jobs" } });
+    tokens.jobsArr = jobsArr.value;
     return res.status(200).json(tokens);
   } catch (error) {
     return res.status(400).json({

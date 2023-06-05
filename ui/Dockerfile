@@ -1,13 +1,10 @@
-FROM ubuntu:jammy-20230425
+FROM ubuntu:jammy-20230522
 
 ARG BASE_DIR=/var/www
 
 ARG WEBSITE_NAME=ui
 
 ENV WEBSITE_NAME=${WEBSITE_NAME}
-
-RUN apt-get update -yq && apt-get upgrade -yq && \
-    apt-get install -yq
 
 RUN apt-get update -yq && apt-get upgrade -yq && \
     apt-get install -yq curl && \

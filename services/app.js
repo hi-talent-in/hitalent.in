@@ -14,7 +14,8 @@ import { tokenMiddleware } from "./core/middleware.js";
 // import { chatBot } from "./core/chatgptHandler.js";
 import { dbConnect, sqConnect } from "./core/dbconnector.js";
 import { Path, KeyValuePairs } from "./models/learningPath.js";
-import { getJobs } from "./views/cronFetchJobs.js"
+import { getJobs } from "./views/fetchJobs.js";
+import { findJobs } from "./views/cronFetchJobs.js";
 
 const app = express();
 const nodePort = process.env.NODE_PORT;
@@ -38,7 +39,8 @@ const appUsage = () => {
   app.use("/staff", staff);
   app.post("/profile/", tokenMiddleware, updateProfile);
   app.get("/profile/", tokenMiddleware, getProfile);
-  app.get("/jobs", getJobs)
+  app.get("/jobs", getJobs);
+  app.get("/cron/find/jobs", findJobs);
 };
 appUsage();
 

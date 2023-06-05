@@ -2,15 +2,75 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "../Navbar";
 import NonHomeFooter from "../NonHomeFooter";
-import { Button, Input, Select, Tooltip, Spin } from "antd";
+import { Button, Input, Select, Tooltip, Spin, Table } from "antd";
 import { useStore } from "../../store";
 import { toast } from "react-hot-toast";
 import { LoadingOutlined } from "@ant-design/icons";
 import Logout from "../Logout";
-import { useNavigate } from "react-router-dom";
 
 const JobDashboard = () => {
-  const navigate = useNavigate();
+
+  const columns = [
+    {
+      title: "Role",
+      dataIndex: "jobTitle",
+      render: (text) => (
+        <small className="font-medium text-xl">
+          {text?.trim().length > 55 ? (
+            <Tooltip title={text?.trim()}>
+              <span>{text?.trim().slice(0, 55) + "..."}</span>
+            </Tooltip>
+          ) : (
+            text?.trim()
+          )}
+        </small>
+      ),
+    },
+    {
+      title: "Company",
+      dataIndex: "jobCompany",
+      render: (text) => (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sky-700 hover:text-sky-500"
+          href={text.link}
+        >
+          {text.name?.trim().length > 55 ? (
+            <Tooltip title={text.name?.trim()}>
+              <small className="font-medium text-xl">
+                {text.name?.trim().slice(0, 55) + "..."}
+              </small>
+            </Tooltip>
+          ) : (
+            <small className="font-medium text-lg md:text-xl">
+              {text.name?.trim()}
+            </small>
+          )}
+        </a>
+      ),
+    },
+    {
+      title: "Location",
+      dataIndex: "jobLocation",
+      render: (text) => <small className="font-medium text-xl">{text}</small>,
+    },
+    {
+      title: "Action",
+      dataIndex: "jobApplyLink",
+      width: 60,
+      render: (text) => (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sky-600 text-xl hover:text-orange-600"
+          href={text}
+        >
+          Apply
+        </a>
+      ),
+    },
+  ];
 
   const antIcon = (
     <LoadingOutlined
@@ -19,6 +79,10 @@ const JobDashboard = () => {
       }}
       spin
     />
+  );
+
+  const nextPrevIcon = (symbol) => (
+    <small className="text-sky-600 hover:text-sky-500 ">{symbol}</small>
   );
 
   const { setNotAuthorised, notAuthorised } = useStore((state) => ({
@@ -31,25 +95,20 @@ const JobDashboard = () => {
   const [getJ, setGetJ] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const jobsArr = sessionStorage.getItem("jobsArr")
-    ? JSON.parse(sessionStorage.getItem("jobsArr"))
-    : [];
+  const jobsArr = JSON.parse(sessionStorage.getItem("jobsArr"));
 
   const sources = ["LinkedIn", "Naukri.com", "Indeed.com"];
 
   const handleSkillChange = (e) => {
     setSkillValue(e.target.value);
-    sessionStorage.setItem("skillValue", e.target.value);
   };
 
   const handleSourceChange = (e) => {
     setSourceValue(e);
-    sessionStorage.setItem("sourceValue", e);
   };
 
   const getJobs = async () => {
     setLoading(true);
-    sessionStorage.removeItem("jobsArr");
     const data = {
       skill: skillValue,
       source: sourceValue,
@@ -68,147 +127,86 @@ const JobDashboard = () => {
           : toast.error(err.response.data.message)
       );
     setLoading(false);
+    setSkillValue("");
+    setSourceValue(null);
   };
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [getJ]);
 
-  useEffect(() => {
-    if (notAuthorised) {
-      navigate("/");
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  return (
-    <section>
-      <Navbar />
-      {notAuthorised ? <Logout /> : null}
-      {localStorage.getItem("accessToken") ? (
-        <div className="flex flex-col mt-24 m-2 text-black bg-white md:w-[80%] md:mx-auto h-[90vh] rounded-lg space-y-3">
-          <strong className="text-center">Job Board</strong>
-          <div className="flex md:flex-row flex-col ">
-            <div className="md:w-[30%] ">
-              <div className="items-center space-y-2 flex flex-col">
-                <div></div>
-                <Select
-                  placeholder="Source"
-                  className="w-[11em]"
-                  onChange={handleSourceChange}
-                  style={{ textAlign: "center" }}
-                  value={sessionStorage.getItem("sourceValue") || sourceValue}
-                >
-                  {sources.map((source, index) => (
-                    <Select.Option value={source.toLowerCase()} key={index}>
-                      <small className="font-serif text-2xl">{source}</small>
-                    </Select.Option>
-                  ))}
-                </Select>
-                <Input.TextArea
-                  placeholder="Skill"
-                  onChange={handleSkillChange}
-                  className="text-xl font-serif block h-10 rounded-md w-[12.5em]"
-                  value={sessionStorage.getItem("skillValue") || skillValue}
-                  autoSize
-                />
-                <Button
-                  onClick={getJobs}
-                  className="w-[5em] hover:bg-transparent m-0"
-                >
-                  Submit
-                </Button>
-              </div>
-            </div>
-            <div className="md:w-[70%] bg-slate-200 m-2  rounded-lg  overflow-auto md:h-[83vh] h-[70vh]">
-              <div className="flex flex-col space-y-2 m-2">
-                {jobsArr && jobsArr?.length > 0 ? (
-                  jobsArr?.map((job, index) => (
-                    <div
-                      className=" bg-white md:w-[80%] w-full mx-auto rounded-lg"
-                      key={index}
+  if (localStorage.getItem("accessToken")) {
+    return (
+      <section>
+        <Navbar />
+        {notAuthorised ? <Logout /> : null}
+        {localStorage.getItem("accessToken") ? (
+          <div className="flex flex-col mt-24 m-2 text-black bg-white md:w-[95%] md:mx-auto h-[90vh] rounded-lg space-y-3">
+            <strong className="text-center">Job Board</strong>
+            <div className="flex md:flex-row flex-col ">
+              <div className="md:w-[25%] ">
+                <div className="items-center md:space-y-10 space-y-3 flex flex-col">
+                  <div></div>
+                  <div className="flex flex-col">
+                    <small>Source:</small>
+                    <Select
+                      className="w-[11em]"
+                      onChange={handleSourceChange}
+                      style={{ textAlign: "center" }}
+                      value={sourceValue}
                     >
-                      <div className="flex flex-row space-x-2 m-2 md:p-2 items-center justify-between">
-                        <div className="flex flex-col">
-                          <div className="flex flex-row space-x-2 items-center">
-                            <small className="text-sm md:text-xl text-slate-600">
-                              Job Title :{" "}
-                            </small>{" "}
-                            <small className="font-medium text-lg md:text-xl">
-                              {job.jobTitle?.trim().length > 55 ? (
-                                <Tooltip title={job.jobTitle?.trim()}>
-                                  <span>
-                                    {job.jobTitle?.trim().slice(0, 55) + "..."}
-                                  </span>
-                                </Tooltip>
-                              ) : (
-                                job.jobTitle?.trim()
-                              )}
-                            </small>
-                          </div>
-                          <div className="flex flex-row space-x-2 items-center">
-                            <small className="text-sm md:text-xl text-slate-600">
-                              Company:{" "}
-                            </small>{" "}
-                            <a
-                              href={job.jobCompanyLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-sky-600 underline hover:text-orange-600 text-sm md:text-xl"
-                            >
-                              {job.jobCompanyName?.trim().length > 55 ? (
-                                <Tooltip title={job.jobCompanyName?.trim()}>
-                                  <span>
-                                    {job.jobCompanyName?.trim().slice(0, 55) +
-                                      "..."}
-                                  </span>
-                                </Tooltip>
-                              ) : (
-                                job.jobCompanyName?.trim()
-                              )}
-                            </a>{" "}
-                          </div>
-                        </div>
-                        <div>
-                          <a
-                            href={job.jobApplyLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <Button className="w-[5em] hover:bg-transparent m-0">
-                              Apply
-                            </Button>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  ))
-                ) : loading ? (
-                  <div className="flex justify-center items-center flex-col space-y-5">
-                    <small className="p-10">
-                      Please wait, we are looking jobs for you...
-                    </small>
-                    <Spin indicator={antIcon}></Spin>
+                      {sources.map((source, index) => (
+                        <Select.Option value={source.toLowerCase()} key={index}>
+                          <small className="font-serif text-xl">{source}</small>
+                        </Select.Option>
+                      ))}
+                    </Select>
                   </div>
-                ) : (
-                  <div className="flex justify-center items-center flex-col space-y-5">
-                    <small className="p-10">
-                      Please select a source from dropdown to search jobs from
-                      them, with your required skill.
-                    </small>
+                  <div className="flex flex-col">
+                    <small>Skill:</small>
+                    <Input.TextArea
+                      onChange={handleSkillChange}
+                      className="text-xl font-serif block h-10 rounded-md w-[12.5em]"
+                      value={skillValue}
+                      autoSize
+                    />
                   </div>
-                )}
+                  <Button
+                    onClick={getJobs}
+                    className="w-[5em] hover:bg-transparent"
+                  >
+                    {loading ? <Spin indicator={antIcon} /> : "Submit"}
+                  </Button>
+                </div>
+              </div>
+              <div className="md:w-[70%] m-2 rounded-lg  overflow-auto md:h-[83vh] h-[70vh]">
+                <Table
+                  columns={columns}
+                  dataSource={jobsArr}
+                  pagination={{
+                    pageSize: 10,
+                    showSizeChanger: false,
+                    nextIcon: nextPrevIcon(">"),
+                    prevIcon: nextPrevIcon("<"),
+                    jumpPrevIcon: nextPrevIcon("<<"),
+                    jumpNextIcon: nextPrevIcon(">>"),
+                  }}
+                  scroll={{
+                    y: 420,
+                  }}
+                  size="middle"
+                />
               </div>
             </div>
+            <div></div>
           </div>
-          <div></div>
-        </div>
-      ) : (
-        ""
-      )}
-      <NonHomeFooter />
-    </section>
-  );
+        ) : (
+          ""
+        )}
+        <NonHomeFooter />
+      </section>
+    );
+  }
 };
 
 export default JobDashboard;

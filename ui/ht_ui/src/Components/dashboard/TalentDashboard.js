@@ -126,8 +126,18 @@ const TalentDashboard = () => {
   const statsRenderer = () => {
     return (
       <div className="flex flex-col justify-center items-center md:w-[30em] md:m-0 m-2 rounded-r-lg bg-white max-h-[39em] md:h-[39em] ">
+        <Link
+          to={"/jobs"}
+          className="mt-5 rounded-md flex flex-row items-center justify-center bg-gray-800 w-[5em] py-2 px-2 text-3xl font-medium text-white shadow-sm
+              hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+        >
+          Job Board
+        </Link>
         <div className="text-justify w-[80%] mx-auto">
           <ol className="p-3 font-serif text-2xl">
+            <li className="font-serif text-2xl p-0 m-0">
+              Explore jobs from Job Board
+            </li>
             <li className="font-serif text-2xl m-0 p-0">
               <small className=" text-2xl">FreeCodeCamp - </small>
               <Link
@@ -164,13 +174,6 @@ const TalentDashboard = () => {
             </li>
           </ol>
         </div>
-        <Link
-          to={"/jobs"}
-          className="mt-5 rounded-md flex flex-row items-center justify-center bg-gray-800 w-[5em] py-2 px-2 text-3xl font-medium text-white shadow-sm
-              hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-        >
-          Job Board
-        </Link>
       </div>
     );
   };
@@ -468,7 +471,7 @@ const TalentDashboard = () => {
                                   </Link>
                                 </div>
                                 {selectedTaskKey === "32" ||
-                                  selectedTaskKey === "84" ? (
+                                selectedTaskKey === "84" ? (
                                   <div className="text-left">
                                     <Link className="font-serif text-2xl p-0 m-0">
                                       Choose:
@@ -500,7 +503,7 @@ const TalentDashboard = () => {
                                     </Select.Option>
                                   </Select>
                                   {progressChange &&
-                                    progressChange !== currentProgress ? (
+                                  progressChange !== currentProgress ? (
                                     <div>
                                       {loading ? (
                                         <Spin indicator={antIcon} />
@@ -587,7 +590,7 @@ const TalentDashboard = () => {
           <div className="md:m-0 m-2">
             <div className="flex md:flex-row bg-white rounded-lg flex-col mx-auto w-full md:w-[98%]">
               <div className="md:w-[29%] rounded-l-lg bg-stone-200">
-                <div className="flex flex-col space-y-3 p-2">
+                <div className="flex flex-col space-y-3 p-2 items-center justify-center">
                   <strong className="text-center">Level</strong>
                   <SkillTable
                     currentLang={currentLang}

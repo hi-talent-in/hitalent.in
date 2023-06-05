@@ -180,6 +180,7 @@ const Navbar = () => {
               localStorage.clear();
               sessionStorage.clear();
               setReload(true);
+              window.location.href = "/";
             }}
             okText={"Logout"}
             cancelButtonProps={{ className: "hover:bg-transparent" }}
