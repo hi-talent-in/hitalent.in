@@ -1,4 +1,4 @@
-import pkg from 'pg';
+import pkg from "pg";
 const { Client } = pkg;
 import { Sequelize } from "sequelize";
 
@@ -13,12 +13,15 @@ export const sequelize = new Sequelize(dbName, dbUser, dbPass, {
   host: dbHost,
   logging: false,
 });
+
 const client = new Client({
   host: dbHost,
   port: dbPort,
   user: dbUser,
   password: dbPass,
   database: dbName,
+  connectionTimeoutMillis: 10000,
+  idle_in_transaction_session_timeout: 30000,
 });
 
 export const dbConnect = async () => {
