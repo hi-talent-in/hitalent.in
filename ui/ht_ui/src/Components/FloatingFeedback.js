@@ -130,7 +130,7 @@ const FloatingFeedback = () => {
         width={600}
         maskClosable={false}
         cancelButtonProps={{
-          className: "hover:bg-transparent",
+          className: "hover:!bg-transparent",
         }}
         onOk={(event) => {
           setLoading(true);

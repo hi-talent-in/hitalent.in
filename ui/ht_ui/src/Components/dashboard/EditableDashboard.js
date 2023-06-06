@@ -427,11 +427,8 @@ const EditableDashboard = () => {
                                 <Modal
                                   mask={false}
                                   title="Edit Task Name"
-                                  okButtonProps={{
-                                    className: "text-white bg-black",
-                                  }}
                                   cancelButtonProps={{
-                                    className: "hover:bg-transparent",
+                                    className: "hover:!bg-transparent",
                                   }}
                                   closable={false}
                                   centered
@@ -469,11 +466,8 @@ const EditableDashboard = () => {
                                 <Modal
                                   mask={false}
                                   title="Add Skill"
-                                  okButtonProps={{
-                                    className: "text-white bg-black",
-                                  }}
                                   cancelButtonProps={{
-                                    className: "hover:bg-transparent",
+                                    className: "hover:!bg-transparent",
                                   }}
                                   closable={false}
                                   centered
@@ -531,7 +525,7 @@ const EditableDashboard = () => {
                               {currentSkill && skill !== currentSkill ? (
                                 <div className="flex flex-row items-center justify-end">
                                   <button
-                                    className="text-sky-600 bg-transparent hover:bg-transparent p-0 m-0 font-serif font-medium text-2xl text-right  hover:text-orange-600 underline "
+                                    className="text-sky-600 bg-transparent hover:!bg-transparent p-0 m-0 font-serif font-medium text-2xl text-right  hover:text-orange-600 underline "
                                     onClick={() => {
                                       setLoading(true);
                                       addTaskSkill();
@@ -590,7 +584,7 @@ const EditableDashboard = () => {
                               selectedTaskPoints !== currentPoints ? (
                                 <div className="flex flex-row items-center justify-end">
                                   <button
-                                    className="text-sky-600 bg-transparent hover:bg-transparent p-0 m-0 font-serif font-medium text-2xl text-right  hover:text-orange-600 underline "
+                                    className="text-sky-600 bg-transparent hover:!bg-transparent p-0 m-0 font-serif font-medium text-2xl text-right  hover:text-orange-600 underline "
                                     onClick={() => {
                                       setLoading(true);
                                       addPoints();
@@ -613,11 +607,8 @@ const EditableDashboard = () => {
                               <Modal
                                 mask={false}
                                 title="Add Tip/Instructions"
-                                okButtonProps={{
-                                  className: "text-white bg-black",
-                                }}
                                 cancelButtonProps={{
-                                  className: "hover:bg-transparent",
+                                  className: "hover:!bg-transparent",
                                 }}
                                 closable={false}
                                 centered
@@ -664,11 +655,8 @@ const EditableDashboard = () => {
                                         <Modal
                                           mask={false}
                                           title="Edit Tip/Instructions"
-                                          okButtonProps={{
-                                            className: "text-white bg-black",
-                                          }}
                                           cancelButtonProps={{
-                                            className: "hover:bg-transparent",
+                                            className: "hover:!bg-transparent",
                                           }}
                                           closable={false}
                                           centered
@@ -718,11 +706,8 @@ const EditableDashboard = () => {
                               <Modal
                                 mask={false}
                                 title="Add Resources"
-                                okButtonProps={{
-                                  className: "text-white bg-black",
-                                }}
                                 cancelButtonProps={{
-                                  className: "hover:bg-transparent",
+                                  className: "hover:!bg-transparent",
                                 }}
                                 closable={false}
                                 centered
@@ -770,11 +755,8 @@ const EditableDashboard = () => {
                                           <Modal
                                             mask={false}
                                             title="Edit Tip/Instructions"
-                                            okButtonProps={{
-                                              className: "text-white bg-black",
-                                            }}
                                             cancelButtonProps={{
-                                              className: "hover:bg-transparent",
+                                              className: "hover:!bg-transparent",
                                             }}
                                             closable={false}
                                             centered

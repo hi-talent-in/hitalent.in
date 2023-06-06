@@ -117,7 +117,7 @@ const Navbar = () => {
                 <AButton
                   key="cancel"
                   onClick={() => setModal2Open(false)}
-                  className="hover:bg-transparent"
+                  className="hover:!bg-transparent"
                 >
                   Close
                 </AButton>,
@@ -163,7 +163,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="text-xl md:visible">
-            <Button onClick={() => setModalOpen(true)}>
+            <Button onClick={() => setModalOpen(true)} className="hover:!bg-transparent">
               <div className="bg-gray-400 w-12 h-12 rounded-full items-center flex justify-center">
                 <FaUserAlt style={{ color: "white", fontSize: "16px" }} />
               </div>
@@ -171,7 +171,6 @@ const Navbar = () => {
           </li>
           <Modal
             mask={false}
-            okButtonProps={{ className: "text-white bg-black" }}
             closable={false}
             centered
             open={modalOpen}
@@ -183,7 +182,7 @@ const Navbar = () => {
               window.location.href = "/";
             }}
             okText={"Logout"}
-            cancelButtonProps={{ className: "hover:bg-transparent" }}
+            cancelButtonProps={{ className: "hover:!bg-transparent" }}
             cancelText="Close"
             width={200}
           >

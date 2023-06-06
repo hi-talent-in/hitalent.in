@@ -178,7 +178,7 @@ const List = () => {
                             <Button
                               key="cancel"
                               onClick={() => setModalOpen(false)}
-                              className="hover:bg-transparent"
+                              className="hover:!bg-transparent"
                             >
                               Close
                             </Button>,
@@ -226,7 +226,7 @@ const List = () => {
                                 setModal3Open(false);
                                 setShowProgress(false);
                               }}
-                              className="hover:bg-transparent mt-14"
+                              className="hover:!bg-transparent mt-14"
                             >
                               Close
                             </Button>,
@@ -302,7 +302,7 @@ const List = () => {
                                 setLJoin("");
                                 setModal2Open(false);
                               }}
-                              className="hover:bg-transparent"
+                              className="hover:!bg-transparent"
                             >
                               Close
                             </Button>,

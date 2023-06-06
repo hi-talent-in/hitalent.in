@@ -173,7 +173,7 @@ const JobDashboard = () => {
                   </div>
                   <Button
                     onClick={getJobs}
-                    className="w-[5em] hover:bg-transparent"
+                    className="w-[5em] hover:!bg-transparent"
                   >
                     {loading ? <Spin indicator={antIcon} /> : "Submit"}
                   </Button>

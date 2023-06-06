@@ -203,7 +203,7 @@ const Profile = () => {
                 <div className="flex flex-row justify-evenly">
                   <button
                     type="submit"
-                    className="text-green-600 bg-transparent hover:bg-transparent p-0 m-0 font-serif font-medium text-3xl text-right  hover:text-orange-600 underline "
+                    className="text-green-600 bg-transparent hover:!bg-transparent p-0 m-0 font-serif font-medium text-3xl text-right  hover:text-orange-600 underline "
                   >
                     Submit
                   </button>

@@ -158,7 +158,7 @@ const Contacts = () => {
                         </TableCell>
                         <TableCell align="center">
                           <button
-                            className="m-0 text-xl font-semibold text-red-600 underline bg-transparent p-0 hover:bg-transparent hover:text-red-600"
+                            className="m-0 text-xl font-semibold text-red-600 underline bg-transparent p-0 hover:!bg-transparent hover:text-red-600"
                             onClick={() => {
                               deleteContact(contact.id);
                             }}
