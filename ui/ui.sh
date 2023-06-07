@@ -7,7 +7,7 @@ case $1 in
     WEBSITE_BASE_NAME="$(printenv WEBSITE_NAME)"
     BASE_PATH=/var/www/${WEBSITE_BASE_NAME}
     cd $BASE_PATH
-    npm install --force
+    yarn
     echo "Packages Installation Success."
     npm run build
     echo "Build Success."

@@ -25,7 +25,7 @@ export const getContacts = async (req, res) => {
         .then((contacts) => {
           const contactsList = contacts.map((contact) => {
             const { id, name, email, subject, message, ...rest } = contact;
-            return { id, name, email, subject, message };
+            return { key: id, name, email, subject, message };
           });
           return res.status(200).json({ contacts: contactsList });
         })

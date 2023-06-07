@@ -40,7 +40,7 @@ export const getFeedbacks = async (req, res) => {
           if (feedback.filesName) {
             filesName = feedback.filesName.split(",");
           }
-          return { id, name, email, message, filesName, givenBy };
+          return { key:id, name, email, message, filesName, givenBy };
         });
         return res.status(200).json({ feedbacks: feedbackList });
       })

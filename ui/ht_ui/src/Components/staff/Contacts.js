@@ -3,15 +3,10 @@ import Navbar from "../Navbar";
 import NonHomeFooter from "../NonHomeFooter";
 import axios from "axios";
 import ReactLoading from "react-loading";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
 import toast, { Toaster } from "react-hot-toast";
 import Logout from "../Logout";
+import { Link } from "react-router-dom";
+import { Table } from "antd";
 
 const Contacts = () => {
   const accessToken = localStorage.getItem("accessToken");
@@ -21,6 +16,48 @@ const Contacts = () => {
   const [contacts, setContacts] = useState([]);
   const [status, setStatus] = useState(false);
   const [deleteState, setDeleteState] = useState(false);
+
+  let columns = [
+    {
+      title: "Name",
+      dataIndex: "name",
+      render: (text) => <small className="font-medium text-xl">{text}</small>,
+    },
+    {
+      title: "Email",
+      dataIndex: "email",
+      render: (text) => <small className="font-medium text-xl">{text}</small>,
+    },
+    {
+      title: "Subject",
+      dataIndex: "subject",
+      responsive: ["md"],
+      render: (text) => <small className="font-medium text-xl">{text}</small>,
+    },
+    {
+      title: "Message",
+      dataIndex: "message",
+      width: 500,
+      align: "center",
+      responsive: ["md"],
+      render: (text) => <small className="font-medium text-xl">{text}</small>,
+    },
+    {
+      title: "Action",
+      dataIndex: "key",
+      align: "center",
+      render: (id, _) => (
+        <Link
+          className="font-medium text-xl text-red-600"
+          onClick={() => {
+            deleteContact(id);
+          }}
+        >
+          Delete
+        </Link>
+      ),
+    },
+  ];
 
   const getContactList = async () => {
     const config = {
@@ -56,7 +93,7 @@ const Contacts = () => {
     };
     await axios(config)
       .then(async (response) => {
-        setDeleteState(true)
+        setDeleteState(true);
         toast.success("Contact deleted.");
       })
       .catch((err) =>
@@ -71,6 +108,10 @@ const Contacts = () => {
     setDeleteState(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [deleteState]);
+
+  const nextPrevIcon = (symbol) => (
+    <small className="text-sky-600 hover:text-sky-500 ">{symbol}</small>
+  );
 
   const permFunc = () => {
     if (accessToken) {
@@ -97,80 +138,46 @@ const Contacts = () => {
                 position="top-center"
                 reverseOrder="false"
               ></Toaster>
-              <TableContainer component={Paper}>
-                <Table size="small">
-                  <TableHead>
-                    <TableRow>
-                      <TableCell align="center">
-                        <h6 className="text-2xl font-semibold font-serif">
-                          Name
-                        </h6>
-                      </TableCell>
-                      <TableCell align="center">
-                        <h6 className="text-2xl font-semibold font-serif">
-                          Email
-                        </h6>
-                      </TableCell>
-                      <TableCell align="center">
-                        <h6 className="text-2xl font-semibold font-serif">
-                          Subject
-                        </h6>
-                      </TableCell>
-                      <TableCell align="center">
-                        <h6 className="text-2xl font-semibold font-serif">
-                          Message
-                        </h6>
-                      </TableCell>
-                      <TableCell align="center">
-                        <h6 className="text-2xl font-semibold font-serif">
-                          Action
-                        </h6>
-                      </TableCell>
-                    </TableRow>
-                  </TableHead>
-                  <TableBody>
-                    {contacts.map((contact) => (
-                      <TableRow
-                        key={contact.id}
-                        sx={{
-                          "&:last-child td, &:last-child th": { border: 0 },
-                        }}
-                      >
-                        <TableCell align="center">
-                          <small className="text-2xl font-serif">
-                            {contact.name}
-                          </small>
-                        </TableCell>
-                        <TableCell align="center">
-                          <small className="text-2xl font-serif">
-                            {contact.email}
-                          </small>
-                        </TableCell>
-                        <TableCell align="center">
-                          <small className="text-2xl font-serif">
-                            {contact.subject}
-                          </small>
-                        </TableCell>
-                        <TableCell align="center">
-                          <small className="text-2xl font-serif">
-                            {contact.message}
-                          </small>
-                        </TableCell>
-                        <TableCell align="center">
-                          <button
-                            className="m-0 text-xl font-semibold text-red-600 underline bg-transparent p-0 hover:bg-transparent hover:text-red-600"
-                            onClick={() => {
-                              deleteContact(contact.id);
-                            }}
-                          >
-                            DELETE
-                          </button>
-                        </TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
-              </TableContainer>
+              <Table
+
+                columns={columns}
+                pagination={{
+                  pageSize: 10,
+                  showSizeChanger: false,
+                  nextIcon: nextPrevIcon(">"),
+                  prevIcon: nextPrevIcon("<"),
+                  jumpPrevIcon: nextPrevIcon("<<"),
+                  jumpNextIcon: nextPrevIcon(">>"),
+                }}
+                scroll={{
+                  y: 387,
+                }}
+                dataSource={contacts}
+                size="small"
+                expandable={{
+                  expandedRowRender: (record) => (
+                    <div className="flec flex-col space-y-2">
+                      <div>
+                        <strong>Subject :</strong>
+                      </div>
+                      <div>{record.subject}</div>
+                      <div>
+                        <strong>Message :</strong>
+                      </div>
+                      <div>{record.message}</div>
+                    </div>
+                  ),
+                  expandIcon: ({ expanded, onExpand, record }) => (
+                    <Link
+                      className="text-sky-600 text-xl"
+                      onClick={(e) => onExpand(record, e)}
+                    >
+                      {expanded ? "-" : "+"}
+                    </Link>
+                  ),
+                  // rowExpandable: (record) => record.name !== "Not Expandable",
+                }}
+              />
             </div>
           </div>
         );
