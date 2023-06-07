@@ -122,7 +122,6 @@ const FloatingFeedback = () => {
             )}
           </div>
         }
-        okButtonProps={{ className: "text-white bg-black" }}
         closable={false}
         centered
         open={modal2Open}
@@ -130,7 +129,7 @@ const FloatingFeedback = () => {
         width={600}
         maskClosable={false}
         cancelButtonProps={{
-          className: "hover:bg-transparent",
+          className: "hover:!bg-transparent",
         }}
         onOk={(event) => {
           setLoading(true);

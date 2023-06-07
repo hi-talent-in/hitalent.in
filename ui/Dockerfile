@@ -11,7 +11,7 @@ RUN apt-get update -yq && apt-get upgrade -yq && \
     curl -sL https://deb.nodesource.com/setup_19.x | bash - && \
     apt-get install -yq nano nodejs build-essential apache2
 
-RUN npm install -g npm
+RUN npm install -g npm yarn
 
 RUN echo "ServerName hitalent.in" >> /etc/apache2/apache2.conf
 
