@@ -141,7 +141,7 @@ const JobDashboard = () => {
         <Navbar />
         {notAuthorised ? <Logout /> : null}
         {localStorage.getItem("accessToken") ? (
-          <div className="flex flex-col mt-24 m-2 text-black bg-white md:w-[95%] md:mx-auto h-[90vh] rounded-lg space-y-3">
+          <div className="flex flex-col mt-24 m-2 text-black bg-white md:w-[95%] md:mx-auto rounded-lg space-y-3">
             <strong className="text-center">Job Board</strong>
             <div className="flex md:flex-row flex-col ">
               <div className="md:w-[25%] ">
@@ -179,7 +179,7 @@ const JobDashboard = () => {
                   </Button>
                 </div>
               </div>
-              <div className="md:w-[70%] m-2 rounded-lg  overflow-auto md:h-[83vh] h-[70vh]">
+              <div className="md:w-[70%] m-2 rounded-lg  overflow-auto">
                 <Table
                   columns={columns}
                   dataSource={jobsArr}
@@ -192,7 +192,7 @@ const JobDashboard = () => {
                     jumpNextIcon: nextPrevIcon(">>"),
                   }}
                   scroll={{
-                    y: 420,
+                    y: 350,
                   }}
                   size="middle"
                 />

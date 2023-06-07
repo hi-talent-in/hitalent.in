@@ -25,7 +25,7 @@ export const getContacts = async (req, res) => {
         .then((contacts) => {
           const contactsList = contacts.map((contact) => {
             const { id, name, email, subject, message, ...rest } = contact;
-            return { id, name, email, subject, message };
+            return { key: id, name, email, subject, message };
           });
           return res.status(200).json({ contacts: contactsList });
         })
@@ -37,7 +37,7 @@ export const getContacts = async (req, res) => {
 export const deleteContact = async (req, res) => {
   const userId = req.user.userId;
   const contactId = req.params.contactId;
-  await Staff.findOne({ where: { id: userId } })
+  await User.findOne({ where: { id: userId } })
     .then(async () => {
       if (contactId) {
         await Contact.destroy({ where: { id: contactId } })

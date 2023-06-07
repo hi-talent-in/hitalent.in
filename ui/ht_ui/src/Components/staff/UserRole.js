@@ -273,6 +273,7 @@ const UserRole = () => {
     {
       title: "Email",
       dataIndex: "email",
+      render: (text) => <small className="font-medium text-xl">{text}</small>,
     },
     {
       title: "Active",
@@ -335,8 +336,6 @@ const UserRole = () => {
       },
       actionObj
     );
-  } else {
-    columns.push(actionObj);
   }
 
   const nextPrevIcon = (symbol) => (
@@ -346,7 +345,7 @@ const UserRole = () => {
   const expandRender = (record) => (
     <div className="fex flex-col space-y-2 text-center">
       <strong>Stats</strong>
-      <div className="flex md:flex-row md:space-x-10 flex-col text-left justify-center md:items-center">
+      <div className="flex md:flex-row md:space-x-10 flex-col text-left justify-center items-center">
         <small>
           Total Level :{" "}
           {levels?.[record.key]?.levelProgress?.total?.level
@@ -490,7 +489,7 @@ const UserRole = () => {
               jumpNextIcon: nextPrevIcon(">>"),
             }}
             scroll={{
-              y: 450,
+              y: 387,
             }}
             onChange={handleChange}
             expandable={{
@@ -503,7 +502,7 @@ const UserRole = () => {
                   {expanded ? "-" : "+"}
                 </Link>
               ),
-              rowExpandable: (record) => record.name !== "Not Expandable",
+              // rowExpandable: (record) => record.name !== "Not Expandable",
             }}
             dataSource={rows}
             size="small"

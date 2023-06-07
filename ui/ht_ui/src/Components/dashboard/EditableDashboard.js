@@ -395,7 +395,7 @@ const EditableDashboard = () => {
             <div className="w-full mx-auto ">
               <div className="bg-white  mt-0 rounded-lg ">
                 <div className="flex flex-col  md:flex-row ">
-                  <div className="md:w-[40%] h-[45em] overflow-auto">
+                  <div className="md:w-[40%] h-[30em] overflow-auto">
                     <div className="flex flex-col justify-center space-y-5  mt-3">
                       <h3 className="font-serif mx-auto text-center font-medium text-2xl">
                         Learning Path
@@ -403,7 +403,8 @@ const EditableDashboard = () => {
                       <hr />
                       <small className="text-2xl text-center">
                         If you are adding or making any changes please select
-                        talent, by default it will be for all talents.
+                        talent,
+                        <br /> by default it will be for all talents.
                       </small>
                     </div>
                     <div className="md:w-[95%] mx-auto mt-5 text-left  overflow-auto">
@@ -411,7 +412,7 @@ const EditableDashboard = () => {
                     </div>
                     <div className="h-10"></div>
                   </div>
-                  <div className="mx-auto w-full md:w-[60%] p-5 bg-stone-200 h-[45em] overflow-auto">
+                  <div className="mx-auto w-full md:w-[60%] p-5 bg-stone-200 h-[30em] overflow-auto">
                     <div>
                       {showTreeData ? (
                         <div className=" md:w-[80%]  md:h-[80%] m-auto space-y-10">
@@ -756,7 +757,8 @@ const EditableDashboard = () => {
                                             mask={false}
                                             title="Edit Tip/Instructions"
                                             cancelButtonProps={{
-                                              className: "hover:!bg-transparent",
+                                              className:
+                                                "hover:!bg-transparent",
                                             }}
                                             closable={false}
                                             centered

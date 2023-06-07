@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar";
 import NonHomeFooter from "../NonHomeFooter";
 import EditableDashboard from "./EditableDashboard";
-import List from "../talent/TalentProgress";
 import UserRole from "../staff/UserRole";
 import { useStore } from "../../store";
 import { Select } from "antd";
@@ -68,9 +67,6 @@ const StaffDashboard = () => {
       <Select.Option value="1">
         <small className="font-serif text-2xl">Talents</small>
       </Select.Option>
-      <Select.Option value="2">
-        <small className="font-serif text-2xl">Talent's Progress</small>
-      </Select.Option>
       <Select.Option value="3">
         <small className="font-serif text-2xl">Talent Dashboard</small>
       </Select.Option>
@@ -92,7 +88,7 @@ const StaffDashboard = () => {
         {open === "3" ? selectTalent() : ""}
       </div>
       {open === "1" ? <UserRole /> : ""}
-      {open === "2" ? <List /> : ""} {open === "3" ? <EditableDashboard /> : ""}
+      {open === "3" ? <EditableDashboard /> : ""}
       <NonHomeFooter />
     </>
   );

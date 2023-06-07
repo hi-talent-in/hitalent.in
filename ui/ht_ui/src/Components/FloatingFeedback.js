@@ -122,7 +122,6 @@ const FloatingFeedback = () => {
             )}
           </div>
         }
-        okButtonProps={{ className: "text-white bg-black" }}
         closable={false}
         centered
         open={modal2Open}

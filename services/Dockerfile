@@ -7,11 +7,12 @@ RUN apt-get update && apt-get install -y \
     ca-certificates
 
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
-RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
-RUN echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.l>
-RUN apt-get install -y nodejs google-chrome-stable
 
-RUN apt-get update && apt-get install -y \
+RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
+
+RUN echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | tee /etc/apt/sources.list.d/google-chrome.list
+
+RUN apt-get update && apt-get install -y nodejs google-chrome-stable \
     gconf-service \
     libasound2 \
     libatk1.0-0 \
@@ -52,7 +53,7 @@ RUN apt-get update && apt-get install -y \
     xdg-utils \
     && rm -rf /var/lib/apt/lists/*
 
-RUN npm install -g npm
+RUN npm install -g npm yarn
 
 RUN mkdir services
 
@@ -60,9 +61,10 @@ COPY . ./services
 
 WORKDIR /services
 
-RUN npm i
+RUN yarn
 
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
+
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome-stable
 
 EXPOSE 8000
