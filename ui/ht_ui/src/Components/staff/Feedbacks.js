@@ -2,15 +2,24 @@ import React, { useState } from "react";
 import Navbar from "../Navbar";
 import NonHomeFooter from "../NonHomeFooter";
 import axios from "axios";
-import ReactLoading from "react-loading";
 import toast, { Toaster } from "react-hot-toast";
 import Logout from "../Logout";
 import { Link } from "react-router-dom";
-import { Table } from "antd";
+import { Table, Spin } from "antd";
+import { LoadingOutlined } from "@ant-design/icons";
 
 const Feedbacks = () => {
   const accessToken = localStorage.getItem("accessToken");
   const me = localStorage.getItem("me");
+
+  const antIcon = (
+    <LoadingOutlined
+      style={{
+        fontSize: 24,
+      }}
+      spin
+    />
+  );
 
   const [feedbacks, setFeedbacks] = useState([]);
   const [status, setStatus] = useState(false);
@@ -141,7 +150,7 @@ const Feedbacks = () => {
               height: "100vh",
             }}
           >
-            <ReactLoading type="cylon" color="#fff" height={100} width={50} />
+            <Spin indicator={antIcon} />{" "}
           </div>
         );
       } else {
