@@ -1,18 +1,12 @@
+# Use an up-to-date Ubuntu base image
 FROM ubuntu:jammy-20230522
 
+# Install required packages in a single command
 RUN apt-get update && apt-get install -y \
     curl \
     wget \
     gnupg \
-    ca-certificates
-
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
-
-RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
-
-RUN echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | tee /etc/apt/sources.list.d/google-chrome.list
-
-RUN apt-get update && apt-get install -y nodejs google-chrome-stable \
+    ca-certificates \
     gconf-service \
     libasound2 \
     libatk1.0-0 \
@@ -53,20 +47,36 @@ RUN apt-get update && apt-get install -y nodejs google-chrome-stable \
     xdg-utils \
     && rm -rf /var/lib/apt/lists/*
 
+# Install Node.js
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+RUN apt-get update && apt-get install -y nodejs
+
+# Install Google Chrome
+RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
+RUN echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | tee /etc/apt/sources.list.d/google-chrome.list
+RUN apt-get update && apt-get install -y google-chrome-stable
+
+# Install global npm packages
 RUN npm install -g npm yarn
 
-RUN mkdir services
+# Copy the rest of the application code
+COPY . /services
 
-COPY . ./services
-
+# Set up the working directory
 WORKDIR /services
 
-RUN yarn
+# Copy only package.json and yarn.lock for caching
+COPY package.json ./
 
+# Install dependencies
+RUN yarn install
+
+# Set environment variables
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
-
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome-stable
 
+# Expose the necessary ports
 EXPOSE 8000
 
+# Start the application
 CMD ["bash", "-c", "npm start"]

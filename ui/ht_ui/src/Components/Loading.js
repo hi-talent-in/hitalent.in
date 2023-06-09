@@ -1,11 +1,21 @@
 import React, { useEffect, useState } from "react";
-import ReactLoading from "react-loading";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { LoadingOutlined } from "@ant-design/icons";
+import { Spin } from "antd";
 
 const Loading = () => {
   const navigate = useNavigate();
   const [auth, setAuth] = useState(false);
+
+  const antIcon = (
+    <LoadingOutlined
+      style={{
+        fontSize: 24,
+      }}
+      spin
+    />
+  );
 
   const codePost = async () => {
     const code = localStorage.getItem("parsingString");
@@ -46,7 +56,7 @@ const Loading = () => {
           height: "100vh",
         }}
       >
-        <ReactLoading type="cylon" color="#fff" height={100} width={50} />
+        <Spin indicator={antIcon} />{" "}
       </div>
     );
   } else {
