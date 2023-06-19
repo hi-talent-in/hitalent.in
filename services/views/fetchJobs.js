@@ -17,7 +17,7 @@ const infiniteScrollItems = async (url, targetCount, scrap) => {
     ],
   });
   const page = await browser.newPage();
-  await page.goto(url);
+  await page.goto(url, { waitUntil: "networkidle0", timeout: 0 });
   let previousHeight;
   let previousCount = 0;
   let currentCount = 0;
@@ -97,7 +97,7 @@ const nextButtonsPageScrap = async (url, targetCount, scrap) => {
   const page = await browser.newPage();
 
   if (scrap === 2) {
-    await page.goto(url);
+    await page.goto(url, { waitUntil: "networkidle0", timeout: 0 });
     await page.waitForSelector("body");
     while (count < targetCount) {
       const jobsArr = await page.evaluate(() =>
@@ -152,10 +152,10 @@ const nextButtonsPageScrap = async (url, targetCount, scrap) => {
   } else if (scrap === 3) {
     for (let i = 0; i < 51; i += 10) {
       if (i === 0) {
-        await page.goto(url);
+        await page.goto(url, { waitUntil: "networkidle0", timeout: 0 });
       } else {
         const newUrl = url + "&start=" + i;
-        await page.goto(newUrl, { waitUntil: "networkidle0" });
+        await page.goto(newUrl, { waitUntil: "networkidle0", timeout: 0 });
         await page.waitForSelector(`body`);
       }
       const jobsArr = await page.evaluate(() =>
