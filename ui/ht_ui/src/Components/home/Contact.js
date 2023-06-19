@@ -4,7 +4,7 @@ import { useFormik } from "formik";
 import axios from "axios";
 import Logout from "../Logout";
 import { Link } from "react-router-dom";
-import { Input } from "antd";
+import { Button, Input } from "antd";
 const { TextArea } = Input;
 
 const Contact = () => {
@@ -170,15 +170,8 @@ const Contact = () => {
                   className="border-transparent"
                 />
               </div>
-              <div className="w-[90%] mx-auto md:max-w-[80%]">
-                <button
-                  type="submit"
-                  className="inline-flex justify-center
-                      rounded-md border border-transparent bg-gray-800 mt-5  py-4 px-10 text-3xl font-medium font-serif text-white
-                       shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                >
-                  Submit
-                </button>
+              <div className="w-[90%] mx-auto md:max-w-[80%] mt-5">
+                <Button >Submit</Button>
               </div>
             </form>
           </div>
