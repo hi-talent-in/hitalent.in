@@ -71,7 +71,7 @@ const Navbar = () => {
           <li>
             {window.location.pathname.includes("/dashboard") ? (
               <Link
-                to={isStaff ? "/staff/dashboard" : "/dashboard"}
+                to={"/dashboard"}
                 className="text-2xl text-orange-600"
               >
                 <small className="font-sans p-0 text-orange-600 text-2xl">
@@ -79,7 +79,7 @@ const Navbar = () => {
                 </small>
               </Link>
             ) : (
-              <Link to={isStaff ? "/staff/dashboard" : "/dashboard"}>
+              <Link to={"/dashboard"}>
                 {nameTag("Dashboard")}
               </Link>
             )}
