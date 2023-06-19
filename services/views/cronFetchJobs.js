@@ -24,7 +24,8 @@ export const findJobs = async (req, res) => {
     let jobs = [];
     let targetCount = 60;
     await page.goto(
-      `https://in.linkedin.com/jobs/search?keywords=Developer&f_TPR=r86400&position=1&pageNum=0`
+      `https://in.linkedin.com/jobs/search?keywords=Developer&f_TPR=r86400&position=1&pageNum=0`,
+      { waitUntil: "networkidle0", timeout: 0 }
     );
     await page.waitForSelector("body");
     let previousHeight;
@@ -78,7 +79,8 @@ export const findJobs = async (req, res) => {
       return jobsArr;
     });
     await page.goto(
-      `https://www.naukri.com/frontend-development-backend-development-fullstack-developer-jobs-in-india?k=frontend%20development%2C%20backend%20development%2C%20fullstack%20developer&l=india&jobAge=1`
+      `https://www.naukri.com/frontend-development-backend-development-fullstack-developer-jobs-in-india?k=frontend%20development%2C%20backend%20development%2C%20fullstack%20developer&l=india&jobAge=1`,
+      { waitUntil: "networkidle0", timeout: 0 }
     );
     await page.waitForSelector("body");
     previousCount = 0;
@@ -145,14 +147,15 @@ export const findJobs = async (req, res) => {
     for (let i = 0; i < 60; i += 10) {
       if (i === 0) {
         await page.goto(
-          `https://in.indeed.com/jobs?q=Developer&l=India&fromage=1`
+          `https://in.indeed.com/jobs?q=Developer&l=India&fromage=1`,
+          { waitUntil: "networkidle0", timeout: 0 }
         );
       } else {
         const newUrl =
           `https://in.indeed.com/jobs?q=Developer&l=India&fromage=1` +
           "&start=" +
           i;
-        await page.goto(newUrl, { waitUntil: "networkidle0" });
+        await page.goto(newUrl, { waitUntil: "networkidle0", timeout: 0 });
         await page.waitForSelector(`body`);
       }
       const jobsArray3 = await page.evaluate(() =>
