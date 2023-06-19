@@ -17,7 +17,7 @@ const infiniteScrollItems = async (url, targetCount, scrap) => {
     ],
   });
   const page = await browser.newPage();
-  await page.goto(url, { waitUntil: "networkidle0", timeout: 0 });
+  await page.goto(url);
   let previousHeight;
   let previousCount = 0;
   let currentCount = 0;
@@ -97,8 +97,7 @@ const nextButtonsPageScrap = async (url, targetCount, scrap) => {
   const page = await browser.newPage();
 
   if (scrap === 2) {
-    await page.goto(url, { waitUntil: "networkidle0", timeout: 0 });
-    await page.waitForSelector("body");
+    await page.goto(url);
     while (count < targetCount) {
       const jobsArr = await page.evaluate(() =>
         Array.from(
@@ -141,7 +140,7 @@ const nextButtonsPageScrap = async (url, targetCount, scrap) => {
           );
           await page.waitForSelector(
             "#root > div.search-result-container > div > div > section.listContainer.fleft",
-            { timeout: 2000 }
+            { timeout: 500 }
           );
         } catch (error) {
           break;
@@ -152,11 +151,10 @@ const nextButtonsPageScrap = async (url, targetCount, scrap) => {
   } else if (scrap === 3) {
     for (let i = 0; i < 51; i += 10) {
       if (i === 0) {
-        await page.goto(url, { waitUntil: "networkidle0", timeout: 0 });
+        await page.goto(url);
       } else {
         const newUrl = url + "&start=" + i;
-        await page.goto(newUrl, { waitUntil: "networkidle0", timeout: 0 });
-        await page.waitForSelector(`body`);
+        await page.goto(newUrl);
       }
       const jobsArr = await page.evaluate(() =>
         Array.from(
@@ -164,11 +162,11 @@ const nextButtonsPageScrap = async (url, targetCount, scrap) => {
         ).map((item) => {
           let job = {};
           const jobTitle = item.querySelector(
-            "div > div.slider_container.css-77eoo7.eu4oa1w0 > div > div.slider_item.css-kyg8or.eu4oa1w0 > div > table.jobCard_mainContent.big6_visualChanges > tbody > tr > td > div.css-1m4cuuf.e37uo190 > h2 > a > span"
+            "div > div.slider_container > div > div.slider_item  > div > table.jobCard_mainContent.big6_visualChanges > tbody > tr > td > div  > h2 > a > span"
           );
           job.jobTitle = jobTitle ? jobTitle.textContent : "";
           const jobCompanyName = item.querySelector(
-            "div > div.slider_container.css-77eoo7.eu4oa1w0 > div > div.slider_item.css-kyg8or.eu4oa1w0 > div > table.jobCard_mainContent.big6_visualChanges > tbody > tr > td > div.heading6.company_location.tapItem-gutter.companyInfo > span"
+            "div > div.slider_container > div > div.slider_item  > div > table.jobCard_mainContent.big6_visualChanges > tbody > tr > td > div.heading6.company_location.tapItem-gutter.companyInfo > span"
           );
           job.jobCompany = {
             name: jobCompanyName ? jobCompanyName.textContent : "",
@@ -177,11 +175,11 @@ const nextButtonsPageScrap = async (url, targetCount, scrap) => {
               : "",
           };
           const jobApplyLink = item.querySelector(
-            "div > div.slider_container.css-77eoo7.eu4oa1w0 > div > div.slider_item.css-kyg8or.eu4oa1w0 > div > table.jobCard_mainContent.big6_visualChanges > tbody > tr > td > div.css-1m4cuuf.e37uo190 > h2 > a"
+            "div > div.slider_container > div > div.slider_item  > div > table.jobCard_mainContent.big6_visualChanges > tbody > tr > td > div  > h2 > a"
           );
           job.jobApplyLink = jobApplyLink ? jobApplyLink.href : "";
           const jobLocation = item.querySelector(
-            "div > div.slider_container.css-77eoo7.eu4oa1w0 > div > div.slider_item.css-kyg8or.eu4oa1w0 > div > table.jobCard_mainContent.big6_visualChanges > tbody > tr > td > div.heading6.company_location.tapItem-gutter.companyInfo > div"
+            "div > div.slider_container > div > div.slider_item  > div > table.jobCard_mainContent.big6_visualChanges > tbody > tr > td > div.heading6.company_location.tapItem-gutter.companyInfo > div"
           );
           job.jobLocation = jobLocation ? jobLocation.textContent : "";
           return job;
