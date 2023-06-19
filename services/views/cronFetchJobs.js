@@ -24,10 +24,8 @@ export const findJobs = async (req, res) => {
     let jobs = [];
     let targetCount = 60;
     await page.goto(
-      `https://in.linkedin.com/jobs/search?keywords=Developer&f_TPR=r86400&position=1&pageNum=0`,
-      { waitUntil: "networkidle0", timeout: 0 }
+      `https://in.linkedin.com/jobs/search?keywords=Developer&f_TPR=r86400&position=1&pageNum=0`
     );
-    await page.waitForSelector("body");
     let previousHeight;
     let previousCount = 0;
     let currentCount = 0;
@@ -79,10 +77,8 @@ export const findJobs = async (req, res) => {
       return jobsArr;
     });
     await page.goto(
-      `https://www.naukri.com/frontend-development-backend-development-fullstack-developer-jobs-in-india?k=frontend%20development%2C%20backend%20development%2C%20fullstack%20developer&l=india&jobAge=1`,
-      { waitUntil: "networkidle0", timeout: 0 }
+      `https://www.naukri.com/frontend-development-backend-development-fullstack-developer-jobs-in-india?k=frontend%20development%2C%20backend%20development%2C%20fullstack%20developer&l=india&jobAge=1`
     );
-    await page.waitForSelector("body");
     previousCount = 0;
     let count = 0;
     let x = 100;
@@ -133,7 +129,7 @@ export const findJobs = async (req, res) => {
           );
           await page.waitForSelector(
             "#root > div.search-result-container > div > div > section.listContainer.fleft",
-            { timeout: 2000 }
+            { timeout: 500 }
           );
         } catch (error) {
           break;
@@ -147,16 +143,14 @@ export const findJobs = async (req, res) => {
     for (let i = 0; i < 60; i += 10) {
       if (i === 0) {
         await page.goto(
-          `https://in.indeed.com/jobs?q=Developer&l=India&fromage=1`,
-          { waitUntil: "networkidle0", timeout: 0 }
+          `https://in.indeed.com/jobs?q=Developer&l=India&fromage=1`
         );
       } else {
         const newUrl =
           `https://in.indeed.com/jobs?q=Developer&l=India&fromage=1` +
           "&start=" +
           i;
-        await page.goto(newUrl, { waitUntil: "networkidle0", timeout: 0 });
-        await page.waitForSelector(`body`);
+        await page.goto(newUrl);
       }
       const jobsArray3 = await page.evaluate(() =>
         Array.from(
@@ -164,11 +158,11 @@ export const findJobs = async (req, res) => {
         ).map((item) => {
           let job = {};
           const jobTitle = item.querySelector(
-            "div > div.slider_container.css-77eoo7.eu4oa1w0 > div > div.slider_item.css-kyg8or.eu4oa1w0 > div > table.jobCard_mainContent.big6_visualChanges > tbody > tr > td > div.css-1m4cuuf.e37uo190 > h2 > a > span"
+            "div > div.slider_container  > div > div.slider_item  > div > table.jobCard_mainContent.big6_visualChanges > tbody > tr > td > div  > h2 > a > span"
           );
           job.jobTitle = jobTitle ? jobTitle.textContent : "";
           const jobCompanyName = item.querySelector(
-            "div > div.slider_container.css-77eoo7.eu4oa1w0 > div > div.slider_item.css-kyg8or.eu4oa1w0 > div > table.jobCard_mainContent.big6_visualChanges > tbody > tr > td > div.heading6.company_location.tapItem-gutter.companyInfo > span"
+            "div > div.slider_container  > div > div.slider_item  > div > table.jobCard_mainContent.big6_visualChanges > tbody > tr > td > div.heading6.company_location.tapItem-gutter.companyInfo > span"
           );
           job.jobCompany = {
             name: jobCompanyName ? jobCompanyName.textContent : "",
@@ -177,11 +171,11 @@ export const findJobs = async (req, res) => {
               : "",
           };
           const jobApplyLink = item.querySelector(
-            "div > div.slider_container.css-77eoo7.eu4oa1w0 > div > div.slider_item.css-kyg8or.eu4oa1w0 > div > table.jobCard_mainContent.big6_visualChanges > tbody > tr > td > div.css-1m4cuuf.e37uo190 > h2 > a"
+            "div > div.slider_container  > div > div.slider_item  > div > table.jobCard_mainContent.big6_visualChanges > tbody > tr > td > div  > h2 > a"
           );
           job.jobApplyLink = jobApplyLink ? jobApplyLink.href : "";
           const jobLocation = item.querySelector(
-            "div > div.slider_container.css-77eoo7.eu4oa1w0 > div > div.slider_item.css-kyg8or.eu4oa1w0 > div > table.jobCard_mainContent.big6_visualChanges > tbody > tr > td > div.heading6.company_location.tapItem-gutter.companyInfo > div"
+            "div > div.slider_container  > div > div.slider_item  > div > table.jobCard_mainContent.big6_visualChanges > tbody > tr > td > div.heading6.company_location.tapItem-gutter.companyInfo > div"
           );
           job.jobLocation = jobLocation ? jobLocation.textContent : "";
           return job;
