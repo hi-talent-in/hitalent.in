@@ -84,13 +84,13 @@ const Profile = () => {
           reverseOrder="false"
         ></Toaster>
         <div className="flex justify-center items-center flex-col">
-          <div className="w-full md:max-w-[40%] mx-auto">
+          <div className="w-full mx-auto">
             <div className="mt-24 text-center text-4xl font-serif text-zinc-800 mb-6 mx-auto">
               You can update profile here.
             </div>
-            <div className=" bg-white rounded-xl shadow-md overflow-hidden m-5">
+            <div className="bg-white  rounded-xl shadow-md overflow-hidden h-auto m-5">
               <form onSubmit={submitButton}>
-                <div className="gap-5 m-5">
+                <div className="gap-5 m-5 grid md:grid-cols-2 grid-cols-1">
                   <div className="flex flex-col mx-auto w-[98%]   ">
                     <label className=" text-xl m-0 text-left font-medium text-black">
                       Name
