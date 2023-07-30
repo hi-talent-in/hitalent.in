@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <section
       id="home"
-      className="md:flex md:flex-col grid grid-rows-2 h-screen bg-gradient-to-r from-slate-700 to-red-300"
+      className="md:flex md:flex-col grid grid-rows-2 h-auto bg-gradient-to-r from-slate-700 to-red-300"
     >
       <div className="md:m-36">
         {accessToken ? (
@@ -37,7 +37,7 @@ const Header = () => {
           </>
         )}
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col m-10">
         <div className="text-black">
           Follow us on{" "}
           <a

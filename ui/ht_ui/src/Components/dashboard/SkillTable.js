@@ -44,7 +44,7 @@ const SkillTable = (props) => {
           <Button
             key="cancel"
             onClick={() => setModalOpen(false)}
-            className="hover:bg-transparent"
+            className="hover:!bg-transparent"
           >
             Close
           </Button>,

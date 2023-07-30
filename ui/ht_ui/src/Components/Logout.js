@@ -15,6 +15,7 @@ const Logout = () => {
   const handleClose = (_, reason) => {
     if (reason && reason === "backdropClick") return;
     localStorage.clear();
+    sessionStorage.clear();
     setOpen(false);
   };
 

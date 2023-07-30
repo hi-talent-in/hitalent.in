@@ -16,7 +16,7 @@ class NonHomeFooter extends Component {
     };
 
     return (
-      <footer className="mt-9">
+      <footer className="mt-5">
         <div className="flex flex-row items-center justify-center mx-4">
           <a
             href={main.linkedin.url}

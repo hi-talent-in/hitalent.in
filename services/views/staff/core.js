@@ -18,10 +18,16 @@ export const getTalentRole = async (req, res) => {
               isTalent,
               isStaff,
               isAdmin,
+              longestStreak,
+              currentStreak,
+              lastLogin,
+              dateOfJoin,
+              lang,
+              track,
               ...rest
             } = user;
             return {
-              id,
+              key: id,
               name,
               email,
               isActive,
@@ -31,6 +37,12 @@ export const getTalentRole = async (req, res) => {
               isTalent,
               isStaff,
               isAdmin,
+              longestStreak,
+              currentStreak,
+              lastLogin,
+              dateOfJoin,
+              lang,
+              track,
             };
           })
         )

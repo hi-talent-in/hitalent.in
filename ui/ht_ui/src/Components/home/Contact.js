@@ -4,7 +4,7 @@ import { useFormik } from "formik";
 import axios from "axios";
 import Logout from "../Logout";
 import { Link } from "react-router-dom";
-import { Input } from "antd";
+import { Button, Input } from "antd";
 const { TextArea } = Input;
 
 const Contact = () => {
@@ -87,100 +87,96 @@ const Contact = () => {
               ""
             )}
           </div>
-          <div className="grid grid-cols-1 ">
-            <form onSubmit={formik.handleSubmit} action="">
-              <div className="w-[90%] mx-auto md:max-w-[80%] ">
-                <label
-                  htmlFor="first-name"
-                  className="block text-2xl font-sans  text-left font-medium text-black"
-                >
-                  Name
-                </label>
-                <Input
-                  className="font-serif"
-                  type="text"
-                  id="first-name"
-                  {...formik.getFieldProps("name")}
-                  autoComplete="given-name"
-                  style={{
-                    backgroundColor: "rgb(107, 114, 128)",
-                    color: "black",
-                    height: "2em",
-                  }}
-                ></Input>
-              </div>
-              <div className="w-[90%] mx-auto md:max-w-[80%]">
-                <label
-                  htmlFor="last-name"
-                  className="block text-2xl font-sans  text-left font-medium text-black"
-                >
-                  Email
-                </label>
-                <Input
-                  className="font-serif"
-                  type="text"
-                  id="last-name"
-                  {...formik.getFieldProps("email")}
-                  autoComplete="family-name"
-                  style={{
-                    backgroundColor: "rgb(107, 114, 128)",
-                    color: "black",
-                    height: "2em",
-                  }}
-                ></Input>
-              </div>
-              <div className="w-[90%] mx-auto md:max-w-[80%]">
-                <label
-                  htmlFor="last-name"
-                  className="block text-2xl font-sans  text-left font-medium text-black"
-                >
-                  Subject
-                </label>
-                <Input
-                  className="font-serif"
-                  type="text"
-                  {...formik.getFieldProps("subject")}
-                  id="last-name"
-                  autoComplete="family-name"
-                  style={{
-                    backgroundColor: "rgb(107, 114, 128)",
-                    color: "black",
-                    height: "2em",
-                  }}
-                ></Input>
-              </div>
-              <div className="w-[90%] mx-auto md:max-w-[80%]">
-                <label
-                  htmlFor="last-name"
-                  className="block text-2xl font-sans  text-left font-medium text-black"
-                >
-                  Message
-                </label>
-                <TextArea
-                  type="text"
-                  {...formik.getFieldProps("message")}
-                  id="last-name"
-                  autoComplete="family-name"
-                  style={{
-                    backgroundColor: "rgb(107, 114, 128)",
-                    color: "black",
-                    height: "12em",
-                    borderColor: "transparent",
-                  }}
-                  className="border-transparent"
-                />
-              </div>
-              <div className="w-[90%] mx-auto md:max-w-[80%]">
-                <button
-                  type="submit"
-                  className="inline-flex justify-center
-                      rounded-md border border-transparent bg-gray-800 mt-5  py-4 px-10 text-3xl font-medium font-serif text-white
-                       shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
+          <div className="grid grid-cols-1">
+            <div className="w-[90%] mx-auto md:max-w-[80%] ">
+              <label
+                htmlFor="first-name"
+                className="block text-2xl font-sans  text-left font-medium text-black"
+              >
+                Name
+              </label>
+              <Input
+                className="font-serif"
+                type="text"
+                id="first-name"
+                {...formik.getFieldProps("name")}
+                autoComplete="given-name"
+                style={{
+                  backgroundColor: "rgb(107, 114, 128)",
+                  color: "black",
+                  height: "2em",
+                }}
+              ></Input>
+            </div>
+            <div className="w-[90%] mx-auto md:max-w-[80%]">
+              <label
+                htmlFor="last-name"
+                className="block text-2xl font-sans  text-left font-medium text-black"
+              >
+                Email
+              </label>
+              <Input
+                className="font-serif"
+                type="text"
+                id="last-name"
+                {...formik.getFieldProps("email")}
+                autoComplete="family-name"
+                style={{
+                  backgroundColor: "rgb(107, 114, 128)",
+                  color: "black",
+                  height: "2em",
+                }}
+              ></Input>
+            </div>
+            <div className="w-[90%] mx-auto md:max-w-[80%]">
+              <label
+                htmlFor="last-name"
+                className="block text-2xl font-sans  text-left font-medium text-black"
+              >
+                Subject
+              </label>
+              <Input
+                className="font-serif"
+                type="text"
+                {...formik.getFieldProps("subject")}
+                id="last-name"
+                autoComplete="family-name"
+                style={{
+                  backgroundColor: "rgb(107, 114, 128)",
+                  color: "black",
+                  height: "2em",
+                }}
+              ></Input>
+            </div>
+            <div className="w-[90%] mx-auto md:max-w-[80%]">
+              <label
+                htmlFor="last-name"
+                className="block text-2xl font-sans  text-left font-medium text-black"
+              >
+                Message
+              </label>
+              <TextArea
+                type="text"
+                {...formik.getFieldProps("message")}
+                id="last-name"
+                autoComplete="family-name"
+                style={{
+                  backgroundColor: "rgb(107, 114, 128)",
+                  color: "black",
+                  height: "12em",
+                  borderColor: "transparent",
+                }}
+                className="border-transparent"
+              />
+            </div>
+            <div className="w-[90%] mx-auto md:max-w-[80%] mt-5 ">
+              <Button
+                onClick={formik.handleSubmit}
+                className="text-2xl font-semibold"
+              >
+                Submit
+              </Button>
+            </div>
           </div>
         </div>
       </div>

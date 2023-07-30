@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar";
 import NonHomeFooter from "../NonHomeFooter";
 import EditableDashboard from "./EditableDashboard";
-import List from "../talent/TalentProgress";
+import List from "../staff/UserRole";
 import { Select } from "antd";
 import { useStore } from "../../store";
 import axios from "axios";
@@ -73,7 +73,7 @@ const StaffDashboard = () => {
         <small className="font-serif text-2xl">Talent Dashboard</small>
       </Select.Option>{" "}
       <Select.Option value="1">
-        <small className="font-serif text-2xl">Talent's Progress</small>
+        <small className="font-serif text-2xl">Talents</small>
       </Select.Option>
     </Select>
   );

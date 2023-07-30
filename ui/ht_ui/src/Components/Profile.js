@@ -6,6 +6,7 @@ import NonHomeFooter from "./NonHomeFooter";
 import { Link } from "react-router-dom";
 import Logout from "./Logout";
 import { useStore } from "../store";
+import { Button } from "antd";
 
 const Profile = () => {
   const accessToken = localStorage.getItem("accessToken");
@@ -84,131 +85,124 @@ const Profile = () => {
           reverseOrder="false"
         ></Toaster>
         <div className="flex justify-center items-center flex-col">
-          <div className="w-full md:max-w-[40%] mx-auto">
+          <div className="w-full mx-auto">
             <div className="mt-24 text-center text-4xl font-serif text-zinc-800 mb-6 mx-auto">
               You can update profile here.
             </div>
-            <div className=" bg-white rounded-xl shadow-md overflow-hidden m-5">
-              <form onSubmit={submitButton}>
-                <div className="gap-5 m-5">
-                  <div className="flex flex-col mx-auto w-[98%]   ">
-                    <label className=" text-xl m-0 text-left font-medium text-black">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      id="first-name"
-                      defaultValue={profileName || name || ""}
-                      onChange={(e) => {
-                        setName(e.target.value);
-                        setProfileName(e.target.value);
-                      }}
-                      className="text-xl font-serif block h-10 rounded-md mx-auto"
-                      style={{
-                        backgroundColor: "rgb(107, 114, 128)",
-                        color: "black",
-                      }}
-                    ></input>
-                  </div>
-                  <div className="flex flex-col mx-auto w-[98%]   ">
-                    <label className=" text-xl m-0 text-left font-medium text-black">
-                      Email
-                    </label>
-                    <input
-                      type="text"
-                      id="last-name"
-                      defaultValue={profileEmail || email || ""}
-                      onChange={(e) => {
-                        setEmail(e.target.value);
-                      }}
-                      className="text-xl font-serif block h-10 rounded-md mx-auto"
-                      style={{
-                        backgroundColor: "rgb(107, 114, 128)",
-                        color: "black",
-                      }}
-                    ></input>
-                  </div>
-                  <div className="flex flex-col mx-auto w-[98%]   ">
-                    <label className=" text-xl m-0 text-left font-medium text-black">
-                      Phone Number
-                    </label>
-                    <input
-                      type="text"
-                      defaultValue={phoneNumber || ""}
-                      id="last-name"
-                      onChange={(e) => {
-                        setPhoneNumber(e.target.value);
-                      }}
-                      className="text-xl font-serif block h-10 rounded-md mx-auto"
-                      style={{
-                        backgroundColor: "rgb(107, 114, 128)",
-                        color: "black",
-                      }}
-                    ></input>
-                  </div>
-                  <div className="flex flex-col mx-auto w-[98%]   ">
-                    <label className=" text-xl m-0 text-left font-medium text-black">
-                      LinkedIn Profile Url
-                    </label>
-                    <input
-                      type="text"
-                      defaultValue={linkedinId || ""}
-                      id="last-name"
-                      onChange={(e) => {
-                        setLinkedinId(e.target.value);
-                      }}
-                      className="text-xl font-serif block h-10 rounded-md mx-auto"
-                      style={{
-                        backgroundColor: "rgb(107, 114, 128)",
-                        color: "black",
-                      }}
-                    ></input>
-                  </div>
-                  {me === "isT" ? (
-                    <>
-                      <div className="flex flex-col mx-auto w-[98%]   ">
-                        <label className=" text-xl m-0 text-left font-medium text-black">
-                          Freecodecamp Username
-                        </label>
-                        <input
-                          type="text"
-                          defaultValue={freeCodeCampId || ""}
-                          onChange={(e) => {
-                            setFreeCodeCampId(e.target.value);
-                          }}
-                          id="last-name"
-                          className="text-xl font-serif block h-10 rounded-md mx-auto"
-                          style={{
-                            backgroundColor: "rgb(107, 114, 128)",
-                            color: "black",
-                          }}
-                        ></input>
+            <div className="bg-white  rounded-xl shadow-md overflow-hidden h-auto m-5">
+              <div className="gap-5 m-5 grid md:grid-cols-2 grid-cols-1">
+                <div className="flex flex-col mx-auto w-[98%]   ">
+                  <label className=" text-xl m-0 text-left font-medium text-black">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    defaultValue={profileName || name || ""}
+                    onChange={(e) => {
+                      setName(e.target.value);
+                      setProfileName(e.target.value);
+                    }}
+                    className="text-xl font-serif block h-10 rounded-md mx-auto"
+                    style={{
+                      backgroundColor: "rgb(107, 114, 128)",
+                      color: "black",
+                    }}
+                  ></input>
+                </div>
+                <div className="flex flex-col mx-auto w-[98%]   ">
+                  <label className=" text-xl m-0 text-left font-medium text-black">
+                    Email
+                  </label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    defaultValue={profileEmail || email || ""}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
+                    className="text-xl font-serif block h-10 rounded-md mx-auto"
+                    style={{
+                      backgroundColor: "rgb(107, 114, 128)",
+                      color: "black",
+                    }}
+                  ></input>
+                </div>
+                <div className="flex flex-col mx-auto w-[98%]   ">
+                  <label className=" text-xl m-0 text-left font-medium text-black">
+                    Phone Number
+                  </label>
+                  <input
+                    type="text"
+                    defaultValue={phoneNumber || ""}
+                    id="last-name"
+                    onChange={(e) => {
+                      setPhoneNumber(e.target.value);
+                    }}
+                    className="text-xl font-serif block h-10 rounded-md mx-auto"
+                    style={{
+                      backgroundColor: "rgb(107, 114, 128)",
+                      color: "black",
+                    }}
+                  ></input>
+                </div>
+                <div className="flex flex-col mx-auto w-[98%]   ">
+                  <label className=" text-xl m-0 text-left font-medium text-black">
+                    LinkedIn Profile Url
+                  </label>
+                  <input
+                    type="text"
+                    defaultValue={linkedinId || ""}
+                    id="last-name"
+                    onChange={(e) => {
+                      setLinkedinId(e.target.value);
+                    }}
+                    className="text-xl font-serif block h-10 rounded-md mx-auto"
+                    style={{
+                      backgroundColor: "rgb(107, 114, 128)",
+                      color: "black",
+                    }}
+                  ></input>
+                </div>
+                {me === "isT" ? (
+                  <>
+                    <div className="flex flex-col mx-auto w-[98%]   ">
+                      <label className=" text-xl m-0 text-left font-medium text-black">
+                        Freecodecamp Username
+                      </label>
+                      <input
+                        type="text"
+                        defaultValue={freeCodeCampId || ""}
+                        onChange={(e) => {
+                          setFreeCodeCampId(e.target.value);
+                        }}
+                        id="last-name"
+                        className="text-xl font-serif block h-10 rounded-md mx-auto"
+                        style={{
+                          backgroundColor: "rgb(107, 114, 128)",
+                          color: "black",
+                        }}
+                      ></input>
+                    </div>
+                    {freeCodeCampId ? null : (
+                      <div className="flex flex-col mx-auto w-[98%]  text-2xl m-0 text-left font-medium text-black  ">
+                        Click below link
+                        <Link
+                          to={`${process.env.REACT_APP_REDIRECT_URI}/freecodecamp/guide`}
+                          className="text-orange-700 w-auto hover:text-blue-500 underline"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >{`${process.env.REACT_APP_REDIRECT_URI}/freecodecamp/guide`}</Link>
+                        To get Freecodecamp account username and configure
+                        account{"."}
                       </div>
-                      {freeCodeCampId ? null : (
-                        <div className="flex flex-col mx-auto w-[98%]  text-2xl m-0 text-left font-medium text-black  ">
-                          Click below link
-                          <Link
-                            to={`${process.env.REACT_APP_REDIRECT_URI}/freecodecamp/guide`}
-                            className="text-orange-700 w-auto hover:text-blue-500 underline"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >{`${process.env.REACT_APP_REDIRECT_URI}/freecodecamp/guide`}</Link>
-                          To get Freecodecamp account username and configure
-                          account{"."}
-                        </div>
-                      )}
-                    </>
-                  ) : null}
-                </div>
-                <div className="flex flex-row justify-evenly">
-                  <button
-                    type="submit"
-                    className="text-green-600 bg-transparent hover:bg-transparent p-0 m-0 font-serif font-medium text-3xl text-right  hover:text-orange-600 underline "
-                  >
-                    Submit
-                  </button>
-                </div>
-              </form>
+                    )}
+                  </>
+                ) : null}
+              </div>
+              <div className="flex flex-row justify-evenly">
+                <Button onClick={submitButton}>Submit</Button>
+              </div>
             </div>
           </div>
         </div>
