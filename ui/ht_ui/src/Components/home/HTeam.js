@@ -1,6 +1,4 @@
 import React from "react";
-import madan from "../../assets/images/hteam/madan.jpg";
-import iliyas from "../../assets/images/hteam/iliyas.jpg";
 import { Carousel } from "antd";
 
 const HTeam = () => {
@@ -12,7 +10,11 @@ const HTeam = () => {
           <Carousel autoplay>
             <div className="h-[12em]">
               <div className="text-white flex flex-row items-center justify-center space-x-5">
-                <img src={madan} alt="" className="h-32 rounded-full" />
+                <img
+                  src={"/hteam/madan.jpg"}
+                  alt="ceo"
+                  className="h-32 rounded-full"
+                />
                 <div>
                   <strong className="text-3xl">Madan Meena</strong>
                   <br />
@@ -32,8 +34,8 @@ const HTeam = () => {
             <div className="h-[12em]">
               <div className="text-white flex flex-row items-center justify-center space-x-5">
                 <img
-                  src={iliyas}
-                  alt=""
+                  src={"/hteam/iliyas.jpg"}
+                  alt="iliyas"
                   className="h-32 rounded-full"
                 />
                 <div>
