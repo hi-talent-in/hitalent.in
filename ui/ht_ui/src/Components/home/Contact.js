@@ -169,8 +169,13 @@ const Contact = () => {
                 className="border-transparent"
               />
             </div>
-            <div className="w-[90%] mx-auto md:max-w-[80%] mt-5">
-              <Button onClick={formik.handleSubmit}>Submit</Button>
+            <div className="w-[90%] mx-auto md:max-w-[80%] mt-5 ">
+              <Button
+                onClick={formik.handleSubmit}
+                className="text-2xl font-semibold"
+              >
+                Submit
+              </Button>
             </div>
           </div>
         </div>
