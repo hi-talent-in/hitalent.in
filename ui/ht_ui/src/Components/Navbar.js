@@ -8,7 +8,6 @@ import { useStore } from "../store";
 
 const Navbar = () => {
   const accessToken = localStorage.getItem("accessToken");
-  const isStaff = localStorage.getItem("isStaff");
   const accT = localStorage.getItem("accT");
   const me = localStorage.getItem("me");
   const [modal2Open, setModal2Open] = React.useState(false);
