@@ -33,6 +33,7 @@ ol {
 
 ::-webkit-scrollbar {
   width: 8px; /* Width of the scrollbar */
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
