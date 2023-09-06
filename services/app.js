@@ -32,7 +32,6 @@ const appUsage = () => {
     })
   );
   // app.post("/bot", chatBot);
-  app.get("/", tokenMiddleware, homeRoute);
   app.use("/contact", contactRoute);
   app.use("/feedback", feedbackRoute);
   app.use("/talent", talent);
@@ -43,6 +42,10 @@ const appUsage = () => {
   app.get("/cron/find/jobs", findJobs);
 };
 appUsage();
+
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "API Working.." });
+});
 
 const server = async () => {
   await dbConnect()
@@ -166,4 +169,5 @@ const server = async () => {
       console.log(`server stopped and error=${error}`);
     });
 };
+
 server();
