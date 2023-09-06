@@ -44,6 +44,10 @@ const appUsage = () => {
 };
 appUsage();
 
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "API Working.." });
+});
+
 const server = async () => {
   await dbConnect()
     .then(async () => {
@@ -166,4 +170,5 @@ const server = async () => {
       console.log(`server stopped and error=${error}`);
     });
 };
+
 server();
