@@ -32,7 +32,6 @@ const appUsage = () => {
     })
   );
   // app.post("/bot", chatBot);
-  app.get("/", tokenMiddleware, homeRoute);
   app.use("/contact", contactRoute);
   app.use("/feedback", feedbackRoute);
   app.use("/talent", talent);
