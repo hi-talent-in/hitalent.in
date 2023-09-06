@@ -77,7 +77,7 @@ const jwtTokenFunc = async (res, user) => {
     const jobsArr = await KeyValuePairs.findOne({ where: { key: "jobs" } });
     return res.status(200).json({
       tokens: tokens,
-      jobsArr: jobsArr.value,
+      jobsArr: jobsArr && jobsArr.value,
     });
   } catch (error) {
     return res.status(400).json({ error: error.message });
