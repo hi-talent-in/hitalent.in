@@ -14,12 +14,18 @@ export const sequelize = new Sequelize(dbName, dbUser, dbPass, {
   logging: false,
 });
 
-const client = new Client({
+const config = {
   host: dbHost,
   port: dbPort,
   user: dbUser,
   password: dbPass,
   database: dbName,
+};
+
+console.log(config);
+
+const client = new Client({
+  ...config,
   connectionTimeoutMillis: 10000,
   idle_in_transaction_session_timeout: 30000,
 });
