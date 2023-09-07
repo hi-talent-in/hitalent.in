@@ -22,8 +22,6 @@ const config = {
   database: dbName,
 };
 
-console.log(config);
-
 const client = new Client({
   ...config,
   connectionTimeoutMillis: 10000,
