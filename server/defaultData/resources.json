@@ -1,0 +1,3150 @@
+{
+  "3": [
+    { "name": "Duolingo", "link": "https://www.duolingo.com/" },
+    { "name": "Memrise", "link": "https://www.memrise.com/" }
+  ],
+  "4": [
+    { "name": "Duolingo", "link": "https://www.duolingo.com/" },
+    { "name": "Memrise", "link": "https://www.memrise.com/" }
+  ],
+  "5": [
+    { "name": "Grammarly", "link": "https://www.grammarly.com/grammar-check" }
+  ],
+  "6": [
+    { "name": "Duolingo", "link": "https://www.duolingo.com/" },
+    { "name": "Memrise", "link": "https://www.memrise.com/" }
+  ],
+  "9": [
+    { "name": "Duolingo", "link": "https://www.duolingo.com/" },
+    { "name": "Memrise", "link": "https://www.memrise.com/" }
+  ],
+  "10": [
+    { "name": "Duolingo", "link": "https://www.duolingo.com/" },
+    { "name": "Memrise", "link": "https://www.memrise.com/" }
+  ],
+  "11": [
+    { "name": "Grammarly", "link": "https://www.grammarly.com/grammar-check" }
+  ],
+  "12": [
+    { "name": "Duolingo", "link": "https://www.duolingo.com/" },
+    { "name": "Memrise", "link": "https://www.memrise.com/" }
+  ],
+  "15": [
+    { "name": "Duolingo", "link": "https://www.duolingo.com/" },
+    { "name": "Memrise", "link": "https://www.memrise.com/" }
+  ],
+  "16": [
+    { "name": "Duolingo", "link": "https://www.duolingo.com/" },
+    { "name": "Memrise", "link": "https://www.memrise.com/" },
+    { "name": "Grammarly", "link": "https://www.grammarly.com/grammar-check" }
+  ],
+  "17": [
+    { "name": "Duolingo", "link": "https://www.duolingo.com/" },
+    { "name": "Memrise", "link": "https://www.memrise.com/" }
+  ],
+  "18": [
+    { "name": "Duolingo", "link": "https://www.duolingo.com/" },
+    { "name": "Grammarly", "link": "https://www.grammarly.com/grammar-check" },
+    { "name": "Memrise", "link": "https://www.memrise.com/" }
+  ],
+  "20": [
+    {
+      "name": "Youtube Hindi Video",
+      "link": "https://www.youtube.com/watch?v=Xs6E-MAJbfE"
+    },
+    {
+      "name": "Youtube English Video",
+      "link": "https://www.youtube.com/watch?v=Z9QbYZh1YXY"
+    },
+    { "name": "Agile 101", "link": "https://www.easyagile.com/blog/agile-101/" }
+  ],
+  "21": [
+    {
+      "name": "Youtube Hindi Video",
+      "link": "https://youtube.com/watch?v=HzJzB0nQYlk"
+    }
+  ],
+  "22": [
+    {
+      "name": "Google Document Guide",
+      "link": "https://docs.google.com/document/d/1w0X-MecqBXPVbgNm5yRcdaFAs7c7c8SzI7gzEanaTyw/edit?usp=sharing"
+    },
+    {
+      "name": "Official Jira Guides",
+      "link": "https://www.atlassian.com/software/jira/guides/getting-started/introduction#what-is-jira-software"
+    }
+  ],
+  "23": [
+    {
+      "name": "Official Jira Guides",
+      "link": "https://www.atlassian.com/software/jira/guides/getting-started/basics#step-4-create-an-issue:~:text=Step%204%20%2D-,Create%20an%20issue,-Issues%20are%20the"
+    }
+  ],
+  "25": [
+    {
+      "name": "Install Git on Windows",
+      "link": "https://www.atlassian.com/git/tutorials/install-git#:~:text=with%20Bitbucket%20Cloud-,Install%20Git%20on%20Windows,-Git%20for%20Windows"
+    },
+    {
+      "name": "Install Git on Linux",
+      "link": "https://www.atlassian.com/git/tutorials/install-git#:~:text=with%20Bitbucket%20Cloud-,Install%20Git%20on%20Linux,-Debian%20/%20Ubuntu%20(apt"
+    },
+    { "name": "Git Download", "link": "https://git-scm.com/downloads" },
+    {
+      "name": "Git Configuration",
+      "link": "https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup"
+    }
+  ],
+  "26": [
+    {
+      "name": "Git repo",
+      "link": "https://docs.github.com/en/get-started/quickstart/create-a-repo"
+    }
+  ],
+  "27": [
+    { "name": "Git clone", "link": "https://github.com/git-guides/git-clone" }
+  ],
+  "28": [{ "name": "Git add", "link": "https://www.javatpoint.com/git-add" }],
+  "29": [
+    { "name": "Git commit", "link": "https://www.javatpoint.com/git-commit" }
+  ],
+  "30": [{ "name": "Git push", "link": "https://www.javatpoint.com/git-push" }],
+  "31": [{ "name": "Git pull", "link": "https://www.javatpoint.com/git-pull" }],
+  "32": [
+    {
+      "name": "JavaScript vs Python",
+      "link": "https://www.simplilearn.com/tutorials/programming-tutorial/javascript-vs-python"
+    }
+  ],
+  "35": [
+    {
+      "name": "Youtube Video Link",
+      "link": "https://www.youtube.com/watch?v=gfDE2a7MKjA"
+    }
+  ],
+  "36": [
+    {
+      "name": "Youtube Video Link",
+      "link": "https://www.youtube.com/watch?v=XKHEtdqhLK8"
+    }
+  ],
+  "37": [
+    {
+      "name": "W3Schools",
+      "link": "https://www.w3schools.com/python/python_datatypes.asp"
+    },
+    {
+      "name": "Digital Ocean Python Tutorial",
+      "link": "https://www.digitalocean.com/community/tutorials/python-data-types"
+    },
+    {
+      "name": "Python Data Types - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/python-exercises/python-data-types.php"
+    }
+  ],
+  "38": [
+    {
+      "name": "Python variable names",
+      "link": "https://www.w3schools.com/python/python_variables_names.asp"
+    },
+    {
+      "name": "Multiple variables",
+      "link": "https://www.w3schools.com/python/python_variables_multiple.asp"
+    },
+    {
+      "name": "Print statement",
+      "link": "https://www.w3schools.com/python/python_variables_output.asp"
+    },
+    {
+      "name": "Python variables",
+      "link": "https://www.w3schools.com/python/python_variables.asp"
+    }
+  ],
+  "39": [
+    {
+      "name": "Python Booleans",
+      "link": "https://www.w3schools.com/python/python_booleans.asp"
+    }
+  ],
+  "40": [
+    {
+      "name": "Python strings",
+      "link": "https://www.w3schools.com/python/python_strings.asp"
+    },
+    {
+      "name": "Python Data Type: String - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/python-exercises/string/"
+    }
+  ],
+  "41": [
+    {
+      "name": "Python operators",
+      "link": "https://www.w3schools.com/python/python_operators.asp"
+    }
+  ],
+  "42": [
+    {
+      "name": "Python conditions",
+      "link": "https://www.w3schools.com/python/python_conditions.asp"
+    },
+    {
+      "name": "Python Conditional Statements and loops",
+      "link": "https://www.w3resource.com/python-exercises/python-conditional-statements-and-loop-exercises.php"
+    }
+  ],
+  "43": [
+    {
+      "name": "Arrays vs Lists",
+      "link": "https://www.freecodecamp.org/news/python-array-tutorial-define-index-methods/"
+    },
+    {
+      "name": "Lists",
+      "link": "https://www.w3schools.com/python/python_lists.asp"
+    },
+    {
+      "name": "Python Data Type: List - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/python-exercises/list/"
+    }
+  ],
+  "44": [
+    {
+      "name": "Dictionaries",
+      "link": "https://www.w3schools.com/python/python_dictionaries.asp"
+    },
+    {
+      "name": "Python Data Types: Dictionary - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/python-exercises/dictionary/"
+    }
+  ],
+  "46": [
+    {
+      "name": "Using Branches",
+      "link": "https://www.atlassian.com/git/tutorials/using-branches"
+    },
+    {
+      "name": "Google Document",
+      "link": "https://docs.google.com/document/d/1HkmJbES2VBw2xPP-NvAwC83RIESSXu0Q48ahN8DjOl4/edit?usp=sharing"
+    },
+    {
+      "name": "Git Branching",
+      "link": "https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"
+    }
+  ],
+  "47": [
+    {
+      "name": "Git Remote",
+      "link": "https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes"
+    }
+  ],
+  "48": [
+    {
+      "name": "Git Undoing Changes",
+      "link": "https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things"
+    },
+    {
+      "name": "Atlassian - Undoing Changes",
+      "link": "https://www.atlassian.com/git/tutorials/undoing-changes"
+    }
+  ],
+  "49": [
+    {
+      "name": "Git Branching",
+      "link": "https://git-scm.com/book/en/v2/Git-Branching-Branch-Management"
+    }
+  ],
+  "51": [
+    {
+      "name": "GitHub Collaboration",
+      "link": "https://guides.github.com/activities/hello-world/"
+    },
+    {
+      "name": "What is collaboration in Git?",
+      "link": "https://www.geeksforgeeks.org/what-is-collaboration-in-git/"
+    },
+    {
+      "name": "Collaborating on GitHub",
+      "link": "https://www.youtube.com/watch?v=MnUd31TvBoU"
+    }
+  ],
+  "52": [
+    {
+      "name": "Youtube video",
+      "link": "https://www.youtube.com/watch?v=LuL60r-XnL4"
+    }
+  ],
+  "53": [
+    {
+      "name": "Sets",
+      "link": "https://www.w3schools.com/python/python_sets.asp"
+    },
+    {
+      "name": "Tuples",
+      "link": "https://www.w3schools.com/python/python_tuples.asp"
+    },
+    {
+      "name": "Python Data Types: Tuple - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/python-exercises/tuple/"
+    }
+  ],
+  "55": [
+    {
+      "name": "What are control flow statements in Python?",
+      "link": "https://www.educative.io/answers/what-are-control-flow-statements-in-python"
+    },
+    {
+      "name": "If/else",
+      "link": "https://www.geeksforgeeks.org/python-if-else/"
+    },
+    {
+      "name": "Control Flow Statements",
+      "link": "https://pynative.com/python-control-flow-statements/#:~:text=statement%20in%20Python-,Control%20Flow%20Statements,-The%20flow%20control"
+    },
+    {
+      "name": "Python Conditional Statements and loops",
+      "link": "https://www.w3resource.com/python-exercises/python-conditional-statements-and-loop-exercises.php"
+    }
+  ],
+  "56": [
+    {
+      "name": "For loops",
+      "link": "https://www.w3schools.com/python/python_for_loops.asp"
+    },
+    {
+      "name": "Python for Loop",
+      "link": "https://www.programiz.com/python-programming/for-loop#:~:text=while%20loop-,Python%20for%20Loop,-In%20Python%2C%20the"
+    },
+    {
+      "name": "Python Conditional Statements and loops",
+      "link": "https://www.w3resource.com/python-exercises/python-conditional-statements-and-loop-exercises.php"
+    }
+  ],
+  "57": [
+    {
+      "name": "While Loops",
+      "link": "https://www.w3schools.com/python/python_while_loops.asp"
+    },
+    {
+      "name": "Python while Loop",
+      "link": "https://www.programiz.com/python-programming/while-loop#:~:text=loop.-,Python%20while%20Loop,-Python"
+    },
+    {
+      "name": "Python Conditional Statements and loops",
+      "link": "https://www.w3resource.com/python-exercises/python-conditional-statements-and-loop-exercises.php"
+    }
+  ],
+  "58": [
+    {
+      "name": "Functions",
+      "link": "https://www.w3schools.com/python/python_functions.asp"
+    },
+    {
+      "name": "Lambda Functions",
+      "link": "https://www.w3schools.com/python/python_lambda.asp"
+    },
+    {
+      "name": "Scopes",
+      "link": "https://www.w3schools.com/python/python_scope.asp"
+    },
+    {
+      "name": "Python functions - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/python-exercises/python-functions-exercises.php"
+    }
+  ],
+  "59": [
+    {
+      "name": "List Methods",
+      "link": "https://www.w3schools.com/python/python_lists_methods.asp"
+    },
+    {
+      "name": "Python List: Advanced - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/python-exercises/list-advanced/index.php"
+    }
+  ],
+  "60": [
+    {
+      "name": "Dictionary methods",
+      "link": "https://www.w3schools.com/python/python_dictionaries_methods.asp"
+    },
+    {
+      "name": "Python Data Types: Dictionary - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/python-exercises/dictionary/"
+    }
+  ],
+  "61": [
+    {
+      "name": "Python Exception Handling",
+      "link": "https://www.geeksforgeeks.org/python-exception-handling/"
+    },
+    {
+      "name": "Python Try Except",
+      "link": "https://www.w3schools.com/python/python_try_except.asp"
+    },
+    {
+      "name": "Python Error Handling",
+      "link": "https://www.w3schools.com/python/gloss_python_error_handling.asp"
+    }
+  ],
+  "62": [
+    {
+      "name": "String methods (You can click on each method to see with examples.)",
+      "link": "https://www.w3schools.com/python/python_strings_methods.asp"
+    },
+    {
+      "name": "Python Data Type: String - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/python-exercises/string/"
+    }
+  ],
+  "63": [
+    {
+      "name": "Set methods",
+      "link": "https://www.w3schools.com/python/python_sets_methods.asp"
+    },
+    {
+      "name": "Python Data Types: Sets - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/python-exercises/sets/"
+    }
+  ],
+  "64": [
+    {
+      "name": "Python Builtin Functions",
+      "link": "https://www.w3schools.com/python/python_ref_functions.asp"
+    }
+  ],
+  "65": [
+    {
+      "name": "Youtube Video",
+      "link": "https://www.youtube.com/watch?v=chx9Rs41W6g"
+    }
+  ],
+  "66": [
+    {
+      "name": "JavaScript data types",
+      "link": "https://www.programiz.com/javascript/data-types#:~:text=a%20string%20data.-,JavaScript%20Data%20Types,-There%20are%20eight"
+    },
+    {
+      "name": "Data Types",
+      "link": "https://www.w3schools.com/js/js_datatypes.asp"
+    },
+    {
+      "name": "JavaScript basic - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/javascript-exercises/javascript-basic-exercises.php"
+    }
+  ],
+  "67": [
+    {
+      "name": "JavaScript variables",
+      "link": "https://javascript.info/variables"
+    },
+    {
+      "name": "Variables",
+      "link": "https://www.w3schools.com/js/js_variables.asp"
+    },
+    {
+      "name": "JavaScript basic - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/javascript-exercises/javascript-basic-exercises.php"
+    }
+  ],
+  "68": [
+    {
+      "name": "Strings",
+      "link": "https://www.w3schools.com/js/js_strings.asp"
+    },
+    {
+      "name": "String-Search",
+      "link": "https://www.w3schools.com/js/js_string_search.asp"
+    },
+    {
+      "name": "JavaScript String - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/javascript-exercises/javascript-string-exercises.php"
+    }
+  ],
+  "69": [
+    {
+      "name": "Operators",
+      "link": "https://www.w3schools.com/js/js_operators.asp"
+    },
+    {
+      "name": "Arithmatic Operators",
+      "link": "https://www.w3schools.com/js/js_arithmetic.asp"
+    }
+  ],
+  "70": [
+    {
+      "name": "If/Else conditions",
+      "link": "https://www.w3schools.com/js/js_if_else.asp"
+    },
+    {
+      "name": "Conditionals",
+      "link": "https://codeinstitute.net/global/blog/control-flow-in-javascript/#:~:text=variable%20fulfils%20it.-,Conditionals,-Conditional%20statements%20are"
+    },
+    {
+      "name": "JavaScript conditional statements and loops - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php"
+    }
+  ],
+  "71": [
+    {
+      "name": "Arrays in JS",
+      "link": "https://www.w3schools.com/js/js_arrays.asp"
+    },
+    {
+      "name": "JavaScript array - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/javascript-exercises/javascript-array-exercises.php"
+    }
+  ],
+  "72": [
+    {
+      "name": "Objects in JS",
+      "link": "https://www.w3schools.com/js/js_objects.asp"
+    },
+    {
+      "name": "JavaScript Object - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/javascript-exercises/javascript-object-exercises.php"
+    }
+  ],
+  "73": [{ "name": "Guide", "link": "/freecodecamp/guide" }],
+  "74": [
+    {
+      "name": "FreeCodeCamp",
+      "link": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
+    }
+  ],
+  "76": [
+    {
+      "name": "What is Control Flow and why do we need it?",
+      "link": "https://medium.com/geekculture/control-flow-in-javascript-conditional-statements-acfdda94c97a#:~:text=What%20is%20Control%20Flow%20and%20why%20do%20we%20need%20it%3F"
+    },
+    {
+      "name": "JavaScript If/else",
+      "link": "https://www.w3schools.com/js/js_if_else.asp"
+    },
+    {
+      "name": "Switch statements",
+      "link": "https://www.w3schools.com/js/js_switch.asp"
+    },
+    {
+      "name": "JavaScript conditional statements and loops - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php"
+    }
+  ],
+  "77": [
+    {
+      "name": "JavaScript For loop",
+      "link": "https://www.w3schools.com/js/js_loop_for.asp"
+    },
+    {
+      "name": "JavaScript For in loop",
+      "link": "https://www.w3schools.com/js/js_loop_forin.asp"
+    },
+    {
+      "name": "JavaScript For Of loop",
+      "link": "https://www.w3schools.com/js/js_loop_forof.asp"
+    },
+    {
+      "name": "JavaScript conditional statements and loops - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php"
+    }
+  ],
+  "78": [
+    {
+      "name": "JS While Loop",
+      "link": "https://www.w3schools.com/js/js_loop_while.asp"
+    },
+    {
+      "name": "JavaScript while Loop",
+      "link": "https://www.programiz.com/javascript/while-loop#:~:text=loops.-,JavaScript%20while%20Loop,-The%20syntax%20of"
+    },
+    {
+      "name": "JavaScript conditional statements and loops - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php"
+    }
+  ],
+  "79": [
+    {
+      "name": "JS Functions",
+      "link": "https://www.w3schools.com/js/js_functions.asp"
+    },
+    {
+      "name": "Types of funtions",
+      "link": "https://blog.sessionstack.com/how-javascript-works-the-different-ways-of-declaring-a-function-5-best-practices-8a0324c06fe2"
+    },
+    {
+      "name": "JavaScript functions - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php"
+    }
+  ],
+  "80": [
+    {
+      "name": "JS Errors",
+      "link": "https://www.w3schools.com/js/js_errors.asp"
+    },
+    {
+      "name": "Exception handling statements",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#:~:text=Copy%20to%20Clipboard-,Exception%20handling%20statements,-You%20can%20throw"
+    }
+  ],
+  "81": [
+    {
+      "name": "String methods",
+      "link": "https://www.w3schools.com/js/js_string_methods.asp"
+    },
+    {
+      "name": "JavaScript String - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/javascript-exercises/javascript-string-exercises.php"
+    }
+  ],
+  "82": [
+    {
+      "name": "JS Array Methods",
+      "link": "https://www.w3schools.com/jsref/jsref_obj_array.asp"
+    },
+    {
+      "name": "JavaScript array - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/javascript-exercises/javascript-array-exercises.php"
+    }
+  ],
+  "83": [
+    {
+      "name": "JS Object Methods",
+      "link": "https://www.w3schools.com/js/js_object_methods.asp"
+    },
+    {
+      "name": "How To Use Object Methods in JavaScript?",
+      "link": "https://www.digitalocean.com/community/tutorials/how-to-use-object-methods-in-javascript"
+    },
+    {
+      "name": "JavaScript Object - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/javascript-exercises/javascript-object-exercises.php"
+    }
+  ],
+  "84": [
+    {
+      "name": "Frontend vs Backend vs FullStack (Simplilearn)",
+      "link": "https://www.simplilearn.com/full-stack-vs-front-end-vs-back-end-developers-article"
+    }
+  ],
+  "91": [
+    {
+      "name": "(New) Responsive Web Design",
+      "link": "https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+    }
+  ],
+  "93": [
+    {
+      "name": "Video Course",
+      "link": "https://www.youtube.com/watch?v=BsDoLVMnmZs"
+    },
+    {
+      "name": "Go to video Course 2",
+      "link": "https://www.youtube.com/watch?v=HD13eq_Pmp8"
+    }
+  ],
+  "94": [
+    {
+      "name": "HTML Introduction",
+      "link": "https://www.w3schools.com/html/html_intro.asp"
+    }
+  ],
+  "95": [
+    {
+      "name": "HTML Text Formatting",
+      "link": "https://www.w3schools.com/html/html_formatting.asp"
+    },
+    {
+      "name": "HTML Links",
+      "link": "https://www.w3schools.com/html/html_links.asp"
+    }
+  ],
+  "96": [
+    {
+      "name": "HTML Media",
+      "link": "https://www.w3schools.com/html/html_media.asp"
+    },
+    {
+      "name": "HTML Images",
+      "link": "https://www.geeksforgeeks.org/html-images/"
+    },
+    {
+      "name": "How to add multimedia to HTML?",
+      "link": "https://www.codewithrandom.com/2022/12/10/how-to-add-multimedia-to-html/"
+    }
+  ],
+  "97": [
+    {
+      "name": "HTML Tables",
+      "link": "https://www.w3schools.com/html/html_tables.asp"
+    },
+    {
+      "name": "HTML Links",
+      "link": "https://www.w3schools.com/html/html_lists.asp"
+    }
+  ],
+  "98": [
+    { "name": "Forms", "link": "https://www.geeksforgeeks.org/html-forms/" },
+    {
+      "name": "HTML Forms",
+      "link": "https://www.w3schools.com/html/html_forms.asp"
+    }
+  ],
+  "100": [
+    {
+      "name": "Youtube video course 1",
+      "link": "https://www.youtube.com/watch?v=Edsxf_NBFrw"
+    },
+    {
+      "name": "Youtube video course 2",
+      "link": "https://www.youtube.com/watch?v=iG2jotQo9NI"
+    }
+  ],
+  "101": [
+    { "name": "Intro", "link": "https://www.w3schools.com/css/css_intro.asp" }
+  ],
+  "102": [
+    {
+      "name": "Box Model",
+      "link": "https://www.w3schools.com/css/css_boxmodel.asp"
+    },
+    {
+      "name": "Introduction to the CSS basic box model",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model"
+    }
+  ],
+  "103": [
+    {
+      "name": "Selectors",
+      "link": "https://www.w3schools.com/css/css_selectors.asp"
+    },
+    {
+      "name": "CSS selectors",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors"
+    }
+  ],
+  "104": [
+    {
+      "name": "Website Layout",
+      "link": "https://www.w3schools.com/css/css_website_layout.asp"
+    },
+    {
+      "name": "CSS Layout",
+      "link": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout"
+    }
+  ],
+  "105": [
+    {
+      "name": "HTML Responsive",
+      "link": "https://www.w3schools.com/html/html_responsive.asp"
+    },
+    {
+      "name": "Responsive-Web-Design",
+      "link": "https://kinsta.com/blog/responsive-web-design/"
+    }
+  ],
+  "106": [
+    {
+      "name": "Transitions & Animations",
+      "link": "https://learn.shayhowe.com/advanced-html-css/transitions-animations/"
+    },
+    {
+      "name": "An Interactive Guide to CSS Transitions",
+      "link": "https://www.joshwcomeau.com/animation/css-transitions/"
+    },
+    {
+      "name": "The Main Difference Between CSS Animations & Transitions",
+      "link": "https://blog.hubspot.com/website/css-transition-vs-animation"
+    }
+  ],
+  "108": [
+    {
+      "name": "Youtube Course 1",
+      "link": "https://www.youtube.com/watch?v=lLeZ8Cr2YVM"
+    },
+    {
+      "name": "Youtube Course 2",
+      "link": "https://www.youtube.com/watch?v=XxXyfkrP298"
+    }
+  ],
+  "109": [
+    {
+      "name": "FreeCodeCamp",
+      "link": "https://www.freecodecamp.org/learn/front-end-development-libraries/"
+    }
+  ],
+  "110": [
+    {
+      "name": "Create react app and show hello <your name> and learn folder structure",
+      "link": "https://create-react-app.dev/docs/getting-started/"
+    }
+  ],
+  "111": [
+    {
+      "name": "Functional Components",
+      "link": "https://www.robinwieruch.de/react-function-component/#react-function-component-example:~:text=Component%20as%20Function%22.-,TABLE%20OF%20CONTENTS,-React%20Function%20Component"
+    },
+    {
+      "name": "ReactJS Functional Components",
+      "link": "https://www.geeksforgeeks.org/reactjs-functional-components/"
+    },
+    {
+      "name": "Understanding Rendering in React",
+      "link": "https://dev.to/teo_garcia/understanding-rendering-in-react-i5i"
+    },
+    {
+      "name": "Components Conditional Rendering",
+      "link": "https://www.robinwieruch.de/conditional-rendering-react/#:~:text=for%20these%20patterns.-,TABLE%20OF%20CONTENTS,-Conditional%20Rendering%20in"
+    }
+  ],
+  "112": [
+    {
+      "name": "React State",
+      "link": "https://www.w3schools.com/react/react_state.asp"
+    }
+  ],
+  "113": [
+    {
+      "name": "React Events",
+      "link": "https://www.w3schools.com/react/react_events.asp"
+    },
+    {
+      "name": "Event Handler In ReactJS",
+      "link": "https://www.robinwieruch.de/react-event-handler/#:~:text=callback%20event%20handlers.-,EVENT%20HANDLER%20IN%20REACT,-First%2C%20we%20will"
+    },
+    {
+      "name": "Introduction to events",
+      "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#:~:text=different%20programming%20environments.-,What%20is%20an%20event%3F,-Events%20are%20things"
+    }
+  ],
+  "114": [
+    {
+      "name": "How to useState in React?",
+      "link": "https://www.robinwieruch.de/react-usestate-hook/#:~:text=How%20to%20useState%20in%20React"
+    },
+    {
+      "name": "How to useEffect in React?",
+      "link": "https://www.robinwieruch.de/react-useeffect-hook/#:~:text=How%20to%20useEffect%20in%20React"
+    }
+  ],
+  "115": [
+    {
+      "name": "React Router 6 Tutorial",
+      "link": "https://www.robinwieruch.de/react-router/#:~:text=React%20Router%206%20Tutorial"
+    }
+  ],
+  "116": [
+    {
+      "name": "React CSS Styling",
+      "link": "https://medium.com/@ralph1786/using-css-modules-in-react-app-c2079eadbb87"
+    },
+    {
+      "name": "Project GitHub Repository",
+      "link": "https://github.com/css-modules/css-modules"
+    }
+  ],
+  "117": [
+    {
+      "name": "How To Use Axios With React?",
+      "link": "https://www.freecodecamp.org/news/how-to-use-axios-with-react/"
+    }
+  ],
+  "119": [
+    {
+      "name": "What is Database?",
+      "link": "https://www.scaler.com/topics/dbms/what-is-database/"
+    },
+    {
+      "name": "Install PostgreSQL on Windows",
+      "link": "https://www.postgresqltutorial.com/install-postgresql/"
+    },
+    {
+      "name": "Install PostgreSQL on Ubuntu",
+      "link": "https://www.postgresqltutorial.com/install-postgresql-linux/"
+    },
+    {
+      "name": "What is PostgreSQL?",
+      "link": "https://www.postgresqltutorial.com/what-is-postgresql/"
+    },
+    { "name": "MongoDB", "link": "https://www.w3schools.com/mongodb/" }
+  ],
+  "120": [
+    {
+      "name": "Filtering Data (PostgreSQL)",
+      "link": "https://www.postgresqltutorial.com/#:~:text=Section%202.-,Filtering%20Data,-Where%C2%A0%E2%80%93%20filter%20rows"
+    },
+    {
+      "name": "Querying Data (PostgreSQL)",
+      "link": "https://www.postgresqltutorial.com/#:~:text=Section%201.-,Querying%20Data,-Select%C2%A0%E2%80%93%20show%20you"
+    },
+    {
+      "name": "W3Schools (Mongodb)",
+      "link": "https://www.w3schools.com/mongodb/"
+    }
+  ],
+  "122": [
+    {
+      "name": "Youtube English Course 1",
+      "link": "https://www.youtube.com/watch?v=7t2alSnE2-I"
+    },
+    {
+      "name": "Youtube English Course 2",
+      "link": "https://www.youtube.com/watch?v=GN6ICac3OXY"
+    }
+  ],
+  "123": [
+    {
+      "name": "What is an API?",
+      "link": "https://www.dataquest.io/blog/python-api-tutorial/#:~:text=API%20tutorial.-,What%20is%20an%20API%3F,-An%20API%2C%20or"
+    }
+  ],
+  "124": [
+    {
+      "name": "An Endpoint With Path Params",
+      "link": "https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-2-url-path-parameters/#:~:text=An%20Endpoint%20With%20Path%20Params"
+    },
+    {
+      "name": "An Endpoint With Query Params",
+      "link": "https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-3-query-parameters/#:~:text=Practical%20Section%20%2D-,An%20Endpoint%20With%20Query%20Params,-If%20you%20haven%E2%80%99t"
+    }
+  ],
+  "125": [
+    {
+      "name": "Youtube Video",
+      "link": "https://www.youtube.com/watch?v=GkrDmUEEEtM"
+    },
+    {
+      "name": "Introduction to Pydantic",
+      "link": "https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-4-pydantic-schemas/#:~:text=Pydantic%20with%20FastAPI-,Introduction%20to%20Pydantic,-Pydantic%20describes%20itself"
+    }
+  ],
+  "126": [
+    {
+      "name": "Building a REST API in FastAPI + PostgreSQL",
+      "link": "https://www.youtube.com/watch?v=d_ugoWsvGLI"
+    }
+  ],
+  "127": [
+    {
+      "name": "Adding Basic Error Handling",
+      "link": "https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-5-basic-error-handling/#:~:text=Practical%20Section%20%2D-,Adding%20Basic%20Error%20Handling,-If%20you%20haven%E2%80%99t"
+    },
+    {
+      "name": "How do I integrate custom exception handling with the FastAPI exception handling?",
+      "link": "https://stackoverflow.com/a/72833281"
+    }
+  ],
+  "129": [
+    {
+      "name": "w3schools Intro",
+      "link": "https://www.w3schools.com/nodejs/nodejs_intro.asp"
+    },
+    {
+      "name": "Get Started ",
+      "link": "https://www.w3schools.com/nodejs/nodejs_get_started.asp"
+    }
+  ],
+  "130": [
+    {
+      "name": "CommonJS vs. ES modules in Node.js",
+      "link": "https://blog.logrocket.com/commonjs-vs-es-modules-node-js/#:~:text=African%20in%20Tech.-,CommonJS%20vs.%20ES%20modules%20in%20Node.js,-December%2029%2C%202021"
+    }
+  ],
+  "131": [
+    { "name": "FS-Extra", "link": "https://www.npmjs.com/package/fs-extra" }
+  ],
+  "132": [
+    {
+      "name": "Callback function",
+      "link": "https://developer.mozilla.org/en-US/docs/Glossary/Callback_function#:~:text=See%20also-,Callback%20function,-A%20callback%20function"
+    },
+    {
+      "name": "How to Create Promises in JavaScript?",
+      "link": "https://www.freecodecamp.org/news/javascript-promises-for-beginners/#:~:text=How%20to%20Create%20Promises%20in%20JavaScript"
+    },
+    {
+      "name": "Difference between promise and async await in Node.js",
+      "link": "https://www.geeksforgeeks.org/difference-between-promise-and-async-await-in-node-js/#:~:text=fs.readFile()%20Method-,Difference%20between%20promise%20and%20async%20await%20in%20Node.js,-Difficulty%20Level%20%3A"
+    }
+  ],
+  "133": [
+    {
+      "name": "HTTP Module",
+      "link": "https://www.geeksforgeeks.org/node-js-http-module/"
+    },
+    {
+      "name": "The Built-in HTTP Module",
+      "link": "https://www.w3schools.com/nodejs/nodejs_http.asp#:~:text=The%20Built%2Din%20HTTP%20Module"
+    }
+  ],
+  "134": [
+    {
+      "name": "Python Modules",
+      "link": "https://www.w3schools.com/python/python_modules.asp"
+    },
+    {
+      "name": "Python modules: Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/python-exercises/modules/index.php"
+    }
+  ],
+  "135": [
+    {
+      "name": "File handling",
+      "link": "https://www.w3schools.com/python/python_file_handling.asp"
+    },
+    {
+      "name": "Python File Input Output: Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/python-exercises/file/index.php"
+    }
+  ],
+  "136": [
+    {
+      "name": "Classes",
+      "link": "https://www.w3schools.com/python/python_classes.asp"
+    },
+    {
+      "name": "OOPS in Python",
+      "link": "https://www.geeksforgeeks.org/python-oops-concepts/"
+    },
+    {
+      "name": "Classes and OOPS (Conceptual and Good one.)",
+      "link": "https://realpython.com/python3-object-oriented-programming/"
+    },
+    {
+      "name": "Python Class - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/python-exercises/class-exercises/index.php"
+    }
+  ],
+  "137": [
+    {
+      "name": "Youtube Video",
+      "link": "https://www.youtube.com/watch?v=KEdq7gC_RTA"
+    }
+  ],
+  "138": [
+    {
+      "name": "GeeksForGeeks (Decorators)",
+      "link": "https://www.geeksforgeeks.org/decorators-in-python/"
+    },
+    {
+      "name": "Youtube Video",
+      "link": "https://www.youtube.com/watch?v=r7Dtus7N4pI"
+    },
+    {
+      "name": "Decorators",
+      "link": "https://www.datacamp.com/tutorial/decorators-python\""
+    }
+  ],
+  "139": [
+    {
+      "name": "Python Generators",
+      "link": "https://www.pythontutorial.net/advanced-python/python-generators/"
+    },
+    {
+      "name": "Generator Expressions",
+      "link": "https://www.pythontutorial.net/advanced-python/python-generator-expressions/"
+    }
+  ],
+  "140": [
+    {
+      "name": "List comprehension",
+      "link": "https://www.w3schools.com/python/python_lists_comprehension.asp"
+    },
+    {
+      "name": "Handling Exceptions",
+      "link": "https://www.programiz.com/python-programming/exception-handling"
+    },
+    {
+      "name": "DataType conversion",
+      "link": "https://www.programiz.com/python-programming/type-conversion-and-casting"
+    },
+    {
+      "name": "Python Map - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/python-exercises/map/index.php"
+    },
+    {
+      "name": "Python Lambda - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/python-exercises/lambda/index.php"
+    }
+  ],
+  "141": [
+    { "name": "Classes", "link": "https://javascript.info/classes" },
+    {
+      "name": "Object Oriented Programming in JavaScript",
+      "link": "https://www.freecodecamp.org/news/how-javascript-implements-oop/"
+    },
+    {
+      "name": "What is OOP (Object-oriented Programming)?",
+      "link": "https://www.scaler.com/topics/javascript/oops-in-javascript/"
+    }
+  ],
+  "142": [
+    {
+      "name": "Prototypes",
+      "link": "https://www.programiz.com/javascript/prototype"
+    },
+    {
+      "name": "JS Class Inheritance",
+      "link": "https://www.w3schools.com/js/js_class_inheritance.asp"
+    },
+    {
+      "name": "JS Object Prototypes",
+      "link": "https://www.w3schools.com/js/js_object_prototypes.asp"
+    }
+  ],
+  "143": [
+    {
+      "name": "JavaScript DOM Manipulation Course",
+      "link": "https://www.freecodecamp.org/news/javascript-dom-manipulation/#:~:text=JavaScript%20DOM%20Manipulation%20Course"
+    },
+    {
+      "name": "JS HTML DOM",
+      "link": "https://www.w3schools.com/js/js_htmldom.asp"
+    },
+    {
+      "name": "JavaScript DOM - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/javascript-exercises/javascript-dom-exercises.php"
+    }
+  ],
+  "144": [
+    {
+      "name": "Asynchronous Programming in JavaScript",
+      "link": "https://www.freecodecamp.org/news/asynchronous-programming-in-javascript/"
+    },
+    {
+      "name": "JS Asynchronous",
+      "link": "https://www.w3schools.com/JS/js_asynchronous.asp"
+    },
+    {
+      "name": "Synchronous vs Asynchronous Programming in JavaScript in Hindi",
+      "link": "https://www.youtube.com/watch?v=tBmeblr67U0"
+    }
+  ],
+  "145": [
+    {
+      "name": "setTimeout and setInternval",
+      "link": "https://www.geeksforgeeks.org/java-script-settimeout-setinterval-method/"
+    },
+    {
+      "name": "Callback and it's Hell",
+      "link": "https://www.geeksforgeeks.org/what-to-understand-callback-and-callback-hell-in-javascript/"
+    }
+  ],
+  "147": [
+    {
+      "name": "ORMs",
+      "link": "https://fastapi.tiangolo.com/tutorial/sql-databases/#:~:text=small%20as%20always.-,ORMs,-%C2%B6"
+    },
+    {
+      "name": "Here we will see how to work with SQLAlchemy ORM.",
+      "link": "https://fastapi.tiangolo.com/tutorial/sql-databases/#:~:text=Here%20we%20will%20see%20how%20to%20work%20with%20SQLAlchemy%20ORM."
+    },
+    {
+      "name": "Getting Started with MongoDB and FastAPI.",
+      "link": "https://www.mongodb.com/developer/languages/python/python-quickstart-fastapi/"
+    }
+  ],
+  "148": [
+    {
+      "name": "CRUD Operations | Swagger | PyMongo",
+      "link": "https://www.youtube.com/watch?v=G7hZlOLhhMY"
+    },
+    {
+      "name": "Fastapi RESTful API CRUD postgresql",
+      "link": "https://www.youtube.com/watch?v=d_ugoWsvGLI&t=170s"
+    }
+  ],
+  "149": [
+    {
+      "name": "What is Authentication?",
+      "link": "https://www.okta.com/identity-101/authentication-vs-authorization/#:~:text=access%20management%20(IAM).-,What%20Is%20Authentication%3F,-Authentication%20is%20the"
+    },
+    {
+      "name": "What is  Authorization?",
+      "link": "https://www.okta.com/identity-101/authentication-vs-authorization/#:~:text=alone%20can%20provide.-,What%20Is%20Authorization%3F,-Authorization%20in%20system"
+    },
+    {
+      "name": "Youtube course",
+      "link": "https://www.youtube.com/watch?v=0_seNFCtglk"
+    },
+    {
+      "name": "JWT Auth Overview",
+      "link": "https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-10-auth-jwt/#:~:text=Endpoints%20%2D%20Login%20Flow-,Theory%20Section%20%2D%20JWT%20Auth%20Overview,-What%20Do%20We"
+    }
+  ],
+  "150": [
+    {
+      "name": "Request Files",
+      "link": "https://fastapi.tiangolo.com/tutorial/request-files/#:~:text=Recap-,Request%20Files,%C2%B6,-You%20can%20define"
+    },
+    {
+      "name": "CORS (Cross-Origin Resource Sharing)",
+      "link": "https://fastapi.tiangolo.com/tutorial/cors/#:~:text=More%20info-,CORS%20(Cross%2DOrigin%20Resource%20Sharing),-%C2%B6"
+    },
+    {
+      "name": "Settings and Environment Variables",
+      "link": "https://fastapi.tiangolo.com/advanced/settings/#:~:text=%C2%B6-,You%20could%20have%20a,file%20with%3A,-ADMIN_EMAIL%3D%22deadpool"
+    }
+  ],
+  "151": [
+    {
+      "name": "Httpx Youtube Course",
+      "link": "https://www.youtube.com/watch?v=qAh5dDODJ5k"
+    },
+    {
+      "name": "Python Requests Library",
+      "link": "https://oxylabs.io/blog/python-requests#:~:text=Tutorials-,Python%20Requests%20Library,-Adomas%20Sulcas"
+    },
+    {
+      "name": "How HTTPX compares to the Requests module",
+      "link": "https://oxylabs.io/blog/httpx-vs-requests-vs-aiohttp#:~:text=Requests%20and%20AIOHTTP.-,How%20HTTPX%20compares%20to%20the%20Requests%20module,-Requests%20is%20a"
+    }
+  ],
+  "153": [
+    {
+      "name": "Installing",
+      "link": "https://expressjs.com/en/starter/installing.html"
+    }
+  ],
+  "154": [
+    {
+      "name": "Writing middleware for use in Express apps",
+      "link": "https://expressjs.com/en/guide/writing-middleware.html"
+    },
+    {
+      "name": "What Is Middleware?",
+      "link": "https://www.simplilearn.com/tutorials/express-js-tutorial/about-express-js-middleware"
+    }
+  ],
+  "155": [
+    {
+      "name": "Basic routing",
+      "link": "https://expressjs.com/en/starter/basic-routing.html#:~:text=Resources-,Basic%20routing,-Routing%20refers%20to"
+    },
+    {
+      "name": "Route parameters",
+      "link": "https://expressjs.com/en/guide/routing.html#:~:text=)%0A%7D)-,Route%20parameters,-Route%20parameters%20are"
+    },
+    {
+      "name": "Express routes parameters",
+      "link": "https://stackoverflow.com/a/34705607"
+    },
+    {
+      "name": "Get Query Strings and Parameters in Express.js",
+      "link": "https://stackabuse.com/get-query-strings-and-parameters-in-express-js/"
+    }
+  ],
+  "156": [
+    {
+      "name": "Build a Rest Api with NodeJS (JavaScript), Express, and PostgreSQL",
+      "link": "https://www.youtube.com/watch?v=DihOP19LQdg"
+    },
+    {
+      "name": "Complete CRUD Application with Node, Express & MongoDB",
+      "link": "https://www.youtube.com/watch?v=W1Kttu53qTg"
+    }
+  ],
+  "157": [
+    {
+      "name": "Authentication and Authorization in ExpressJS API Using JWT",
+      "link": "https://www.topcoder.com/thrive/articles/authentication-and-authorization-in-express-js-api-using-jwt"
+    },
+    {
+      "name": "Complete User Authentication & Authorization with JWT in NodeJS, Express & MongoDB ",
+      "link": "https://www.youtube.com/watch?v=jJVwNdeS4Ms"
+    }
+  ],
+  "158": [
+    {
+      "name": "How to use CORS in Node.js with Express",
+      "link": "https://www.section.io/engineering-education/how-to-use-cors-in-nodejs-with-express/"
+    },
+    {
+      "name": "How to Use dotenv in Express",
+      "link": "https://javascript.plainenglish.io/how-to-use-dotenv-in-express-3aa933758ead"
+    },
+    {
+      "name": "How To Use morgan in Your Express Project ",
+      "link": "https://www.digitalocean.com/community/tutorials/nodejs-getting-started-morgan"
+    }
+  ],
+  "160": [
+    {
+      "name": "React Props",
+      "link": "https://www.w3schools.com/react/react_props.asp"
+    },
+    {
+      "name": "A good tutorial explaining Props (Recommended)",
+      "link": "https://www.robinwieruch.de/react-pass-props-to-component/#:~:text=React%20props%20examples.-,TABLE%20OF%20CONTENTS,-React%20Component%20Props"
+    },
+    {
+      "name": "what-is-the-difference-between-state-and-props-in-react?",
+      "link": "https://stackoverflow.com/a/50229738"
+    },
+    {
+      "name": "How to update state from props in React?",
+      "link": "https://www.robinwieruch.de/react-derive-state-props/#:~:text=RSS-,How%20to%20update%20state%20from%20props%20in%20React,-MAY%2018%2C%202020"
+    }
+  ],
+  "161": [
+    {
+      "name": "React Hooks",
+      "link": "https://www.w3schools.com/react/react_hooks.asp#:~:text=React%20Sass%20Styling-,React%20Hooks,-What%20is%20a"
+    },
+    {
+      "name": "Hooks Reference",
+      "link": "https://reactjs.org/docs/hooks-reference.html"
+    },
+    {
+      "name": "sd",
+      "link": "https://www.robinwieruch.de/react-derive-state-props/#:~:text=RSS-,How%20to%20update%20state%20from%20props%20in%20React,-MAY%2018%2C%202020"
+    }
+  ],
+  "162": [
+    {
+      "name": "React CSS Styling",
+      "link": "https://www.robinwieruch.de/react-css-styling/#:~:text=CSS%20style%20file.-,TABLE%20OF%20CONTENTS,-CSS%2Din%2DCSS"
+    },
+    {
+      "name": "Tailwind CSS Crash Course",
+      "link": "https://www.youtube.com/watch?v=UBOj6rqRUME"
+    },
+    {
+      "name": "Material UI React Tutorial",
+      "link": "https://www.youtube.com/watch?v=UBOj6rqRUME"
+    }
+  ],
+  "163": [
+    {
+      "name": "Components and Props",
+      "link": "https://reactjs.org/docs/components-and-props.html"
+    },
+    {
+      "name": "React Class Components",
+      "link": "https://www.w3schools.com/react/react_class.asp"
+    }
+  ],
+  "164": [
+    {
+      "name": "how-to-create-forms-in-react-using-react-hook-form?",
+      "link": "https://www.freecodecamp.org/news/how-to-create-forms-in-react-using-react-hook-form/"
+    },
+    {
+      "name": "building-forms-formik-react",
+      "link": "https://blog.logrocket.com/building-forms-formik-react/"
+    },
+    {
+      "name": "react_forms",
+      "link": "https://www.w3schools.com/react/react_forms.asp"
+    }
+  ],
+  "165": [
+    {
+      "name": "useContext vs useState vs useReducer",
+      "link": "https://www.robinwieruch.de/react-state-usereducer-usestate-usecontext/#:~:text=step%20by%20step.-,TABLE%20OF%20CONTENTS,-React%20useState%3A%20simple"
+    },
+    {
+      "name": "Redux Tutorial - Beginner to Advanced",
+      "link": "https://www.youtube.com/watch?v=zrs7u6bdbUw"
+    },
+    {
+      "name": "Zustand (recommended)",
+      "link": "https://github.com/pmndrs/zustand"
+    }
+  ],
+  "166": [
+    {
+      "name": "Closures",
+      "link": "https://www.freecodecamp.org/news/lets-learn-javascript-closures-66feb44f6a44/#:~:text=Let%E2%80%99s%20get%20started!-,What%20is%20a%20closure%3F,-Closures%20are%20an"
+    },
+    {
+      "name": "Lexical Environment",
+      "link": "https://www.freecodecamp.org/news/lets-learn-javascript-closures-66feb44f6a44/#:~:text=excellent%20article.-,Lexical%20Environment,-By%20definition%3A"
+    },
+    {
+      "name": "Closure in JavaScript",
+      "link": "https://www.geeksforgeeks.org/closure-in-javascript/"
+    }
+  ],
+  "167": [
+    {
+      "name": "(New) Responsive Web Design",
+      "link": "https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+    }
+  ],
+  "169": [
+    {
+      "name": "Java Basic Syntax",
+      "link": "https://www.tutorialspoint.com/java/java_basic_syntax.htm"
+    },
+    {
+      "name": "Java Basic Syntax - II",
+      "link": "https://www.geeksforgeeks.org/java-basic-syntax/"
+    },
+    {
+      "name": "Java JVM, JRE and JDK",
+      "link": "https://www.programiz.com/java-programming/jvm-jre-jdk"
+    },
+    {
+      "name": "Java Hello World",
+      "link": "https://www.programiz.com/java-programming/hello-world"
+    },
+    {
+      "name": "Java Basic Programming : Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/java-exercises/basic/index.php"
+    }
+  ],
+  "170": [
+    {
+      "name": "Java Data Types",
+      "link": "https://www.w3schools.com/java/java_data_types.asp"
+    },
+    {
+      "name": "Data Types in Java",
+      "link": "https://www.geeksforgeeks.org/data-types-in-java/"
+    },
+    {
+      "name": "Java Data Types - II",
+      "link": "https://www.programiz.com/java-programming/variables-primitive-data-types"
+    },
+    {
+      "name": "Java Data Types: Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/java-exercises/datatypes/index.php"
+    }
+  ],
+  "171": [
+    {
+      "name": "Java Variables",
+      "link": "https://www.w3schools.com/java/java_variables.asp"
+    },
+    {
+      "name": "Variables in Java",
+      "link": "https://www.geeksforgeeks.org/variables-in-java/"
+    },
+    {
+      "name": "Java Variables - II",
+      "link": "https://www.programiz.com/java-programming/variables-literals"
+    }
+  ],
+  "172": [
+    {
+      "name": "Strings in Java",
+      "link": "https://www.geeksforgeeks.org/strings-in-java/"
+    },
+    {
+      "name": "Strings - Learning the Java Language",
+      "link": "https://docs.oracle.com/javase/tutorial/java/data/strings.html"
+    },
+    {
+      "name": "Java Strings",
+      "link": "https://www.w3schools.com/java/java_strings.asp"
+    },
+    {
+      "name": "Java String: Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/java-exercises/string/index.php"
+    }
+  ],
+  "173": [
+    {
+      "name": "Java Arrays",
+      "link": "https://www.w3schools.com/java/java_arrays.asp"
+    },
+    {
+      "name": "Arrays - Learning the Java Language",
+      "link": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html"
+    },
+    {
+      "name": "Arrays in Java",
+      "link": "https://www.geeksforgeeks.org/arrays-in-java/"
+    },
+    {
+      "name": "Java Array (With Examples)",
+      "link": "https://www.programiz.com/java-programming/arrays"
+    },
+    {
+      "name": "Java Array: Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/java-exercises/array/index.php"
+    }
+  ],
+  "174": [
+    {
+      "name": "Java if...else",
+      "link": "https://www.programiz.com/java-programming/if-else-statement"
+    },
+    {
+      "name": "Java Conditions and If Statements",
+      "link": "https://www.w3schools.com/java/java_conditions.asp"
+    },
+    {
+      "name": "Java if-else",
+      "link": "https://www.geeksforgeeks.org/java-if-else-statement-with-examples/"
+    },
+    {
+      "name": "Java Conditional Statement : Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/java-exercises/conditional-statement/index.php"
+    }
+  ],
+  "175": [
+    {
+      "name": "Java Booleans",
+      "link": "https://www.w3schools.com/java/java_booleans.asp"
+    },
+    {
+      "name": "Boolean (Java Platform SE 8 )",
+      "link": "https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html"
+    }
+  ],
+  "176": [
+    {
+      "name": "Operators in Java",
+      "link": "https://www.geeksforgeeks.org/operators-in-java/"
+    },
+    {
+      "name": "Java Operators: Arithmetic, Relational, Logical and more",
+      "link": "https://www.programiz.com/java-programming/operators"
+    }
+  ],
+  "177": [
+    {
+      "name": "Youtube video course 1",
+      "link": "https://www.youtube.com/watch?v=xk4_1vDrzzo&pp=ygUNamF2YSBicm8gY29kZQ%3D%3D"
+    },
+    {
+      "name": "Youtube video course 2",
+      "link": "https://www.youtube.com/watch?v=x1RCEvYRTz0"
+    }
+  ],
+  "178": [
+    {
+      "name": "Youtube video course",
+      "link": "https://www.youtube.com/watch?v=VZg5r9i90z0"
+    }
+  ],
+  "179": [
+    {
+      "name": "Packages In Java",
+      "link": "https://www.geeksforgeeks.org/packages-in-java/"
+    },
+    {
+      "name": "Java Packages",
+      "link": "https://www.w3schools.com/java/java_packages.asp"
+    }
+  ],
+  "181": [
+    {
+      "name": "Youtube video",
+      "link": "https://www.youtube.com/watch?v=vvanI8NRlSI"
+    },
+    {
+      "name": "Functions in Java",
+      "link": "https://www.learnjavaonline.org/en/Functions"
+    },
+    {
+      "name": "Methods in Java - GeeksforGeeks",
+      "link": "https://www.geeksforgeeks.org/methods-in-java/"
+    },
+    {
+      "name": "Java Methods: Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/java-exercises/method/index.php"
+    }
+  ],
+  "182": [
+    {
+      "name": "Java String Methods ( Click on each method to see with example, lots of people forget this. )",
+      "link": "https://www.w3schools.com/java/java_ref_string.asp"
+    },
+    {
+      "name": "Java String: Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/java-exercises/string/index.php"
+    }
+  ],
+  "183": [
+    {
+      "name": "Arrays class in Java",
+      "link": "https://www.geeksforgeeks.org/array-class-in-java/"
+    },
+    {
+      "name": "Java Array: Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/java-exercises/array/index.php"
+    }
+  ],
+  "184": [
+    {
+      "name": "Java Flow Control",
+      "link": "https://www.programiz.com/java-programming/if-else-statement#:~:text=In%20this%20tutorial%2C%20you%20will%20learn%20about%20control%20flow%20statements%20using%20Java%20if%20and%20if...else%20statements%20with%20the%20help%20of%20examples."
+    },
+    {
+      "name": "Conditionals and Loops Youtube Video",
+      "link": "https://www.youtube.com/watch?v=ldYLYRNaucM"
+    },
+    {
+      "name": "Java Switch Youtube Video",
+      "link": "https://www.youtube.com/watch?v=mA23x39DjbI"
+    }
+  ],
+  "185": [
+    {
+      "name": "For Loop in Java",
+      "link": "https://www.programiz.com/java-programming/for-loop"
+    },
+    {
+      "name": "Loops in Java | Java For Loop (Syntax, Program, Example)",
+      "link": "https://www.javatpoint.com/java-for-loop"
+    },
+    {
+      "name": "Understanding For Loop in Java With Examples and Syntax",
+      "link": "https://www.simplilearn.com/tutorials/java-tutorial/for-loop-in-java"
+    },
+    {
+      "name": "For-each loop in Java",
+      "link": "https://www.geeksforgeeks.org/for-each-loop-in-java/"
+    },
+    {
+      "name": "Java for-each Loop (With Examples)",
+      "link": "https://www.programiz.com/java-programming/enhanced-for-loop"
+    }
+  ],
+  "186": [
+    {
+      "name": "Java While Loop",
+      "link": "https://www.w3schools.com/java/java_while_loop.asp"
+    },
+    {
+      "name": "Java while and do...while Loop",
+      "link": "https://www.programiz.com/java-programming/do-while-loop"
+    },
+    {
+      "name": "Java while loop with Examples",
+      "link": "https://www.geeksforgeeks.org/java-while-loop-with-examples/"
+    }
+  ],
+  "187": [
+    {
+      "name": "Java Exception Handling ( Remaining topics are in left bar )",
+      "link": "https://www.programiz.com/java-programming/exceptions"
+    }
+  ],
+  "188": [
+    {
+      "name": "Java File (With Examples)",
+      "link": "https://www.programiz.com/java-programming/file"
+    },
+    {
+      "name": "File (Java Platform SE 7 )",
+      "link": "https://docs.oracle.com/javase/7/docs/api/java/io/File.html"
+    },
+    {
+      "name": "Java Files",
+      "link": "https://www.w3schools.com/java/java_files.asp"
+    },
+    {
+      "name": "Path (Java Platform SE 7 ) - Oracle Help Center",
+      "link": "https://docs.oracle.com/javase/7/docs/api/java/nio/file/Path.html#:~:text=A%20Path%20can%20represent%20a,directory%20of%20the%20file%20system."
+    },
+    {
+      "name": "Java I/O Programming: Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/java-exercises/io/index.php"
+    }
+  ],
+  "189": [
+    {
+      "name": "What is Java API, its Advantages and Need for it?",
+      "link": "https://www.simplilearn.com/tutorials/java-tutorial/java-api"
+    }
+  ],
+  "190": [
+    {
+      "name": "Java Collections Framework",
+      "link": "https://www.programiz.com/java-programming/collections"
+    },
+    {
+      "name": "Collections Framework Overview",
+      "link": "https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html"
+    },
+    {
+      "name": "Collections in Java",
+      "link": "https://www.geeksforgeeks.org/collections-in-java-2/"
+    }
+  ],
+  "193": [
+    {
+      "name": "Java Class and Objects",
+      "link": "https://www.programiz.com/java-programming/class-objects"
+    },
+    {
+      "name": "Java Classes and Objects",
+      "link": "https://www.w3schools.com/java/java_classes.asp"
+    },
+    {
+      "name": "Classes and Objects in Java",
+      "link": "https://www.geeksforgeeks.org/classes-objects-java/"
+    }
+  ],
+  "194": [
+    {
+      "name": "Java Class Methods",
+      "link": "https://www.w3schools.com/java/java_class_methods.asp"
+    },
+    {
+      "name": "Class Methods in Java | Explained",
+      "link": "https://linuxhint.com/java-class-methods/"
+    },
+    {
+      "name": "Java Methods",
+      "link": "https://www.programiz.com/java-programming/methods"
+    }
+  ],
+  "195": [
+    {
+      "name": "Java Method Overloading",
+      "link": "https://www.programiz.com/java-programming/method-overloading"
+    },
+    {
+      "name": "Method Overloading in Java",
+      "link": "https://www.geeksforgeeks.org/method-overloading-in-java/"
+    },
+    {
+      "name": "Java Method Overloading- II",
+      "link": "https://www.w3schools.com/java/java_methods_overloading.asp"
+    }
+  ],
+  "197": [
+    {
+      "name": "Java Constructors",
+      "link": "https://www.programiz.com/java-programming/constructors"
+    },
+    {
+      "name": "Java Constructors - II",
+      "link": "https://www.w3schools.com/java/java_constructors.asp"
+    },
+    {
+      "name": "Constructor in Java",
+      "link": "https://www.digitalocean.com/community/tutorials/constructor-in-java"
+    },
+    {
+      "name": "Java Constructors - III",
+      "link": "https://www.geeksforgeeks.org/constructors-in-java/"
+    }
+  ],
+  "198": [
+    {
+      "name": "Java Strings",
+      "link": "https://www.programiz.com/java-programming/string"
+    }
+  ],
+  "199": [
+    {
+      "name": "Access Modifiers in Java",
+      "link": "https://www.geeksforgeeks.org/access-modifiers-java/"
+    },
+    {
+      "name": "Java Access Modifiers",
+      "link": "https://www.programiz.com/java-programming/access-modifiers"
+    }
+  ],
+  "200": [
+    {
+      "name": "Java this Keyword",
+      "link": "https://www.programiz.com/java-programming/this-keyword"
+    },
+    {
+      "name": "'this' reference in Java",
+      "link": "https://www.geeksforgeeks.org/this-reference-in-java/"
+    },
+    {
+      "name": "Java this Keyword - II",
+      "link": "https://www.w3schools.com/java/ref_keyword_this.asp"
+    }
+  ],
+  "201": [
+    {
+      "name": "Java final keyword",
+      "link": "https://www.programiz.com/java-programming/final-keyword"
+    },
+    {
+      "name": "final Keyword in Java",
+      "link": "https://www.geeksforgeeks.org/final-keyword-in-java/"
+    },
+    {
+      "name": "Java final Keyword -II",
+      "link": "https://www.w3schools.com/java/ref_keyword_final.asp"
+    }
+  ],
+  "202": [
+    {
+      "name": "Java Recursion",
+      "link": "https://www.programiz.com/java-programming/recursion"
+    },
+    {
+      "name": "Recursion in Java",
+      "link": "https://www.geeksforgeeks.org/recursion-in-java/"
+    },
+    {
+      "name": "Java Recursion - II",
+      "link": "https://www.w3schools.com/java/java_recursion.asp"
+    }
+  ],
+  "203": [
+    {
+      "name": "Java instanceof Operator",
+      "link": "https://www.programiz.com/java-programming/instanceof"
+    },
+    {
+      "name": "instanceof Keyword in Java",
+      "link": "https://www.geeksforgeeks.org/instanceof-keyword-in-java/"
+    },
+    {
+      "name": "Java instanceof Operator - II",
+      "link": "https://www.baeldung.com/java-instanceof"
+    }
+  ],
+  "205": [
+    {
+      "name": "Java Inheritance",
+      "link": "https://www.programiz.com/java-programming/inheritance"
+    },
+    {
+      "name": "Inheritance in Java",
+      "link": "https://www.geeksforgeeks.org/inheritance-in-java/"
+    },
+    {
+      "name": "Java Inheritance (Subclass and Superclass)",
+      "link": "https://www.w3schools.com/java/java_inheritance.asp"
+    }
+  ],
+  "206": [
+    {
+      "name": "Java Method Overriding",
+      "link": "https://www.programiz.com/java-programming/method-overriding"
+    },
+    {
+      "name": "Overriding in Java",
+      "link": "https://www.geeksforgeeks.org/overriding-in-java/"
+    },
+    {
+      "name": "Overriding in Java [Methods, Uses, Examples with Output]",
+      "link": "https://www.simplilearn.com/tutorials/java-tutorial/overriding-in-java"
+    }
+  ],
+  "207": [
+    {
+      "name": "Java super",
+      "link": "https://www.programiz.com/java-programming/super-keyword"
+    },
+    {
+      "name": "Java super Keyword",
+      "link": "https://www.w3schools.com/java/ref_keyword_super.asp"
+    },
+    {
+      "name": "Super Keyword in Java",
+      "link": "https://www.geeksforgeeks.org/super-keyword/"
+    }
+  ],
+  "208": [
+    {
+      "name": "Java Abstract Class and Abstract Methods",
+      "link": "https://www.programiz.com/java-programming/abstract-classes-methods"
+    },
+    {
+      "name": "Abstract Methods and Classes (The Java™ Tutorials ...",
+      "link": "https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html"
+    },
+    {
+      "name": "Java Abstraction",
+      "link": "https://www.w3schools.com/java/java_abstract.asp"
+    }
+  ],
+  "210": [
+    {
+      "name": "Java Polymorphism",
+      "link": "https://www.programiz.com/java-programming/polymorphism"
+    },
+    {
+      "name": "Polymorphism in Java",
+      "link": "https://www.geeksforgeeks.org/polymorphism-in-java/"
+    },
+    {
+      "name": "Polymorphism in Java with Examples in 2023",
+      "link": "https://www.mygreatlearning.com/blog/polymorphism-in-java/"
+    }
+  ],
+  "211": [
+    {
+      "name": "Java Encapsulation",
+      "link": "https://www.programiz.com/java-programming/encapsulation"
+    },
+    {
+      "name": "Encapsulation in Java",
+      "link": "https://www.geeksforgeeks.org/encapsulation-in-java/"
+    },
+    {
+      "name": "What is Encapsulation in Java and How to Implement It?",
+      "link": "https://www.simplilearn.com/tutorials/java-tutorial/java-encapsulation"
+    }
+  ],
+  "213": [
+    {
+      "name": "Java Nested and Inner Class",
+      "link": "https://www.programiz.com/java-programming/nested-inner-class"
+    },
+    {
+      "name": "Nested Classes in Java",
+      "link": "https://www.geeksforgeeks.org/nested-classes-java/"
+    }
+  ],
+  "214": [
+    {
+      "name": "Java Nested Static Class",
+      "link": "https://www.programiz.com/java-programming/static-class"
+    },
+    {
+      "name": "Static class in Java",
+      "link": "https://www.geeksforgeeks.org/static-class-in-java/"
+    },
+    {
+      "name": "What is a static class in Java?",
+      "link": "https://www.tutorialspoint.com/What-is-a-static-class-in-Java"
+    }
+  ],
+  "215": [
+    {
+      "name": "Java Anonymous Class",
+      "link": "https://www.programiz.com/java-programming/anonymous-class"
+    },
+    {
+      "name": "Anonymous Classes in Java",
+      "link": "https://www.baeldung.com/java-anonymous-classes"
+    },
+    {
+      "name": "Anonymous Inner Class in Java",
+      "link": "https://www.geeksforgeeks.org/anonymous-inner-class-java/"
+    }
+  ],
+  "216": [
+    {
+      "name": "Java Singleton Class",
+      "link": "https://www.programiz.com/java-programming/singleton"
+    },
+    {
+      "name": "Java Singleton Class - II",
+      "link": "https://www.geeksforgeeks.org/singleton-class-java/"
+    },
+    {
+      "name": "Java Singleton Design Pattern Best Practices with Examples",
+      "link": "https://www.digitalocean.com/community/tutorials/java-singleton-design-pattern-best-practices-examples"
+    }
+  ],
+  "217": [
+    {
+      "name": "Java Enums",
+      "link": "https://www.programiz.com/java-programming/enums"
+    },
+    {
+      "name": "Java Enums - II",
+      "link": "https://www.w3schools.com/java/java_enums.asp"
+    },
+    {
+      "name": "Enum in Java",
+      "link": "https://www.geeksforgeeks.org/enum-in-java/"
+    }
+  ],
+  "218": [
+    {
+      "name": "How to Use Enum, Constructor, Instance Variable & ...",
+      "link": "https://www.geeksforgeeks.org/how-to-use-enum-constructor-instance-variable-method-in-java/"
+    },
+    {
+      "name": "Java enum Constructor",
+      "link": "https://www.programiz.com/java-programming/enum-constructor"
+    }
+  ],
+  "219": [
+    {
+      "name": "Java enum Strings",
+      "link": "https://www.programiz.com/java-programming/enum-string"
+    }
+  ],
+  "220": [
+    {
+      "name": "Reflection in Java",
+      "link": "https://www.geeksforgeeks.org/reflection-in-java/"
+    },
+    {
+      "name": "Java Reflection (With Examples)",
+      "link": "https://www.programiz.com/java-programming/reflection"
+    }
+  ],
+  "222": [
+    {
+      "name": "Java Collection Interface",
+      "link": "https://www.programiz.com/java-programming/collection-interface"
+    }
+  ],
+  "223": [
+    {
+      "name": "Java List",
+      "link": "https://www.programiz.com/java-programming/list"
+    }
+  ],
+  "224": [
+    {
+      "name": "Java ArrayList",
+      "link": "https://www.programiz.com/java-programming/arraylist"
+    },
+    {
+      "name": "ArrayList in Java",
+      "link": "https://www.geeksforgeeks.org/arraylist-in-java/"
+    },
+    {
+      "name": "Java Collection: ArrayList Exercises",
+      "link": "https://www.w3resource.com/java-exercises/collection/index.php#:~:text=Java%20Collection%3A%20ArrayList%20Exercises%20%5B22%20exercises%20with%20solution%5D"
+    }
+  ],
+  "225": [
+    {
+      "name": "Vector Class in Java",
+      "link": "https://www.geeksforgeeks.org/java-util-vector-class-java/"
+    },
+    {
+      "name": "Java Vector",
+      "link": "https://www.programiz.com/java-programming/vector"
+    }
+  ],
+  "226": [
+    {
+      "name": "Stack Class in Java",
+      "link": "https://www.geeksforgeeks.org/stack-class-in-java/"
+    },
+    {
+      "name": "Java Stack Class",
+      "link": "https://www.programiz.com/java-programming/stack"
+    },
+    {
+      "name": "Java Stack - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/java-exercises/stack/index.php"
+    }
+  ],
+  "232": [
+    {
+      "name": "Java Type Casting (With Examples)",
+      "link": "https://www.programiz.com/java-programming/typecasting"
+    },
+    {
+      "name": "Java Program to Implement Type Casting and ...",
+      "link": "https://www.geeksforgeeks.org/java-program-to-implement-type-casting-and-type-conversion/"
+    },
+    {
+      "name": "Java Type Casting",
+      "link": "https://www.w3schools.com/java/java_type_casting.asp"
+    }
+  ],
+  "233": [
+    {
+      "name": "Java autoboxing and unboxing",
+      "link": "https://www.programiz.com/java-programming/autoboxing-unboxing"
+    },
+    {
+      "name": "Autoboxing and Unboxing in Java",
+      "link": "https://www.geeksforgeeks.org/autoboxing-unboxing-java/"
+    }
+  ],
+  "234": [
+    {
+      "name": "Java Lambda Expressions",
+      "link": "https://www.programiz.com/java-programming/lambda-expression"
+    },
+    {
+      "name": "Lambda Expressions in Java 8",
+      "link": "https://www.geeksforgeeks.org/lambda-expressions-java-8/"
+    }
+  ],
+  "235": [
+    {
+      "name": "Java Generics",
+      "link": "https://www.programiz.com/java-programming/generics"
+    },
+    {
+      "name": "Generics in Java",
+      "link": "https://www.geeksforgeeks.org/generics-in-java/"
+    },
+    {
+      "name": "The Basics of Java Generics",
+      "link": "https://www.baeldung.com/java-generics"
+    }
+  ],
+  "236": [
+    {
+      "name": "Java Wrapper Class",
+      "link": "https://www.programiz.com/java-programming/wrapper"
+    },
+    {
+      "name": "Wrapper Classes in Java",
+      "link": "https://www.geeksforgeeks.org/wrapper-classes-java/"
+    }
+  ],
+  "237": [
+    {
+      "name": "Java Memory Management",
+      "link": "https://www.geeksforgeeks.org/java-memory-management/"
+    },
+    {
+      "name": "What is Memory Management in Java?",
+      "link": "https://www.scaler.com/topics/memory-management-in-java/"
+    }
+  ],
+  "238": [
+    {
+      "name": "How JVM Works - JVM Architecture?",
+      "link": "https://www.geeksforgeeks.org/jvm-works-jvm-architecture/"
+    },
+    {
+      "name": "What is JVM (Java Virtual Machine): Architecture Explained!",
+      "link": "https://www.guru99.com/java-virtual-machine-jvm.html"
+    },
+    {
+      "name": "JVM Tutorial - Java Virtual Machine Architecture Explained",
+      "link": "https://www.freecodecamp.org/news/jvm-tutorial-java-virtual-machine-architecture-explained-for-beginners/"
+    }
+  ],
+  "239": [
+    {
+      "name": "Garbage Collection in Java",
+      "link": "https://www.geeksforgeeks.org/garbage-collection-java/"
+    },
+    {
+      "name": "Garbage Collection in Java – What is GC and How it Works ...",
+      "link": "https://www.freecodecamp.org/news/garbage-collection-in-java-what-is-gc-and-how-it-works-in-the-jvm/"
+    },
+    {
+      "name": "JVM Garbage Collectors",
+      "link": "https://www.baeldung.com/jvm-garbage-collectors"
+    }
+  ],
+  "240": [
+    {
+      "name": "Serialization and Deserialization in Java with Example",
+      "link": "https://www.geeksforgeeks.org/serialization-in-java/"
+    },
+    {
+      "name": "Introduction to Java Serialization",
+      "link": "https://www.baeldung.com/java-serialization"
+    },
+    {
+      "name": "Serialization in Java",
+      "link": "https://www.digitalocean.com/community/tutorials/serialization-in-java"
+    }
+  ],
+  "241": [
+    {
+      "name": "Socket Programming in Java",
+      "link": "https://www.geeksforgeeks.org/socket-programming-in-java/"
+    },
+    {
+      "name": "A Guide to Java Sockets",
+      "link": "https://www.baeldung.com/a-guide-to-java-sockets"
+    },
+    {
+      "name": "Java Socket Programming - Socket Server, Client example",
+      "link": "https://www.digitalocean.com/community/tutorials/java-socket-programming-server-client"
+    }
+  ],
+  "242": [
+    {
+      "name": "An Introduction to Thread in Java",
+      "link": "https://www.simplilearn.com/tutorials/java-tutorial/thread-in-java"
+    },
+    {
+      "name": "Basics: All about Java threads",
+      "link": "https://beginnersbook.com/2013/03/java-threads/"
+    },
+    {
+      "name": "Java Threads",
+      "link": "https://www.geeksforgeeks.org/java-threads/"
+    }
+  ],
+  "243": [
+    {
+      "name": "Ant vs Maven vs Gradle: Java Build Tools Comparison",
+      "link": "https://www.jrebel.com/blog/java-build-tools-comparison"
+    },
+    {
+      "name": "Java build tools: Maven vs Gradle",
+      "link": "https://www.educative.io/blog/java-build-tools-maven-vs-gradle"
+    },
+    {
+      "name": "What are the best Java Build Tools ?",
+      "link": "https://stackshare.io/java-build-tools"
+    }
+  ],
+  "246": [
+    {
+      "name": "Introduction to Spring Data JDBC",
+      "link": "https://www.baeldung.com/spring-data-jdbc-intro"
+    },
+    {
+      "name": "Spring Data JDBC - Reference Documentation",
+      "link": "https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/"
+    },
+    {
+      "name": "Spring Data JDBC",
+      "link": "https://spring.io/projects/spring-data-jdbc"
+    }
+  ],
+  "247": [
+    {
+      "name": "Java Queue Interface",
+      "link": "https://www.programiz.com/java-programming/queue"
+    },
+    {
+      "name": "Queue Interface In Java",
+      "link": "https://www.geeksforgeeks.org/queue-interface-java/"
+    }
+  ],
+  "248": [
+    {
+      "name": "Java Priority Queue",
+      "link": "https://www.programiz.com/java-programming/priorityqueue"
+    },
+    {
+      "name": "PriorityQueue in Java",
+      "link": "https://www.geeksforgeeks.org/priority-queue-class-in-java/"
+    },
+    {
+      "name": "Priority Queues in Java Explained with Examples",
+      "link": "https://www.freecodecamp.org/news/priority-queue-implementation-in-java/"
+    },
+    {
+      "name": "Java Collection: PriorityQueue Exercises",
+      "link": "https://www.w3resource.com/java-exercises/collection/index.php#:~:text=Java%20Collection%3A%20PriorityQueue%20Exercises"
+    }
+  ],
+  "249": [
+    {
+      "name": "Java Deque Interface",
+      "link": "https://www.programiz.com/java-programming/deque"
+    },
+    {
+      "name": "Deque interface in Java with Example",
+      "link": "https://www.geeksforgeeks.org/deque-interface-java-example/"
+    }
+  ],
+  "250": [
+    {
+      "name": "Java LinkedList",
+      "link": "https://www.programiz.com/java-programming/linkedlist"
+    },
+    {
+      "name": "LinkedList in Java",
+      "link": "https://www.geeksforgeeks.org/linked-list-in-java/"
+    },
+    {
+      "name": "Linked List in Java: All You Need to Know About it",
+      "link": "https://www.simplilearn.com/tutorials/java-tutorial/linked-list-in-java"
+    },
+    {
+      "name": "Java Collection: LinkedList Exercises",
+      "link": "https://www.w3resource.com/java-exercises/collection/index.php#:~:text=Java%20Collection%3A%20LinkedList%20Exercises"
+    }
+  ],
+  "251": [
+    {
+      "name": "ArrayDeque in Java",
+      "link": "https://www.geeksforgeeks.org/arraydeque-in-java/"
+    },
+    {
+      "name": "Java ArrayDeque",
+      "link": "https://www.programiz.com/java-programming/arraydeque"
+    }
+  ],
+  "252": [
+    {
+      "name": "BlockingQueue Interface in Java",
+      "link": "https://www.geeksforgeeks.org/blockingqueue-interface-in-java/"
+    },
+    {
+      "name": "Java BlockingQueue Example",
+      "link": "https://www.digitalocean.com/community/tutorials/java-blockingqueue-example"
+    },
+    {
+      "name": "Java BlockingQueue Interface",
+      "link": "https://www.programiz.com/java-programming/blockingqueue"
+    }
+  ],
+  "253": [
+    {
+      "name": "Java ArrayBlockingQueue",
+      "link": "https://www.programiz.com/java-programming/arrayblockingqueue"
+    },
+    {
+      "name": "ArrayBlockingQueue Class in Java",
+      "link": "https://www.geeksforgeeks.org/arrayblockingqueue-class-in-java/"
+    }
+  ],
+  "254": [
+    {
+      "name": "Java LinkedBlockingQueue",
+      "link": "https://www.programiz.com/java-programming/linkedblockingqueue"
+    },
+    {
+      "name": "LinkedBlockingQueue Class in Java",
+      "link": "https://www.geeksforgeeks.org/linkedblockingqueue-class-in-java/"
+    }
+  ],
+  "255": [
+    {
+      "name": "Java Map Interface",
+      "link": "https://www.programiz.com/java-programming/map"
+    }
+  ],
+  "256": [
+    {
+      "name": "Java HashMap",
+      "link": "https://www.programiz.com/java-programming/hashmap"
+    },
+    {
+      "name": "A Guide to Java HashMap",
+      "link": "https://www.baeldung.com/java-hashmap"
+    },
+    {
+      "name": "HashMap in Java",
+      "link": "https://www.digitalocean.com/community/tutorials/java-hashmap"
+    },
+    {
+      "name": "Java Collection: HashMap Exercises ",
+      "link": "https://www.w3resource.com/java-exercises/collection/index.php#:~:text=Java%20Collection%3A%20HashMap%20Exercises"
+    }
+  ],
+  "257": [
+    {
+      "name": "Java LinkedHashMap",
+      "link": "https://www.programiz.com/java-programming/linkedhashmap"
+    },
+    {
+      "name": "LinkedHashMap in Java",
+      "link": "https://www.geeksforgeeks.org/linkedhashmap-class-in-java/"
+    }
+  ],
+  "258": [
+    {
+      "name": "Java WeakHashMap",
+      "link": "https://www.programiz.com/java-programming/weakhashmap"
+    },
+    {
+      "name": "Guide to WeakHashMap in Java - Baeldung",
+      "link": "https://www.baeldung.com/java-weakhashmap#:~:text=Simply%20put%2C%20the%20WeakHashMap%20is,that%20point%20to%20that%20key."
+    },
+    {
+      "name": "Hashmap vs WeakHashMap in Java",
+      "link": "https://www.geeksforgeeks.org/hashmap-vs-weakhashmap-java/"
+    }
+  ],
+  "259": [
+    {
+      "name": "Java EnumMap",
+      "link": "https://www.programiz.com/java-programming/enummap"
+    },
+    {
+      "name": "A Guide to EnumMap",
+      "link": "https://www.baeldung.com/java-enum-map"
+    },
+    {
+      "name": "EnumMap class in Java",
+      "link": "https://www.geeksforgeeks.org/enummap-class-java-example/"
+    }
+  ],
+  "260": [
+    {
+      "name": "Java SortedMap Interface",
+      "link": "https://www.programiz.com/java-programming/sortedmap"
+    },
+    {
+      "name": "SortedMap Interface in Java with Examples",
+      "link": "https://www.geeksforgeeks.org/sortedmap-java-examples/"
+    }
+  ],
+  "261": [
+    {
+      "name": "Java NavigableMap Interface",
+      "link": "https://www.programiz.com/java-programming/navigablemap"
+    },
+    {
+      "name": "NavigableMap Interface in Java with Example",
+      "link": "https://www.geeksforgeeks.org/navigablemap-interface-in-java-with-example/"
+    }
+  ],
+  "262": [
+    {
+      "name": "TreeMap in Java",
+      "link": "https://www.geeksforgeeks.org/treemap-in-java/"
+    },
+    {
+      "name": "Java TreeMap",
+      "link": "https://www.programiz.com/java-programming/treemap"
+    },
+    {
+      "name": "Java Collection: TreeMap Exercises",
+      "link": "https://www.w3resource.com/java-exercises/collection/index.php#:~:text=Java%20Collection%3A%20TreeMap%20Exercises"
+    }
+  ],
+  "263": [
+    {
+      "name": "Java ConcurrentMap Interface",
+      "link": "https://www.programiz.com/java-programming/concurrentmap"
+    },
+    {
+      "name": "ConcurrentMap Interface in java",
+      "link": "https://www.geeksforgeeks.org/concurrentmap-interface-java/"
+    }
+  ],
+  "264": [
+    {
+      "name": "Java ConcurrentHashMap",
+      "link": "https://www.programiz.com/java-programming/concurrenthashmap"
+    },
+    {
+      "name": "ConcurrentHashMap in Java",
+      "link": "https://www.geeksforgeeks.org/concurrenthashmap-in-java/"
+    }
+  ],
+  "266": [
+    {
+      "name": "Java Set Interface",
+      "link": "https://www.programiz.com/java-programming/set"
+    },
+    {
+      "name": "Set in Java",
+      "link": "https://www.geeksforgeeks.org/set-in-java/"
+    }
+  ],
+  "267": [
+    {
+      "name": "Java HashSet Class",
+      "link": "https://www.programiz.com/java-programming/hashset"
+    },
+    {
+      "name": "HashSet in Java",
+      "link": "https://www.geeksforgeeks.org/hashset-in-java/"
+    },
+    {
+      "name": "A Guide to HashSet in Java",
+      "link": "https://www.baeldung.com/java-hashset"
+    },
+    {
+      "name": "Java Collection: HashSet Exercises",
+      "link": "https://www.w3resource.com/java-exercises/collection/index.php#:~:text=Java%20Collection%3A%20HashSet%20Exercises"
+    }
+  ],
+  "268": [
+    {
+      "name": "Java EnumSet",
+      "link": "https://www.programiz.com/java-programming/enumset"
+    },
+    {
+      "name": "EnumSet in Java",
+      "link": "https://www.geeksforgeeks.org/enumset-class-java/"
+    }
+  ],
+  "269": [
+    {
+      "name": "Java LinkedHashSet",
+      "link": "https://www.programiz.com/java-programming/linkedhashset"
+    },
+    {
+      "name": "LinkedHashSet in Java with Examples",
+      "link": "https://www.geeksforgeeks.org/linkedhashset-in-java-with-examples/"
+    }
+  ],
+  "270": [
+    {
+      "name": "SortedSet Interface in Java with Examples",
+      "link": "https://www.geeksforgeeks.org/sortedset-java-examples/"
+    },
+    {
+      "name": "Java SortedSet Interface",
+      "link": "https://www.programiz.com/java-programming/sortedset"
+    }
+  ],
+  "271": [
+    {
+      "name": "Java NavigableSet Interface",
+      "link": "https://www.programiz.com/java-programming/navigableset"
+    },
+    {
+      "name": "NavigableSet in Java with Examples",
+      "link": "https://www.geeksforgeeks.org/navigableset-java-examples/"
+    }
+  ],
+  "272": [
+    {
+      "name": "Java TreeSet",
+      "link": "https://www.programiz.com/java-programming/treeset"
+    },
+    {
+      "name": "TreeSet in Java",
+      "link": "https://www.geeksforgeeks.org/treeset-in-java-with-examples/"
+    },
+    {
+      "name": "A Guide to TreeSet in Java",
+      "link": "https://www.baeldung.com/java-tree-set"
+    },
+    {
+      "name": "Java Collection: TreeSet Exercises ",
+      "link": "https://www.w3resource.com/java-exercises/collection/index.php#:~:text=Java%20Collection%3A%20TreeSet%20Exercises"
+    }
+  ],
+  "273": [
+    {
+      "name": "Java Algorithms",
+      "link": "https://www.programiz.com/java-programming/algorithms"
+    },
+    {
+      "name": "Algorithms",
+      "link": "https://www.geeksforgeeks.org/fundamentals-of-algorithms/"
+    }
+  ],
+  "274": [
+    {
+      "name": "Java Iterator Interface",
+      "link": "https://www.programiz.com/java-programming/iterator"
+    },
+    {
+      "name": "Iterators in Java",
+      "link": "https://www.geeksforgeeks.org/iterators-in-java/"
+    },
+    {
+      "name": "A Guide to Iterator in Java",
+      "link": "https://www.baeldung.com/java-iterator"
+    },
+    {
+      "name": "Iterable Interface in Java",
+      "link": "https://www.geeksforgeeks.org/iterable-interface-in-java/"
+    },
+    {
+      "name": "Differences Between Iterator and Iterable and How to Use ...",
+      "link": "https://www.baeldung.com/java-iterator-vs-iterable"
+    }
+  ],
+  "275": [
+    {
+      "name": "Java ListIterator Interface",
+      "link": "https://www.programiz.com/java-programming/listiterator"
+    },
+    {
+      "name": "ListIterator in Java",
+      "link": "https://www.geeksforgeeks.org/listiterator-in-java/"
+    },
+    {
+      "name": "ListIterator in Java - II",
+      "link": "https://www.digitalocean.com/community/tutorials/java-listiterator"
+    }
+  ],
+  "276": [
+    {
+      "name": "Java IO : Input-output in Java with Examples",
+      "link": "https://www.geeksforgeeks.org/java-io-input-output-in-java-with-examples/"
+    },
+    {
+      "name": "Java I/O Streams",
+      "link": "https://www.programiz.com/java-programming/io-streams"
+    }
+  ],
+  "277": [
+    {
+      "name": "Java InputStream (With Example)",
+      "link": "https://www.programiz.com/java-programming/inputstream"
+    },
+    {
+      "name": "Java.io.InputStream Class in Java",
+      "link": "https://www.geeksforgeeks.org/java-io-inputstream-class-in-java/"
+    }
+  ],
+  "278": [
+    {
+      "name": "Java OutputStream (With Example)",
+      "link": "https://www.programiz.com/java-programming/outputstream"
+    },
+    {
+      "name": "Java.io.OutputStream class in Java",
+      "link": "https://www.geeksforgeeks.org/java-io-outputstream-class-java/"
+    }
+  ],
+  "279": [
+    {
+      "name": "Java.io.FileInputStream Class in Java",
+      "link": "https://www.geeksforgeeks.org/java-io-fileinputstream-class-java/"
+    },
+    {
+      "name": "Java FileInputStream (With Examples)",
+      "link": "https://www.programiz.com/java-programming/fileinputstream"
+    }
+  ],
+  "280": [
+    {
+      "name": "FileOutputStream in Java",
+      "link": "https://www.geeksforgeeks.org/fileoutputstream-in-java/"
+    },
+    {
+      "name": "Java FileOutputStream (With Examples)",
+      "link": "https://www.programiz.com/java-programming/fileoutputstream"
+    }
+  ],
+  "281": [
+    {
+      "name": "Java.io.ByteArrayInputStream class in Java",
+      "link": "https://www.geeksforgeeks.org/io-bytearrayinputstream-class-java/"
+    },
+    {
+      "name": "Java ByteArrayInputStream (With Examples)",
+      "link": "https://www.programiz.com/java-programming/bytearrayinputstream"
+    }
+  ],
+  "282": [
+    {
+      "name": "Java ByteArrayOutputStream (With Examples)",
+      "link": "https://www.programiz.com/java-programming/bytearrayoutputstream"
+    },
+    {
+      "name": "Java.io.ByteArrayOutputStream() Class in Java",
+      "link": "https://www.geeksforgeeks.org/io-bytearrayoutputstream-class-java/"
+    }
+  ],
+  "283": [
+    {
+      "name": "Java ObjectInputStream (With Examples)",
+      "link": "https://www.programiz.com/java-programming/objectinputstream"
+    },
+    {
+      "name": "Java.io.ObjectInputStream Class",
+      "link": "https://www.geeksforgeeks.org/difference-between-objectinputstream-and-objectoutputstream-in-java/"
+    }
+  ],
+  "284": [
+    {
+      "name": "Java ObjectOutputStream (With Examples)",
+      "link": "https://www.programiz.com/java-programming/objectoutputstream"
+    },
+    {
+      "name": "Java.io.ObjectOutputStream Class in Java ",
+      "link": "https://www.geeksforgeeks.org/java-io-objectoutputstream-class-java-set-1/"
+    },
+    {
+      "name": "ObjectOutputStream in Java - write Object to File",
+      "link": "https://www.digitalocean.com/community/tutorials/objectoutputstream-java-write-object-file"
+    }
+  ],
+  "285": [
+    {
+      "name": "Java.io.BufferedInputStream class in Java",
+      "link": "https://www.geeksforgeeks.org/java-io-bufferedinputstream-class-java/"
+    },
+    {
+      "name": "Java BufferedInputStream (With Examples)",
+      "link": "https://www.programiz.com/java-programming/bufferedinputstream"
+    }
+  ],
+  "286": [
+    {
+      "name": "Java BufferedOutputStream (With Examples)",
+      "link": "https://www.programiz.com/java-programming/bufferedoutputstream"
+    },
+    {
+      "name": "Java.io.BufferedOutputStream class in Java",
+      "link": "https://www.geeksforgeeks.org/java-io-bufferedoutputstream-class-java/"
+    }
+  ],
+  "287": [
+    {
+      "name": "Java PrintStream (With Examples)",
+      "link": "https://www.programiz.com/java-programming/printstream"
+    },
+    {
+      "name": "Java.io.Printstream Class in Java",
+      "link": "https://www.geeksforgeeks.org/java-io-printstream-class-java-set-1/"
+    }
+  ],
+  "288": [
+    {
+      "name": "Java Reader (With Example)",
+      "link": "https://www.programiz.com/java-programming/reader"
+    }
+  ],
+  "289": [
+    {
+      "name": "Java Writer (With Example)",
+      "link": "https://www.programiz.com/java-programming/writer"
+    },
+    {
+      "name": "Java.io.Writer Class in Java",
+      "link": "https://www.geeksforgeeks.org/java-io-writer-class-java/"
+    }
+  ],
+  "290": [
+    {
+      "name": "InputStreamReader class in Java",
+      "link": "https://www.geeksforgeeks.org/inputstreamreader-class-in-java/"
+    },
+    {
+      "name": "Java InputStreamReader (With Examples)",
+      "link": "https://www.programiz.com/java-programming/inputstreamreader"
+    }
+  ],
+  "291": [
+    {
+      "name": "Java OutputStreamWriter (With Examples)",
+      "link": "https://www.programiz.com/java-programming/outputstreamwriter"
+    },
+    {
+      "name": "Java.io.OutputStreamWriter Class methods",
+      "link": "https://www.geeksforgeeks.org/java-io-outputstreamwriter-class-methods/"
+    }
+  ],
+  "292": [
+    {
+      "name": "Java FileReader (With Examples)",
+      "link": "https://www.programiz.com/java-programming/filereader"
+    },
+    {
+      "name": "Java IO FileReader Class",
+      "link": "https://www.geeksforgeeks.org/java-io-filereader-class/"
+    }
+  ],
+  "293": [
+    {
+      "name": "Java FileWriter (With Examples)",
+      "link": "https://www.programiz.com/java-programming/filewriter"
+    },
+    {
+      "name": "FileWriter Class in Java",
+      "link": "https://www.geeksforgeeks.org/filewriter-class-in-java/"
+    },
+    {
+      "name": "Java FileWriter Example",
+      "link": "https://www.digitalocean.com/community/tutorials/java-filewriter-example"
+    }
+  ],
+  "294": [
+    {
+      "name": "Java.io.BufferedReader Class in Java",
+      "link": "https://www.geeksforgeeks.org/java-io-bufferedreader-class-java/"
+    },
+    {
+      "name": "Java BufferedReader (With Examples )",
+      "link": "https://www.programiz.com/java-programming/bufferedreader"
+    }
+  ],
+  "295": [
+    {
+      "name": "Java.io.BufferedWriter class methods in Java",
+      "link": "https://www.geeksforgeeks.org/io-bufferedwriter-class-methods-java/"
+    },
+    {
+      "name": "Java BufferedWriter (With Examples)",
+      "link": "https://www.programiz.com/java-programming/bufferedwriter"
+    }
+  ],
+  "296": [
+    {
+      "name": "Java StringReader (With Examples)",
+      "link": "https://www.programiz.com/java-programming/stringreader"
+    },
+    {
+      "name": "Java.io.StringReader class in Java",
+      "link": "https://www.geeksforgeeks.org/java-io-stringreader-class-java/"
+    }
+  ],
+  "297": [
+    {
+      "name": "Java StringWriter (With Examples)",
+      "link": "https://www.programiz.com/java-programming/stringwriter"
+    },
+    {
+      "name": "Java.io.StringWriter class in Java",
+      "link": "https://www.geeksforgeeks.org/java-io-stringwriter-class-in-java/"
+    }
+  ],
+  "298": [
+    {
+      "name": "Java PrintWriter (With Examples)",
+      "link": "https://www.programiz.com/java-programming/printwriter"
+    },
+    {
+      "name": "Java.io.PrintWriter class in Java",
+      "link": "https://www.geeksforgeeks.org/java-io-printwriter-class-java-set-1/"
+    }
+  ],
+  "300": [
+    {
+      "name": "Project Configuration with Spring",
+      "link": "https://www.baeldung.com/project-configuration-with-spring"
+    },
+    {
+      "name": "Spring Tips: Configuration",
+      "link": "https://spring.io/blog/2020/04/23/spring-tips-configuration"
+    }
+  ],
+  "301": [
+    {
+      "name": "Spring Dependency Injection",
+      "link": "https://www.baeldung.com/spring-dependency-injection"
+    },
+    {
+      "name": "Dependency Injection Using Spring Boot",
+      "link": "https://medium.com/edureka/what-is-dependency-injection-5006b53af782"
+    },
+    {
+      "name": "Dependency Injection in Spring",
+      "link": "https://www.javatpoint.com/dependency-injection-in-spring"
+    }
+  ],
+  "302": [
+    {
+      "name": "Intro to Inversion of Control",
+      "link": "https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring"
+    },
+    {
+      "name": "Spring IoC, Spring Bean Example Tutorial",
+      "link": "https://www.digitalocean.com/community/tutorials/spring-ioc-bean-example-tutorial"
+    },
+    {
+      "name": "Spring – IoC Container",
+      "link": "https://www.geeksforgeeks.org/spring-ioc-container/"
+    }
+  ],
+  "303": [
+    {
+      "name": "Spring AOP ",
+      "link": "https://www.simplilearn.com/tutorials/spring-tutorial/spring-aop-aspect-oriented-programming"
+    },
+    {
+      "name": "AOP with Spring Framework",
+      "link": "https://www.tutorialspoint.com/spring/aop_with_spring.htm"
+    },
+    {
+      "name": "Spring AOP Tutorial",
+      "link": "https://howtodoinjava.com/spring-aop-tutorial/"
+    }
+  ],
+  "304": [
+    {
+      "name": "Spring MVC Tutorial",
+      "link": "https://www.javatpoint.com/spring-mvc-tutorial"
+    },
+    {
+      "name": "Spring MVC Tutorial - II",
+      "link": "https://www.baeldung.com/spring-mvc-tutorial"
+    },
+    {
+      "name": "Spring - MVC Framework",
+      "link": "https://www.geeksforgeeks.org/spring-mvc-framework/"
+    }
+  ],
+  "305": [
+    {
+      "name": "Spring Annotations",
+      "link": "https://www.digitalocean.com/community/tutorials/spring-annotations"
+    },
+    {
+      "name": "Spring Boot Annotations",
+      "link": "https://www.javatpoint.com/spring-boot-annotations"
+    }
+  ],
+  "306": [
+    {
+      "name": "Spring - Bean Scopes",
+      "link": "https://www.tutorialspoint.com/spring/spring_bean_scopes.htm"
+    },
+    {
+      "name": "Quick Guide to Spring Bean Scopes",
+      "link": "https://www.baeldung.com/spring-bean-scopes"
+    },
+    {
+      "name": "Spring Bean Scopes",
+      "link": "https://www.digitalocean.com/community/tutorials/spring-bean-scopes"
+    }
+  ],
+  "308": [
+    {
+      "name": "Authentication",
+      "link": "https://docs.spring.io/spring-security/reference/features/authentication/index.html"
+    },
+    {
+      "name": "Spring Security Basic Authentication",
+      "link": "https://www.baeldung.com/spring-security-basic-authentication"
+    }
+  ],
+  "309": [
+    {
+      "name": "Authorization",
+      "link": "https://docs.spring.io/spring-security/reference/servlet/authorization/index.html"
+    },
+    {
+      "name": "Authorization - II",
+      "link": "https://docs.spring.io/spring-security/site/docs/5.2.11.RELEASE/reference/html/authorization.html"
+    },
+    {
+      "name": "Spring Security: Authentication and Authorization In-Depth",
+      "link": "https://www.marcobehler.com/guides/spring-security"
+    }
+  ],
+  "310": [
+    {
+      "name": "Spring Boot - OAuth2 with JWT",
+      "link": "https://www.tutorialspoint.com/spring_boot/spring_boot_oauth2_with_jwt.htm"
+    },
+    {
+      "name": "Spring Boot and OAuth2",
+      "link": "https://spring.io/guides/tutorials/spring-boot-oauth2/"
+    },
+    {
+      "name": "Spring Security",
+      "link": "https://www.tutorialspoint.com/spring_security/spring_security_with_oauth2.htm"
+    }
+  ],
+  "311": [
+    {
+      "name": "Using JWT with Spring Security OAuth",
+      "link": "https://www.baeldung.com/spring-security-oauth-jwt"
+    },
+    {
+      "name": "Spring Boot Token based Authentication with Spring ...",
+      "link": "https://www.bezkoder.com/spring-boot-jwt-authentication/"
+    },
+    {
+      "name": "Implementing JSON Web Token (JWT) Authentication ...",
+      "link": "https://medium.com/geekculture/implementing-json-web-token-jwt-authentication-using-spring-security-detailed-walkthrough-1ac480a8d970"
+    }
+  ],
+  "313": [
+    {
+      "name": "Spring Boot - Starter Guide",
+      "link": "https://spring.io/quickstart"
+    },
+    {
+      "name": "Spring Boot - Official Website",
+      "link": "https://spring.io/projects/spring-boot"
+    }
+  ],
+  "314": [
+    {
+      "name": "Spring Boot Architecture",
+      "link": "https://www.javatpoint.com/spring-boot-architecture"
+    },
+    {
+      "name": "Spring Boot Architecture – Detailed Explanation",
+      "link": "https://www.interviewbit.com/blog/spring-boot-architecture"
+    },
+    {
+      "name": "Spring Boot – Architecture",
+      "link": "https://www.geeksforgeeks.org/spring-boot-architecture/"
+    }
+  ],
+  "315": [
+    { "name": "Why Spring?", "link": "https://spring.io/why-spring" },
+    {
+      "name": "Spring vs Spring Boot: Know The Difference",
+      "link": "https://www.interviewbit.com/blog/spring-vs-spring-boot"
+    },
+    {
+      "name": "A Comparison Between Spring and Spring Boot",
+      "link": "https://www.baeldung.com/spring-vs-spring-boot"
+    }
+  ],
+  "316": [
+    {
+      "name": "Intro to Spring Boot Starters",
+      "link": "https://www.baeldung.com/spring-boot-starters"
+    },
+    {
+      "name": "Spring Boot Starters",
+      "link": "https://www.javatpoint.com/spring-boot-starters"
+    },
+    {
+      "name": "Spring Boot – Starters",
+      "link": "https://www.geeksforgeeks.org/spring-boot-starters/"
+    }
+  ],
+  "317": [
+    {
+      "name": "Auto-configuration",
+      "link": "https://docs.spring.io/spring-boot/docs/2.0.x/reference/html/using-boot-auto-configuration.html"
+    },
+    {
+      "name": "Spring Boot – Auto-configuration",
+      "link": "https://www.geeksforgeeks.org/spring-boot-auto-configuration/"
+    }
+  ],
+  "318": [
+    {
+      "name": "Building a RESTful Web Service with Spring Boot Actuator",
+      "link": "https://spring.io/guides/gs/actuator-service/"
+    },
+    {
+      "name": "Spring Boot Actuator",
+      "link": "https://www.baeldung.com/spring-boot-actuators"
+    }
+  ],
+  "319": [
+    {
+      "name": "Embedded Web Servers",
+      "link": "https://docs.spring.io/spring-boot/docs/2.1.9.RELEASE/reference/html/howto-embedded-web-servers.html"
+    },
+    {
+      "name": "What is an Embedded Server? (Spring Boot) - in28minutes",
+      "link": "https://www.springboottutorial.com/java-programmer-essentials-what-is-an-embedded-server#:~:text=An%20embedded%20server%20is%20embedded,default%20embedded%20server%20is%20Tomcat."
+    },
+    {
+      "name": "Which Web Server is used by Spring Boot?",
+      "link": "https://medium.com/java-epic/which-web-server-is-used-by-spring-boot-4e024106923f"
+    }
+  ],
+  "320": [
+    {
+      "name": "Hibernate Transaction Management Example",
+      "link": "https://www.javatpoint.com/hibernate-transaction-management-example"
+    },
+    {
+      "name": "Hibernate Transaction Management Tutorial",
+      "link": "https://www.javaguides.net/2018/12/hibernate-transaction-management-tutorial.html"
+    },
+    {
+      "name": "Transaction",
+      "link": "https://www.w3schools.blog/hibernate-transaction-management"
+    }
+  ],
+  "321": [
+    {
+      "name": "How to Implement Database Relationship in Hibernate",
+      "link": "https://www.developer.com/database/how-to-implement-database-relationship-in-hibernate/"
+    },
+    {
+      "name": "Hibernate One to Many Annotation Tutorial",
+      "link": "https://www.tutorialspoint.com/hibernate/hibernate_or_mappings.htm"
+    }
+  ],
+  "322": [
+    {
+      "name": "Hibernate Lifecycle",
+      "link": "https://www.geeksforgeeks.org/hibernate-lifecycle/"
+    },
+    {
+      "name": "Hibernate Lifecycle - II",
+      "link": "https://www.javatpoint.com/hibernate-lifecycle"
+    },
+    {
+      "name": "Hibernate Entity Lifecycle",
+      "link": "https://www.baeldung.com/hibernate-entity-lifecycle"
+    }
+  ],
+  "325": [
+    {
+      "name": "Introduction to Spring Data JPA",
+      "link": "https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa"
+    },
+    {
+      "name": "Spring Data JPA Tutorial",
+      "link": "https://www.javatpoint.com/spring-and-jpa-integration"
+    },
+    {
+      "name": "Spring Data JPA",
+      "link": "https://spring.io/projects/spring-data-jpa"
+    }
+  ],
+  "326": [
+    {
+      "name": "Spring Data MongoDB",
+      "link": "https://spring.io/projects/spring-data-mongodb"
+    },
+    {
+      "name": "Introduction to Spring Data MongoDB",
+      "link": "https://www.baeldung.com/spring-data-mongodb-tutorial"
+    },
+    {
+      "name": "Spring Boot Integration with MongoDB Tutorial",
+      "link": "https://www.mongodb.com/compatibility/spring-boot"
+    }
+  ],
+  "327": [
+    {
+      "name": "DispatcherServlet and web.xml in Spring Boot",
+      "link": "https://www.baeldung.com/spring-boot-dispatcherservlet-web-xml"
+    },
+    {
+      "name": " The DispatcherServlet",
+      "link": "https://docs.spring.io/spring-framework/docs/3.0.0.M4/spring-framework-reference/html/ch15s02.html"
+    },
+    {
+      "name": "How to Register a Servlet in Java",
+      "link": "https://www.baeldung.com/register-servlet"
+    }
+  ],
+  "328": [
+    {
+      "name": "Spring MVC with JSP View",
+      "link": "https://www.geeksforgeeks.org/spring-mvc-with-jsp-view/"
+    },
+    {
+      "name": "Spring Boot With JavaServer Pages (JSP)",
+      "link": "https://www.baeldung.com/spring-boot-jsp"
+    },
+    {
+      "name": "Introduction to JSP",
+      "link": "https://www.geeksforgeeks.org/introduction-to-jsp/"
+    }
+  ],
+  "329": [
+    {
+      "name": "Spring MVC Tutorial",
+      "link": "https://www.javatpoint.com/spring-mvc-tutorial"
+    },
+    {
+      "name": "Spring – MVC Framework",
+      "link": "https://www.geeksforgeeks.org/spring-mvc-framework/"
+    },
+    {
+      "name": "MVC Framework Tutorial for Beginners",
+      "link": "https://www.guru99.com/mvc-tutorial.html"
+    },
+    {
+      "name": "Everything you need to know about MVC architecture",
+      "link": "https://towardsdatascience.com/everything-you-need-to-know-about-mvc-architecture-3c827930b4c1"
+    }
+  ],
+  "330": [
+    {
+      "name": "Spring Boot vs Spring MVC: How do They Compare?",
+      "link": "https://rollbar.com/blog/spring-boot-vs-spring-mvc-how-do-they-compare/"
+    },
+    {
+      "name": "Spring MVC components",
+      "link": "http://makble.com/spring-mvc-components"
+    }
+  ],
+  "331": [
+    {
+      "name": "Spring Boot Complete Tutorial - Master Class",
+      "link": "https://www.youtube.com/watch?v=zvR-Oif_nxg"
+    },
+    {
+      "name": "Spring Boot Microservice Project Full Course in 6 Hours",
+      "link": "https://www.youtube.com/watch?v=mPPhcU7oWDU&pp=ygUUc3ByaW5nIGJvb3QgdHV0b3JpYWw%3D"
+    },
+    {
+      "name": "Spring Boot Tutorial",
+      "link": "https://www.youtube.com/watch?v=slTUtTSwRKU"
+    }
+  ],
+  "332": [
+    {
+      "name": "Youtube Hindi Course",
+      "link": "https://www.youtube.com/watch?v=tRBVD8UE2cQ&pp=ygUac3ByaW5nIGJvb3QgdHV0b3JpYWwgaGluZGk%3D"
+    }
+  ],
+  "333": [
+    {
+      "name": "Youtube Video Course",
+      "link": "https://www.youtube.com/watch?v=0KCKBv6rbkc&pp=ygUSaGliZXJuYXRlIHR1dG9yaWFs"
+    }
+  ],
+  "334": [
+    {
+      "name": "Java Object Oriented Programming - Exercises, Practice, Solution",
+      "link": "https://www.w3resource.com/java-exercises/oop/index.php"
+    }
+  ]
+}

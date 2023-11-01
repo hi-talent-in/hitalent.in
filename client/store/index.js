@@ -1,6 +1,13 @@
 import { create } from "zustand";
 
-export const useStore = create((set) => ({
+const useStore = create((set) => ({
+  userData: {
+    email: "",
+    name: "",
+  },
+  setUserData: (userData) => set(() => ({ userData })),
+  //////////////////////////////////////////////////////////////////
+  openViewAs: false,
   openAddParentPath: false,
   notAuthorised: false,
   getPathBool: false,
@@ -51,6 +58,7 @@ export const useStore = create((set) => ({
   reload: false,
   ptId: "",
   showProgress: false,
+  setOpenViewAs: (openViewAs) => set(() => ({ openViewAs })),
   setOpenAddParentPath: (openAddParentPath) =>
     set(() => ({ openAddParentPath })),
   setNotAuthorised: (notAuthorised) => set(() => ({ notAuthorised })),
@@ -109,3 +117,5 @@ export const useStore = create((set) => ({
   setPtiD: (ptId) => set(() => ({ ptId })),
   setShowProgress: (showProgress) => set(() => ({ showProgress })),
 }));
+
+export default useStore;
