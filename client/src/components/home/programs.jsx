@@ -7,8 +7,8 @@ const Programs = () => {
           Our Programs
         </h1>
         <small className="text-center">
-          Our expertly designed full-stack JavaScript curriculum is consistent
-          between all remote, onsite, full-time and part-time programs. <br />
+          Our expertly designed curriculum is consistent between all programs.
+          <br />
           Choose the option that works best for you.
         </small>
         <br />

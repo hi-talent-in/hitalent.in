@@ -53,7 +53,7 @@ export const useStore = create((set) => ({
   showProgress: false,
   setOpenAddParentPath: (openAddParentPath) =>
     set(() => ({ openAddParentPath })),
-  setNotAuthorised: () => set((notAuthorised) => ({ notAuthorised })),
+  setNotAuthorised: (notAuthorised) => set(() => ({ notAuthorised })),
   setGetPathBool: (getPathBool) => set(() => ({ getPathBool })),
   setNewPathName: (newPathName) => set(() => ({ newPathName })),
   setWhoami: (whoami) => set(() => ({ whoami })),

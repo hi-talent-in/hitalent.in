@@ -8,7 +8,7 @@ import { useStore } from "../../store";
 import axios from "axios";
 import { toast } from "react-hot-toast";
 
-const StaffDashboard = () => {
+const MentorDashboard = () => {
   const [open, setOpen] = useState("1");
   const { talentId, setTalentId, talents, setTalents, setNotAuthorised } =
     useStore((state) => ({
@@ -91,4 +91,4 @@ const StaffDashboard = () => {
   );
 };
 
-export default StaffDashboard;
+export default MentorDashboard;

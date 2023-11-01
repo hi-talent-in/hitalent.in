@@ -5,6 +5,7 @@ import Header from "./header";
 import Programs from "./programs";
 import Team from "./team";
 import Contact from "./contact";
+import Testimonials from "./testimonials";
 
 const Home = () => {
   useEffect(() => {
@@ -29,6 +30,7 @@ const Home = () => {
       <Header />
       <About />
       <Programs />
+      <Testimonials />
       <Team />
       <Contact />
     </div>

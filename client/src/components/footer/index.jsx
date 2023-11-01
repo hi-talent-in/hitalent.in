@@ -37,7 +37,7 @@ const Footer = () => {
         &copy; <small>Copyright 2022-2023</small>
         <strong> . HiTalent . </strong>
       </small>
-      <p className="text-xs">
+      <p className="text-xs text-center">
         HiTalent, Johad Mohalla, Plot No1, Kharkhada, Rajgarh, Alwar, Rajasthan,
         301408.
       </p>
