@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Join = () => {
@@ -5,7 +6,14 @@ const Join = () => {
   if (accessToken) {
     window.location.href = "/";
   }
-  
+
+  useEffect(() => {
+    document.title = "Signup - HiTalent";
+    return () => {
+      document.title = "HiTalent";
+    };
+  }, []);
+
   return (
     <div className="min-h-screen">
       <div className="pt-20"></div>

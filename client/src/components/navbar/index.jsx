@@ -9,8 +9,9 @@ const Navbar = () => {
   const roles = accT?.split(",").sort();
   const actualRoles = ["isS", "isM", "isA", "isT"].sort();
 
-  const { setOpenViewAs } = useStore((state) => ({
+  const { setOpenViewAs, scrollViewAs } = useStore((state) => ({
     setOpenViewAs: state.setOpenViewAs,
+    scrollViewAs: state.scrollViewAs,
   }));
 
   const handleLogout = () => {
@@ -19,17 +20,29 @@ const Navbar = () => {
     window.location.href = "/";
   };
 
-  const { pathname, hash } = useLocation();
+  const { pathname } = useLocation();
 
   const nonAuthItems = [
-    { title: "About", path: "/#about", active: hash === "#about" },
+    {
+      title: "About",
+      path: "/#about",
+      active: scrollViewAs === "about" && pathname === "/",
+    },
     {
       title: "Programs",
       path: "/#programs",
-      active: hash === "#programs",
+      active: scrollViewAs === "programs" && pathname === "/",
     },
-    { title: "Team", path: "/#team", active: hash === "#team" },
-    { title: "Contact", path: "/#contact", active: hash === "#contact" },
+    {
+      title: "Team",
+      path: "/#team",
+      active: scrollViewAs === "team" && pathname === "/",
+    },
+    {
+      title: "Contact",
+      path: "/#contact",
+      active: scrollViewAs === "contact" && pathname === "/",
+    },
   ];
 
   const authItems = [
@@ -57,7 +70,7 @@ const Navbar = () => {
       <Link
         to={"/"}
         className={`${
-          hash === "#home" || ((!hash && pathname) === "/" && "text-sky-800")
+          scrollViewAs === "home" && pathname === "/" && "text-sky-800"
         } hover:text-sky-800 md:w-auto w-full md:rounded-none md:bg-white rounded-md bg-slate-50 md:py-0 py-1 md:hover:bg-white hover:bg-slate-100 md:text-base text-center text-sm`}
         onClick={() => {
           pathname === "/" &&

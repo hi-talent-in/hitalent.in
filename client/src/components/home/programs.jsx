@@ -1,6 +1,6 @@
 const Programs = () => {
   return (
-    <section id="programs" className="min-h-screen">
+    <section id="programs" className="min-h-[30rem]">
       <div className="pt-20"></div>
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-4xl font-semibold text-center py-2 text-sky-800">

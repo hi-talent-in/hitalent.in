@@ -120,6 +120,10 @@ const Feedbacks = () => {
   React.useEffect(() => {
     getFeedbackList();
     setDeleteState(false);
+    document.title = "Feedbacks - HiTalent";
+    return () => {
+      document.title = "HiTalent";
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [deleteState]);
 

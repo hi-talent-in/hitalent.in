@@ -1,5 +1,6 @@
 import axios from "axios";
 import useCustomMessage from "../../hooks/useCustomMessage";
+import { useEffect } from "react";
 
 const NewJoin = () => {
   const accessToken = localStorage.getItem("accessToken");
@@ -41,6 +42,13 @@ const NewJoin = () => {
   if (!accessToken || isNew !== "true") {
     window.location.href = "/";
   }
+
+  useEffect(() => {
+    document.title = "Choose Program - HiTalent";
+    return () => {
+      document.title = "HiTalent";
+    };
+  }, []);
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center">

@@ -45,6 +45,10 @@ const Profile = () => {
 
   useEffect(() => {
     initialData();
+    document.title = "Your Profile - HiTalent";
+    return () => {
+      document.title = "HiTalent";
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -5,6 +6,13 @@ const Login = () => {
   if (accessToken) {
     window.location.href = "/";
   }
+
+  useEffect(() => {
+    document.title = "Login - HiTalent";
+    return () => {
+      document.title = "HiTalent";
+    };
+  }, []);
 
   return (
     <div className="min-h-screen">

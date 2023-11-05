@@ -8,6 +8,7 @@ const useStore = create((set) => ({
   setUserData: (userData) => set(() => ({ userData })),
   //////////////////////////////////////////////////////////////////
   openViewAs: false,
+  scrollViewAs: "",
   openAddParentPath: false,
   notAuthorised: false,
   getPathBool: false,
@@ -59,6 +60,7 @@ const useStore = create((set) => ({
   ptId: "",
   showProgress: false,
   setOpenViewAs: (openViewAs) => set(() => ({ openViewAs })),
+  setScrollViewAs: (scrollViewAs) => set(() => ({ scrollViewAs })),
   setOpenAddParentPath: (openAddParentPath) =>
     set(() => ({ openAddParentPath })),
   setNotAuthorised: (notAuthorised) => set(() => ({ notAuthorised })),
