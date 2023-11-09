@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from "react";
-import Navbar from "../Navbar";
-import NonHomeFooter from "../NonHomeFooter";
+import { useEffect, useState } from "react";
 import EditableDashboard from "./EditableDashboard";
 import List from "../staff/UserRole";
 import { Select } from "antd";
-import { useStore } from "../../store";
 import axios from "axios";
-import { toast } from "react-hot-toast";
+import useStore from "../../../store";
+import useCustomMessage from "../../hooks/useCustomMessage";
 
-const MentorDashboard = () => {
+const StaffDashboard = () => {
   const [open, setOpen] = useState("1");
   const { talentId, setTalentId, talents, setTalents, setNotAuthorised } =
     useStore((state) => ({
@@ -18,6 +16,8 @@ const MentorDashboard = () => {
       setTalents: state.setTalents,
       setNotAuthorised: state.setNotAuthorised,
     }));
+
+  const { error, contextHolder } = useCustomMessage();
 
   const handleChange = (e) => {
     setOpen(e);
@@ -33,11 +33,11 @@ const MentorDashboard = () => {
       style={{ textAlign: "center" }}
     >
       <Select.Option value={"2023"}>
-        <small className="font-serif text-2xl">All Talents</small>
+        <small className="text-sm">All Talents</small>
       </Select.Option>
       {talents?.map((talent) => (
         <Select.Option value={`${talent.id}`} key={talent.id}>
-          <small className="font-serif text-2xl">{talent.name}</small>
+          <small className="text-sm">{talent.name}</small>
         </Select.Option>
       ))}
     </Select>
@@ -45,14 +45,14 @@ const MentorDashboard = () => {
 
   const getTalents = async () => {
     await axios
-      .get(`${process.env.REACT_APP_BACKEND_API}/talent/get/talents/`)
+      .get(`${import.meta.env.VITE_BACKEND_API}/talent/get/talents/`)
       .then((talentData) => {
         setTalents(talentData.data);
       })
       .catch((err) =>
         err.response.status === 401
           ? setNotAuthorised(true)
-          : toast.error(err.response.data.message)
+          : error(err.response.data.message)
       );
   };
 
@@ -69,26 +69,25 @@ const MentorDashboard = () => {
       onChange={handleChange}
       style={{ textAlign: "center" }}
     >
-      <Select.Option value="2">
-        <small className="font-serif text-2xl">Talent Dashboard</small>
-      </Select.Option>{" "}
       <Select.Option value="1">
-        <small className="font-serif text-2xl">Talents</small>
+        <small className="text-sm">Talents</small>
+      </Select.Option>
+      <Select.Option value="2">
+        <small className="text-sm">Talent Dashboard</small>
       </Select.Option>
     </Select>
   );
 
   return (
-    <>
-      <Navbar />
-      <div className="mt-24 w-[95%] flex md:flex-row flex-col md:space-x-5 md:space-y-0 space-y-5 items-center mx-auto">
+    <section className="min-h-screen">
+      {contextHolder}
+      <div className="flex p-3 md:flex-row flex-col md:space-x-5 md:space-y-0 space-y-5 items-center mx-auto">
         {select()}
         {open === "2" ? selectTalent() : ""}
       </div>
       {open === "1" ? <List /> : ""} {open === "2" ? <EditableDashboard /> : ""}
-      <NonHomeFooter />
-    </>
+    </section>
   );
 };
 
-export default MentorDashboard;
+export default StaffDashboard;
