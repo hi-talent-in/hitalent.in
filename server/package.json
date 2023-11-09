@@ -5,8 +5,8 @@
   "license": "MIT",
   "description": "HiTalent's Backend Services",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "type": "module",
   "dependencies": {
