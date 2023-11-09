@@ -21,7 +21,7 @@ const Root = () => {
       <ScrollToTop />
       <FabFeedback />
       <Navbar />
-      <div className="min-h-screen">
+      <div className="min-h-[40rem]">
         <Outlet />
       </div>
       <Footer />

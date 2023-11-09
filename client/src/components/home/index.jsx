@@ -18,12 +18,16 @@ const Home = () => {
   useEffect(() => {
     if (!accessToken) {
       const handleScroll = () => {
+        const scrollPosition = window.scrollY;
         const sections = document.querySelectorAll("section");
         sections.forEach((section) => {
-          const rect = section.getBoundingClientRect();
-          const sectionId = section.getAttribute("id");
-          if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-            setScrollViewAs(sectionId);
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          if (
+            scrollPosition >= sectionTop - 50 && // Adjust the offset as needed
+            scrollPosition < sectionTop + sectionHeight - 50 // Adjust the offset as needed
+          ) {
+            setScrollViewAs(section.id);
           }
         });
       };

@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 
 import useClickOutside from "../../hooks/useClickOutside";
 import useStore from "../../../store";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const accessToken = localStorage.getItem("accessToken");
@@ -20,28 +21,30 @@ const Navbar = () => {
     window.location.href = "/";
   };
 
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
+
+  const { popoverRef, setShow, show } = useClickOutside();
 
   const nonAuthItems = [
     {
       title: "About",
       path: "/#about",
-      active: scrollViewAs === "about" && pathname === "/",
+      active: scrollViewAs === "about",
     },
     {
       title: "Programs",
       path: "/#programs",
-      active: scrollViewAs === "programs" && pathname === "/",
+      active: scrollViewAs === "programs",
     },
     {
       title: "Team",
       path: "/#team",
-      active: scrollViewAs === "team" && pathname === "/",
+      active: scrollViewAs === "team",
     },
     {
       title: "Contact",
       path: "/#contact",
-      active: scrollViewAs === "contact" && pathname === "/",
+      active: scrollViewAs === "contact",
     },
   ];
 
@@ -62,8 +65,6 @@ const Navbar = () => {
       active: pathname === "/jobs",
     },
   ];
-
-  const { popoverRef, setShow, show } = useClickOutside();
 
   const navItems = (
     <div className="md:flex-row flex flex-col items-center justify-center gap-2 w-full">
@@ -112,7 +113,7 @@ const Navbar = () => {
             key={item.title}
             href={item.path}
             onClick={() => setShow(false)}
-            className={`${item.active && "text-sky-800"}
+            className={`${item.active && pathname === "/" && "text-sky-800"}
                hover:text-sky-800 md:w-auto w-full md:rounded-none md:bg-white rounded-md bg-slate-50 md:py-0 py-1 md:hover:bg-white hover:bg-slate-100 md:text-base text-center text-sm `}
           >
             {item.title}
@@ -121,6 +122,16 @@ const Navbar = () => {
       )}
     </div>
   );
+
+  useEffect(() => {
+    // Check if the hash exists and scroll to the corresponding section
+    if (hash) {
+      const targetElement = document.querySelector(hash);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash, pathname]);
 
   return (
     <div className="p-2 md:h-16 h-14 w-full z-[999] flex flex-row justify-between px-5 md:px-0 md:justify-around items-center bg-white border-b-2 border-b-slate-100 fixed  bg-inherit">
