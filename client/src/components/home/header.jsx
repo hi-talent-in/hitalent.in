@@ -5,7 +5,10 @@ const Header = () => {
   const accessToken = localStorage.getItem("accessToken");
 
   return (
-    <div className="flex flex-col md:flex-row gap-7 pt-16 w-full items-center justify-around min-h-screen md:text-center">
+    <section
+      id="home"
+      className="flex flex-col md:flex-row gap-7 pt-16 w-full items-center justify-around min-h-screen md:text-center"
+    >
       <div className="md:hidden block pt-3"></div>
       <div className="grid grid-cols-2 gap-2 ">
         <img
@@ -86,7 +89,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -103,6 +103,10 @@ const Contacts = () => {
   React.useEffect(() => {
     getContactList();
     setDeleteState(false);
+    document.title = "Contacts - HiTalent";
+    return () => {
+      document.title = "HiTalent";
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [deleteState]);
 

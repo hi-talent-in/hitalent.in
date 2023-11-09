@@ -116,6 +116,10 @@ const JobDashboard = () => {
   };
 
   useEffect(() => {
+    document.title = "Jobs Board - HiTalent";
+    return () => {
+      document.title = "HiTalent";
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [getJ]);
 

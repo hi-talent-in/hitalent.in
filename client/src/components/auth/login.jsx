@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -6,8 +7,15 @@ const Login = () => {
     window.location.href = "/";
   }
 
+  useEffect(() => {
+    document.title = "Login - HiTalent";
+    return () => {
+      document.title = "HiTalent";
+    };
+  }, []);
+
   return (
-    <div className="min-h-screen">
+    <div>
       <div className="pt-20"></div>
       <div className="flex flex-col items-center justify-center lg:px-36 md:px-24 px-12">
         <h1 className="text-4xl font-semibold text-center py-2 text-sky-800">
