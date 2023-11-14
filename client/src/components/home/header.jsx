@@ -15,23 +15,27 @@ const Header = () => {
           src="/images/header/01.jpeg"
           alt="header img 1"
           width={200}
+          height={200}
           className="rounded-md shadow-sky-200 shadow-2xl hover:-translate-x-1 hover:-translate-y-1"
         />
         <img
           src="/images/header/02.jpeg"
           alt="header img 1"
+          height={200}
           width={200}
           className="rounded-md shadow-sky-200 shadow-2xl hover:translate-x-1 hover:-translate-y-1"
         />
         <img
           src="/images/header/03.jpeg"
           alt="header img 1"
+          height={180}
           width={180}
           className="rounded-md shadow-sky-200 shadow-2xl hover:-translate-x-1 hover:translate-y-1"
         />
         <img
           src="/images/header/04.jpeg"
           alt="header img 1"
+          height={200}
           width={200}
           className="rounded-md shadow-sky-200 shadow-2xl hover:translate-x-1 hover:translate-y-1"
         />
