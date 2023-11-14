@@ -397,7 +397,7 @@ const EditableDashboard = () => {
                   </Modal>
                   <button
                     onClick={() => setModalOpen(true)}
-                    className="text-sky-600"
+                    className="text-sky-700"
                   >
                     <AiOutlineEdit />
                   </button>
@@ -430,7 +430,7 @@ const EditableDashboard = () => {
                       </Modal>
                       <Link
                         onClick={() => setModal1Open(true)}
-                        className="text-sky-600"
+                        className="text-sky-700"
                       >
                         <AiOutlinePlus />
                       </Link>
@@ -508,7 +508,7 @@ const EditableDashboard = () => {
                     {currentPoints && selectedTaskPoints !== currentPoints ? (
                       <div className="flex flex-row items-center justify-end">
                         <button
-                          className="hover:text-sky-600 h-5 underline text-sm"
+                          className="hover:text-sky-700 h-5 underline text-sm"
                           onClick={() => {
                             setLoading(true);
                             addPoints();
@@ -553,7 +553,7 @@ const EditableDashboard = () => {
                   onClick={() => {
                     setModal2Open(true);
                   }}
-                  className="text-sky-600"
+                  className="text-sky-700"
                 >
                   <AiOutlinePlus />
                 </Link>
@@ -593,7 +593,7 @@ const EditableDashboard = () => {
                             {editTipRenderer()}
                           </Modal>
                           <Link
-                            className="text-sky-600"
+                            className="text-sky-700"
                             onClick={() => {
                               setModal4Open(true);
                               setEditTip(tip);
@@ -637,7 +637,7 @@ const EditableDashboard = () => {
                   onClick={() => {
                     setModal3Open(true);
                   }}
-                  className="text-sky-600"
+                  className="text-sky-700"
                 >
                   <AiOutlinePlus />
                 </Link>
@@ -675,7 +675,7 @@ const EditableDashboard = () => {
                         {editResourceRenderer()}
                       </Modal>
                       <button
-                        className="hover:text-sky-700 text-sky-600"
+                        className="hover:text-sky-700 text-sky-700"
                         onClick={() => {
                           setModal5Open(true);
                           setEditResourceLink(resource.link);

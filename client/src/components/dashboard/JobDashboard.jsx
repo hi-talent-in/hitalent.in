@@ -28,6 +28,7 @@ const JobDashboard = () => {
       render: (text) => (
         <a
           target="_blank"
+          aria-label={text + " Company"}
           rel="noopener noreferrer"
           className="text-sky-700 hover:text-sky-500"
           href={text.link}
@@ -54,6 +55,7 @@ const JobDashboard = () => {
       render: (text) => (
         <a
           target="_blank"
+          aria-label={text + " Apply link"}
           rel="noopener noreferrer"
           className="hover:text-sky-700 underline text-xs"
           href={text}
@@ -65,7 +67,7 @@ const JobDashboard = () => {
   ];
 
   const nextPrevIcon = (symbol) => (
-    <small className="text-sky-600 hover:text-sky-500">{symbol}</small>
+    <small className="text-sky-700 hover:text-sky-500">{symbol}</small>
   );
 
   const { error, contextHolder } = useCustomMessage();

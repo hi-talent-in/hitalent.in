@@ -145,7 +145,7 @@ const TalentDashboard = () => {
                 onClick={() => {
                   window.open("https://www.freecodecamp.org/", "_blank");
                 }}
-                className="font-serif text-2xl text-sky-600 hover:text-orange-600 p-0 m-0"
+                className="font-serif text-2xl text-sky-700 hover:text-orange-600 p-0 m-0"
               >
                 Visit Site
               </Link>
@@ -345,7 +345,7 @@ const TalentDashboard = () => {
                 <Spin indicator={antIcon} />
               ) : (
                 <button
-                  className="text-sky-600 bg-transparent hover:!bg-transparent p-0 m-0 font-serif font-medium text-2xl text-right  hover:text-orange-600 underline "
+                  className="text-sky-700 bg-transparent hover:!bg-transparent p-0 m-0 font-serif font-medium text-2xl text-right  hover:text-orange-600 underline "
                   onClick={() => {
                     setLoading(true);
                     saveLang();
@@ -393,7 +393,7 @@ const TalentDashboard = () => {
                 <Spin indicator={antIcon} />
               ) : (
                 <button
-                  className="text-sky-600 bg-transparent hover:!bg-transparent p-0 m-0 font-serif font-medium text-2xl text-right  hover:text-orange-600 underline "
+                  className="text-sky-700 bg-transparent hover:!bg-transparent p-0 m-0 font-serif font-medium text-2xl text-right  hover:text-orange-600 underline "
                   onClick={() => {
                     setLoading(true);
                     saveTrack();
@@ -509,7 +509,7 @@ const TalentDashboard = () => {
                                         <Spin indicator={antIcon} />
                                       ) : (
                                         <Link
-                                          className="font-serif text-2xl text-sky-600 hover:text-orange-600 underline p-0 m-0"
+                                          className="font-serif text-2xl text-sky-700 hover:text-orange-600 underline p-0 m-0"
                                           onClick={() => {
                                             setLoading(true);
                                             editProgress();
