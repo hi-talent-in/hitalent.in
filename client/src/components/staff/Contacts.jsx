@@ -111,7 +111,7 @@ const Contacts = () => {
   }, [deleteState]);
 
   const nextPrevIcon = (symbol) => (
-    <small className="text-sky-600 hover:text-sky-500 ">{symbol}</small>
+    <small className="text-sky-700 hover:text-sky-500 ">{symbol}</small>
   );
 
   if (!accessToken || !["isS", "isM", "isA"].includes(me)) {
@@ -158,7 +158,7 @@ const Contacts = () => {
               ),
               expandIcon: ({ expanded, onExpand, record }) => (
                 <Link
-                  className="text-sky-600 text-xl"
+                  className="text-sky-700 text-xl"
                   onClick={(e) => onExpand(record, e)}
                 >
                   {expanded ? "-" : "+"}
