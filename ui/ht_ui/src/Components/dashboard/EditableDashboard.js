@@ -456,7 +456,7 @@ const EditableDashboard = () => {
                                 </Modal>
                                 <Link
                                   onClick={() => setModalOpen(true)}
-                                  className="text-2xl text-sky-600 font-serif text-center hover:text-orange-600 underline"
+                                  className="text-2xl text-sky-700 font-serif text-center hover:text-orange-600 underline"
                                 >
                                   <AiOutlineEdit />
                                 </Link>
@@ -494,7 +494,7 @@ const EditableDashboard = () => {
                                 </Modal>
                                 <Link
                                   onClick={() => setModal1Open(true)}
-                                  className="font-serif text-2xl text-sky-600 hover:text-orange-600 underline"
+                                  className="font-serif text-2xl text-sky-700 hover:text-orange-600 underline"
                                 >
                                   <AiOutlinePlus />
                                 </Link>
@@ -526,7 +526,7 @@ const EditableDashboard = () => {
                               {currentSkill && skill !== currentSkill ? (
                                 <div className="flex flex-row items-center justify-end">
                                   <button
-                                    className="text-sky-600 bg-transparent hover:!bg-transparent p-0 m-0 font-serif font-medium text-2xl text-right  hover:text-orange-600 underline "
+                                    className="text-sky-700 bg-transparent hover:!bg-transparent p-0 m-0 font-serif font-medium text-2xl text-right  hover:text-orange-600 underline "
                                     onClick={() => {
                                       setLoading(true);
                                       addTaskSkill();
@@ -585,7 +585,7 @@ const EditableDashboard = () => {
                               selectedTaskPoints !== currentPoints ? (
                                 <div className="flex flex-row items-center justify-end">
                                   <button
-                                    className="text-sky-600 bg-transparent hover:!bg-transparent p-0 m-0 font-serif font-medium text-2xl text-right  hover:text-orange-600 underline "
+                                    className="text-sky-700 bg-transparent hover:!bg-transparent p-0 m-0 font-serif font-medium text-2xl text-right  hover:text-orange-600 underline "
                                     onClick={() => {
                                       setLoading(true);
                                       addPoints();
@@ -638,7 +638,7 @@ const EditableDashboard = () => {
                                 onClick={() => {
                                   setModal2Open(true);
                                 }}
-                                className="font-serif text-2xl text-sky-600 hover:text-orange-600 underline"
+                                className="font-serif text-2xl text-sky-700 hover:text-orange-600 underline"
                               >
                                 <AiOutlinePlus />
                               </Link>
@@ -683,7 +683,7 @@ const EditableDashboard = () => {
                                           {editTipRenderer()}
                                         </Modal>
                                         <Link
-                                          className="text-2xl text-sky-600 font-serif text-center hover:text-orange-600 underline"
+                                          className="text-2xl text-sky-700 font-serif text-center hover:text-orange-600 underline"
                                           onClick={() => {
                                             setModal4Open(true);
                                             setEditTip(tip);
@@ -737,7 +737,7 @@ const EditableDashboard = () => {
                                 onClick={() => {
                                   setModal3Open(true);
                                 }}
-                                className="font-serif text-2xl text-sky-600 hover:text-orange-600 underline"
+                                className="font-serif text-2xl text-sky-700 hover:text-orange-600 underline"
                               >
                                 <AiOutlinePlus />
                               </Link>
@@ -787,7 +787,7 @@ const EditableDashboard = () => {
                                             {editResourceRenderer()}
                                           </Modal>
                                           <Link
-                                            className="text-2xl text-sky-600 font-serif text-center hover:text-orange-600 underline"
+                                            className="text-2xl text-sky-700 font-serif text-center hover:text-orange-600 underline"
                                             onClick={() => {
                                               setModal5Open(true);
                                               setEditResourceLink(
@@ -805,7 +805,7 @@ const EditableDashboard = () => {
                                             to={resource.link}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="font-serif text-2xl text-sky-600 hover:text-orange-600 underline"
+                                            className="font-serif text-2xl text-sky-700 hover:text-orange-600 underline"
                                           >
                                             {resource.name}
                                           </Link>

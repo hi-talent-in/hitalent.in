@@ -309,7 +309,7 @@ const UserRole = () => {
     width: 90,
     render: (text, _) => (
       <Link
-        className="font-medium text-xl text-sky-600"
+        className="font-medium text-xl text-sky-700"
         onClick={() => {
           if (!openEdit) {
             setRowData(_);
@@ -339,7 +339,7 @@ const UserRole = () => {
   }
 
   const nextPrevIcon = (symbol) => (
-    <small className="text-sky-600 hover:text-sky-500 ">{symbol}</small>
+    <small className="text-sky-700 hover:text-sky-500 ">{symbol}</small>
   );
 
   const expandRender = (record) => (
@@ -375,7 +375,7 @@ const UserRole = () => {
         <div className="flex flex-row space-x-2">
           <strong>Level Details - </strong>
           <Link
-            className="text-2xl text-sky-600 underline font-serif"
+            className="text-2xl text-sky-700 underline font-serif"
             onClick={() => {
               setModalOpen(true);
               setId(record.key);
@@ -406,7 +406,7 @@ const UserRole = () => {
                   }
                 });
             }}
-            className="text-2xl text-sky-600 underline font-serif"
+            className="text-2xl text-sky-700 underline font-serif"
           >
             See
           </Link>
@@ -496,7 +496,7 @@ const UserRole = () => {
               expandedRowRender: expandRender,
               expandIcon: ({ expanded, onExpand, record }) => (
                 <Link
-                  className="text-sky-600 text-xl"
+                  className="text-sky-700 text-xl"
                   onClick={(e) => onExpand(record, e)}
                 >
                   {expanded ? "-" : "+"}

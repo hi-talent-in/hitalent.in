@@ -486,7 +486,7 @@ const TreeView = (props) => {
             onClick={() => {
               setModalOpen(true);
             }}
-            className="!text-sky-600 bg-transparent hover:!bg-transparent p-0 m-0 font-serif font-medium text-2xl text-right  hover:text-orange-600 underline "
+            className="!text-sky-700 bg-transparent hover:!bg-transparent p-0 m-0 font-serif font-medium text-2xl text-right  hover:text-orange-600 underline "
           >
             <AiOutlinePlus />
           </button>
@@ -496,7 +496,7 @@ const TreeView = (props) => {
           ""
         ) : (
           <button
-            className="text-sky-600 bg-transparent hover:!bg-transparent p-0 m-0 font-serif font-medium text-2xl text-right  hover:text-orange-600 underline "
+            className="text-sky-700 bg-transparent hover:!bg-transparent p-0 m-0 font-serif font-medium text-2xl text-right  hover:text-orange-600 underline "
             onClick={() => {
               setModal1Open(true);
               editPathApi();

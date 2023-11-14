@@ -166,7 +166,7 @@ const Navbar = () => {
                 setShow(!show);
               }}
             >
-              <img src="/icons/menu.png" alt="menu image" width={20} />
+              <img src="/icons/menu.png" alt="menu image" width={20} height={20}/>
             </button>
             {show && (
               <div className="relative md:hidden block" ref={popoverRef}>

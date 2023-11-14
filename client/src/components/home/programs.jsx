@@ -36,13 +36,13 @@ const Programs = () => {
               software industry.
             </p>
             <br />
-            <div className="mr-auto">
+            <p className="mr-auto flex flex-col gap-1">
               <strong>Roadmap of Talent:</strong>
-              <li>FreeCodeCamp Course </li>
-              <li>Practical Projects </li>
-              <li>Problem Solving </li>
-              <li>Interview Preparation </li>
-            </div>
+              <small>. FreeCodeCamp Course </small>
+              <small>. Practical Projects </small>
+              <small>. Problem Solving </small>
+              <small>. Interview Preparation </small>
+            </p>
           </div>
           <div className="flex items-center md:w-[75%] min-h-[40rem] text-left p-2 px-4 justify-start rounded-md shadow-xl text-[14px] shadow-sky-200 flex-col space-y-1">
             <br />
