@@ -24,6 +24,7 @@ const FreeCodeCamp = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-orange-700 hover:text-blue-500 underline"
+                  aria-label="Freecodecamp"
                 >
                   https://www.freecodecamp.org/
                 </a>

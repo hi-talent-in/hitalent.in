@@ -139,6 +139,7 @@ const TalentDashboard = () => {
               * {resource.name} -{" "}
               <a
                 href={resource.link}
+                aria-label={resource + "Link"}
                 className="hover:text-sky-700 underline text-sm p-0 m-0"
                 target="_blank"
                 rel="noopener noreferrer"

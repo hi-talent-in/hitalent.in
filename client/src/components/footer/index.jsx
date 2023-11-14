@@ -16,7 +16,12 @@ const Footer = () => {
   return (
     <div className="flex flex-col space-y-2 py-2 items-center justify-center border-t border-slate-100">
       <div className="flex flex-row items-center justify-center gap-4">
-        <a href={main.linkedin.url} target="_blank" rel="noopener noreferrer">
+        <a
+          href={main.linkedin.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={"Linkedin - " + main.linkedin.url}
+        >
           <AiOutlineLinkedin
             style={{
               color: "black",
@@ -24,7 +29,12 @@ const Footer = () => {
             }}
           />
         </a>
-        <a href={main.github.url} target="_blank" rel="noopener noreferrer">
+        <a
+          href={main.github.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={"Github - " + main.github.url}
+        >
           <AiFillGithub
             style={{
               color: "black",

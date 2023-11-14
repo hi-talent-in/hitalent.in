@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const About = () => {
   return (
     <section id="about">
@@ -10,16 +11,15 @@ const About = () => {
           <p className="text-left md:px-10 px-2 text-sm md:text-base">
             HiTalent is an online programming training platform that is on a
             mission to help students learn programming
-            <strong className="text-sky-600"> free of cost</strong>. We deliver
-            our training through an
-            <a href="/#:~:text=a%20suitable%20company.-,Internship%20Program,-(3%2D6%20Months">
-              {" "}
+            <strong className="text-sky-700"> free of cost</strong>. We deliver
+            our training through an{" "}
+            <a href="/#programs" aria-label={"internship-program"}>
               <strong className="hover:text-sky-800 underline">
                 internship
               </strong>{" "}
             </a>
             program of 3-6 months and an
-            <a href="/#:~:text=Apprenticeship%20Program">
+            <a href="/#programs" aria-label={"apprenticeship-program"}>
               {" "}
               <strong className="hover:text-sky-800 underline">
                 apprenticeship
@@ -44,6 +44,7 @@ const About = () => {
           src="/images/about.jpeg"
           alt="about image"
           width={400}
+          height={400}
           className="hidden lg:block rounded-md hover:-translate-x-1 hover:-translate-y-1 m-3"
         />
       </div>

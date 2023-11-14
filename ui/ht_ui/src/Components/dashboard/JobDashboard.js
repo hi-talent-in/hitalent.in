@@ -62,7 +62,7 @@ const JobDashboard = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sky-600 text-xl hover:text-orange-600"
+          className="text-sky-700 text-xl hover:text-orange-600"
           href={text}
         >
           Apply
@@ -81,7 +81,7 @@ const JobDashboard = () => {
   );
 
   const nextPrevIcon = (symbol) => (
-    <small className="text-sky-600 hover:text-sky-500 ">{symbol}</small>
+    <small className="text-sky-700 hover:text-sky-500 ">{symbol}</small>
   );
 
   const { setNotAuthorised, notAuthorised } = useStore((state) => ({

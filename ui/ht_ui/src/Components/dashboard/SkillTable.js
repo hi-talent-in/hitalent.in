@@ -63,7 +63,7 @@ const SkillTable = (props) => {
       </Modal>
       <Link
         onClick={() => setModalOpen(true)}
-        className="text-2xl text-sky-600 underline font-semibold"
+        className="text-2xl text-sky-700 underline font-semibold"
       >
         <AiOutlineInfoCircle />
       </Link>
