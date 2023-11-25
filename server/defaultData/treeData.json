@@ -1,5 +1,15 @@
 [
-  { "key": "73", "title": "FreeCodeCamp Account Setup" },
+  {
+    "key": "336",
+    "title": "Onboarding",
+    "progress": false,
+    "children": [
+      { "key": "73", "title": "FreeCodeCamp Account Setup" },
+      { "key": "337", "title": "Join Telegram", "progress": false },
+      { "key": "338", "title": "LinkedIn", "progress": false },
+      { "key": "339", "title": "Setup", "progress": false }
+    ]
+  },
   {
     "key": "1",
     "title": "Beginner",
