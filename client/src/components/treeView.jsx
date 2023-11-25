@@ -93,7 +93,7 @@ const TreeView = (props) => {
 
   const { error, success, contextHolder } = useCustomMessage();
 
-  const [expandedKeys] = useState(["1"]);
+  // const [expandedKeys, setExpandedKeys] = useState(["336"]);
   const me = localStorage.getItem("me");
   const accessToken = localStorage.getItem("accessToken");
   const talentId = props.talentId;
@@ -397,7 +397,7 @@ const TreeView = (props) => {
   };
 
   const renderTitle = (node) => {
-    return <span className="">{node.title}</span>;
+    return <span className="hover:text-sky-700">- {node.title}</span>;
   };
 
   const addPath = () => (
@@ -514,7 +514,8 @@ const TreeView = (props) => {
       </div>
       <Tree
         className="text-left "
-        defaultExpandedKeys={expandedKeys}
+        defaultExpandedKeys={["336"]}
+        // defaultSelectedKeys={["337"]}
         draggable={me === "isT" ? false : true}
         blockNode
         onDrop={onDrop}
@@ -525,4 +526,5 @@ const TreeView = (props) => {
     </section>
   );
 };
+
 export default TreeView;

@@ -1030,5 +1030,15 @@
   ],
   "334": [
     "Complete all problems below. First try without seeing solution, if you can not come up with answer then learn the specific topic related to that problem and try again. If can't solve at last you see solution and understand it."
+  ],
+  "337": [
+    "Connect with fellow interns and mentors easily through our Telegram channel. Share screenshots to clarify doubts with the community or send private messages for more personalized assistance. Collaborate, learn, and grow together!"
+  ],
+  "338": [
+    "Stay updated on our latest updates, insights, and opportunities! Follow us on LinkedIn to join our professional network and be part of the conversation. Let's connect and grow together!",
+    "Create a post and share it in LinkedIn(This is important for us to grow.)"
+  ],
+  "339": [
+    "Setup Development Environment - Install Git, Python/Node/Java, Docker, Docker Compose, VSCode/IDE"
   ]
 }

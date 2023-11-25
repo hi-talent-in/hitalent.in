@@ -3146,5 +3146,24 @@
       "name": "Java Object Oriented Programming - Exercises, Practice, Solution",
       "link": "https://www.w3resource.com/java-exercises/oop/index.php"
     }
+  ],
+  "337": [
+    { "name": "Join our telegram group", "link": "https://t.me/hitalent0" }
+  ],
+  "338": [
+    {
+      "name": "Follow us on LinkedIn",
+      "link": "https://www.linkedin.com/company/hitalent-in/"
+    }
+  ],
+  "339": [
+    {
+      "name": "Install Docker Engine",
+      "link": "https://docs.docker.com/engine/install/"
+    },
+    {
+      "name": "Download Visual Studio Code",
+      "link": "https://code.visualstudio.com/download"
+    }
   ]
 }
