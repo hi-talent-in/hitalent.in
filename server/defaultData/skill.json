@@ -58,7 +58,7 @@
   "70": "javascript",
   "71": "javascript",
   "72": "javascript",
-  "73": "basic",
+  "73": "onboarding",
   "74": "javascript",
   "76": "javascript",
   "77": "javascript",
@@ -282,5 +282,8 @@
   "331": "spring boot",
   "332": "spring boot",
   "333": "spring boot",
-  "334": "java"
+  "334": "java",
+  "337": "onboarding",
+  "338": "onboarding",
+  "339": "onboarding"
 }
