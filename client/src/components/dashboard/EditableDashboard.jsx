@@ -187,7 +187,12 @@ const EditableDashboard = () => {
   };
 
   const postSkill = () => (
-    <TextArea placeholder="Skill Name" autoSize value={newSkill || ""} />
+    <TextArea
+      placeholder="Skill Name"
+      autoSize
+      value={newSkill || ""}
+      onChange={(e) => setNewSkill(e.target.value)}
+    />
   );
 
   const addTaskSkill = async () => {
