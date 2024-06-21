@@ -1,7 +1,0 @@
-button,
-input[type="button"] {
-  color: #000000 !important;
-}
-button:hover {
-  background-color: rgb(92, 192, 241) !important;
-}
