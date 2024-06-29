@@ -59,11 +59,11 @@ const Navbar = () => {
       path: "/profile",
       active: pathname === "/profile",
     },
-    {
-      title: "Jobs",
-      path: "/jobs",
-      active: pathname === "/jobs",
-    },
+    // {
+    //   title: "Jobs",
+    //   path: "/jobs",
+    //   active: pathname === "/jobs",
+    // },
   ];
 
   const navItems = (

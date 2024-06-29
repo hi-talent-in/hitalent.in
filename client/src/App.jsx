@@ -48,10 +48,10 @@ const routes = createBrowserRouter([
         path: "login",
         element: <Login />,
       },
-      {
-        path: "jobs",
-        element: <JobDashboard />,
-      },
+      // {
+      //   path: "jobs",
+      //   element: <JobDashboard />,
+      // },
       {
         path: "new/join",
         element: <NewJoin />,
