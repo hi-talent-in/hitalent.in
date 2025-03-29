@@ -1,11 +1,6 @@
 const Team = () => {
   const persons = [
-    {
-      image: "/images/team/madan.jpg",
-      name: "Madan Meena",
-      linkedin: "https://www.linkedin.com/in/mmmiitr/",
-      role: "Acting CEO",
-    },
+  
     {
       image: "/images/team/iliyas.jpg",
       name: "Iliyas Shaik",
